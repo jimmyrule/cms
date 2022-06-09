@@ -1,0 +1,218 @@
+---
+layout: default
+title: CMS project
+---
+
+<div class="page-content">
+  <div class="row container-fluid g-0">
+    <div class="col-12">
+      <div class="row container-fluid mx-0 p-0">
+
+        {% include case-sidebar.html %}
+
+        <!-- Case stage content -->
+        <div class="col-12 stage-content pb-3">
+
+          {% include assessment-progress.html %}
+
+          <!-- Actions bar -->
+          <div class="card actions">
+            <div class="card-body">
+              <div class="row">
+                <h2>Stage 5</h2>
+                <div class="col-lg-5 d-flex align-items-center">
+                  <ul class="pagination pagination-sm zero-mb">
+                    <li>Draft version 2 <i class="bi bi-caret-down-fill"></i></li>
+                    <li class="shared-status">Not yet shared</li>
+                  </ul>
+                </div>
+                <!-- <div class="col-lg-6 d-flex">
+                  <p class="card-text me-auto" style="margin:auto 0"><strong>Plan issue due:</strong> 5 May 2021 <a href="#" data-bs-toggle="modal" data-bs-target="#guidanceModal"><i class="bi bi-question-circle"></i></a></p>
+                </div> -->
+                <div class="col-lg-7 d-flex align-items-center justify-content-end" id="action-buttons">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-file-earmark-arrow-down"></i> Download
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Draft plan (PDF)</a></li>
+                      <li><a class="dropdown-item" href="#">Draft plan (Word)</a></li>
+                      <li><a class="dropdown-item" href="#">Plan letter (PDF)</a></li>
+                    </ul>
+                  </div>
+                  <button type="button" class="btn btn-secondary ms-2"><i class="bi bi-eye"></i> Preview</button>
+                  <button type="button" class="btn btn-secondary ms-2" id="notificationToast"><i class="bi bi-pencil-square"></i> Edit</button>
+                  <button type="button" class="btn btn-secondary ms-2" data-bs-toggle="modal" data-bs-target="#issuePlanModal"><i class="bi bi-arrow-right-circle"></i> Issue</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Onscreen guidance -->
+          <div class="stage-section">
+            <p>An Education, Health and Care Plan (EHC Plan) must be issued no later than 20 weeks after the request for EHC needs assessment was submitted. The plan is initially put together using all of the contributed advice and views from the Assessment stage. This can be changed... <a href="#">read more</a></p>
+          </div>
+          <!-- Tabs -->
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link tab active" aria-current="page" href="#">Plan contents</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tab" href="#">Consultations</a>
+            </li>
+          </ul>
+          <!-- Plan sections -->
+          <div class="stage-section task-list">
+            <div class="row">
+              <div class="col-xl-6">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">
+                        <h4>Section A <a href=#><i class="bi bi-info-circle"></i></a></h4>
+                        <span class="table-sub-heading">About me</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="#">All about me</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">My parent or carer views</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Local authority background</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">
+                        <h4>Sections B, E and F <a href=#><i class="bi bi-info-circle"></i></a></h4>
+                        <span class="table-sub-heading">Special educational needs, outcomes and provision</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="#">Summary of special educational needs</a></td>
+                    </tr>
+                    <tr>
+                      <td class="d-flex justify-content-between">
+                        <a href="#">Communication and interaction</a>
+                        <span class="badge rounded-pill badge-outlined-need"><i class="bi bi-check2"></i> Identified need</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Cognition and learning</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Sensory and/or physical needs</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Social, emotional and mental health</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">
+                        <h4>Sections C, E and G <a href=#><i class="bi bi-info-circle"></i></a></h4>
+                        <span class="table-sub-heading">Health needs, outcomes and provisions</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="d-flex justify-content-between">
+                        <a href="#">Health</a>
+                        <span class="badge rounded-pill badge-outlined-need"><i class="bi bi-check2"></i> Identified need</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">
+                        <h4>Section D, E, H1 and H2 <a href=#><i class="bi bi-info-circle"></i></a></h4>
+                        <span class="table-sub-heading">Social care needs, outcomes and provision</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="#">Social care</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">
+                        <h4>Section I <a href=#><i class="bi bi-info-circle"></i></a></h4>
+                        <span class="table-sub-heading">Educational placement</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="#">Educational placement</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">
+                        <h4>Section J <a href=#><i class="bi bi-info-circle"></i></a></h4>
+                        <span class="table-sub-heading">Personal budget</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="#">Budget information</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Annual cost of support</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">
+                        <h4>Section K <a href=#><i class="bi bi-info-circle"></i></a></h4>
+                        <span class="table-sub-heading">Information and advice</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="#">Advice contributions</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Monitoring and review</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Chronology</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

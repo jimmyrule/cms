@@ -1,0 +1,228 @@
+---
+layout: default
+title: CMS project
+---
+
+<div class="page-content">
+  <div class="row container-fluid g-0">
+    <div class="col">
+      <div class="row container-fluid mx-0 p-0">
+
+        {% include search-sidebar.html %}
+
+        <!-- Case stage content -->
+        <div class="col stage-content pt-4 pb-3">
+          <h2>My children and young people</h2>
+          <p>Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur... <a href="#">read more</a></p>
+          <!-- Tabs -->
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link tab active" aria-current="page" href="#">Cases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tab" href="#">Tasks</a>
+            </li>
+          </ul>
+          <!-- Search results -->
+          <div class="col pt-3 pb-3">
+            <!-- Onscreen guidance -->
+            <div class="results-section">
+              <!-- Sort options -->
+              <div class="row mb-3">
+                <div class="col">
+                  <p><strong>1-5</strong> of <strong>5</strong> cases based on your current search options <a href="#" data-bs-toggle="modal" data-bs-target="#guidanceModal"><i class="bi bi-question-circle"></i></a></p>
+                </div>
+                <div class="col">
+                  <div class="text-end mb-3">
+                    Sort by: <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span>Last name ascending</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Last name ascending</a></li>
+                      <li><a class="dropdown-item" href="#">Last name descending</a></li>
+                      <li><a class="dropdown-item" href="#">Due date ascending</a></li>
+                      <li><a class="dropdown-item" href="#">Due date descending</a></li>
+                      <li><a class="dropdown-item" href="#">Last updated date ascending</a></li>
+                      <li><a class="dropdown-item" href="#">Last updated date descending</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Search results -->
+
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Photo</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">School</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Next due</th>
+                    <th scope="col">Alert</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img src="/assets/images/boy in a forest.jpg" class="rounded d-block avatar-card" alt="avatar"></td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <a href="/case-view" class="card case-card d-flex justify-content-between flex-row align-items-center">
+                <div class="hidden-mobile">
+                  <img src="/assets/images/boy in a forest.jpg" class="rounded d-block avatar-card" alt="avatar">
+                </div>
+                <div>
+                  <h5 class="my-0">Alvin<br>Hanson
+                  </h5>
+                </div>
+                <div>
+                  Greenhill School<br>Year 9
+                </div>
+                <div>
+                  Stage 1
+                </div>
+                <div>
+                  17/12/2020
+                </div>
+                <div>
+                  <span class="badge rounded-pill bg-success">On track</span>
+                </div>
+                <div class="p-2 text-center">
+                  <i class="bi bi-chevron-right"></i>
+                </div>
+              </a>
+
+              <a href="/case-view" class="card case-card d-flex justify-content-between flex-row align-items-center">
+                <div class="hidden-mobile">
+                  <img src="/assets/images/boy running.jpg" class="rounded d-block avatar-card" alt="avatar">
+                </div>
+                <div>
+                  <h5 class="my-0">Ellery<br>Holden
+                  </h5>
+                </div>
+                <div>
+                  Greenhill School<br>Year 4
+                </div>
+                <div>
+                  Stage 1
+                </div>
+                <div>
+                  17/12/2020
+                </div>
+                <div>
+                  <span class="badge rounded-pill bg-danger">Decision overdue</span>
+                </div>
+                <div class="p-2 text-center">
+                  <i class="bi bi-chevron-right"></i>
+                </div>
+              </a>
+
+              <a href="/case-view" class="card case-card d-flex justify-content-between flex-row align-items-center">
+                <div class="hidden-mobile">
+                  <img src="/assets/images/girl at school.jpg" class="rounded d-block avatar-card" alt="avatar">
+                </div>
+                <div>
+                  <h5 class="my-0">Sienna<br>Reid
+                  </h5>
+                </div>
+                <div>
+                  Greenhill School<br>Year 2
+                </div>
+                <div>
+                  Stage 1
+                </div>
+                <div>
+                  17/12/2020
+                </div>
+                <div>
+                  <span class="badge rounded-pill bg-warning text-dark">Decision impending</span>
+                </div>
+                <div class="p-2 text-center">
+                  <i class="bi bi-chevron-right"></i>
+                </div>
+              </a>
+
+              <a href="/case-view" class="card case-card d-flex justify-content-between flex-row align-items-center">
+                <div class="hidden-mobile">
+                  <img src="/assets/images/teenager at college.jpg" class="rounded d-block avatar-card" alt="avatar">
+                </div>
+                <div>
+                  <h5 class="my-0">Chandler<br>Tate
+                  </h5>
+                </div>
+                <div>
+                  Greenhill School<br>Year 13
+                </div>
+                <div>
+                  Stage 1
+                </div>
+                <div>
+                  17/12/2020
+                </div>
+                <div>
+                  <span class="badge rounded-pill bg-warning text-dark">Decision impending</span>
+                </div>
+                <div class="p-2 text-center">
+                  <i class="bi bi-chevron-right"></i>
+                </div>
+              </a>
+
+              <a href="/case-view" class="card case-card d-flex justify-content-between flex-row align-items-center">
+                <div class="hidden-mobile">
+                  <img src="/assets/images/teenager wearing a cap.jpg" class="rounded d-block avatar-card" alt="avatar">
+                </div>
+                <div>
+                  <h5 class="my-0">Victor<br>Wagner
+                  </h5>
+                </div>
+                <div>
+                  Greenhill School<br>Year 11
+                </div>
+                <div>
+                  Stage 1
+                </div>
+                <div>
+                  17/12/2020
+                </div>
+                <div>
+                  <span class="badge rounded-pill bg-warning text-dark">Decision impending</span>
+                </div>
+                <div class="p-2 text-center">
+                  <i class="bi bi-chevron-right"></i>
+                </div>
+              </a>
+
+
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center my-5">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                  </li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

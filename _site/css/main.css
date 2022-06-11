@@ -346,7 +346,7 @@ tbody tr {
   padding: .4rem 1rem;
 }
 
-.stage-content {
+.stage-content, .work-tray-content {
   padding-left: 3rem;
   padding-right: 3rem;
 }
@@ -356,12 +356,17 @@ tbody tr {
   .page-content {padding-left:50px;}
   .sidenav {padding-top: 55px; width:50px;}
   .sidenav a {font-size: 18px;}
-  .stage-content {padding-left:1.5rem; padding-right:1.5rem;}
+  .stage-content, .work-tray-content {padding-left:1.5rem; padding-right:1.5rem;}
 }
 
 @media screen and (min-width: 768px) {
   .sidebar, .searchbar {position: fixed; overflow-y: auto; width: 220px;}
   .stage-content {margin-left: 220px; width: calc(100% - 220px);}
+}
+
+.search-bar {
+  background-color: var(--lightgrey);
+  border-radius: 3px;
 }
 
 .card {
@@ -442,7 +447,7 @@ tbody tr {
   #action-buttons {justify-content: left!important; margin-top: 0.5rem;}
 }
 
-.actions, .search-bar {
+.actions {
   position: initial;
   margin-bottom: 1em;
   top: 55px;
@@ -451,8 +456,13 @@ tbody tr {
   border-radius: 0;
 }
 
-.pagination {
-  color: var(--darkgrey);
+.page-link, .page-link:hover {
+  color: var(--primary);
+}
+
+.active > .page-link, .page-link.active {
+    background-color: var(--primary);
+    border-color: var(--primary);
 }
 
 .shared-status {

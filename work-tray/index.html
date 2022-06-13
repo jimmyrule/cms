@@ -18,19 +18,19 @@ title: Work tray
       </li>
     </ul>
     <!-- Search cases -->
-    <div class="row mt-4 p-3 search-bar">
-      <div class="col-md-5 py-1">
+    <div class="row gx-0 mt-3 p-3 search-bar">
+      <div class="col-md-5 p-1">
         <div class="input-group">
           <input type="text" class="form-control" placeholder="Name or reference" aria-label="Search by name or reference" aria-describedby="button-addon2">
           <button class="btn btn-secondary" type="button" id="button-addon2"><i class="bi bi-search"></i> Search</button>
         </div>
       </div>
-      <div class="col-md-7 py-1">
+      <div class="col-md-7 p-1">
         <a class="btn btn-secondary" href="#" data-bs-toggle="collapse" data-bs-target="#search-filters"><i class="bi bi-filter"></i> Filter</a>
-        <a class="btn btn-secondary" href="#" data-bs-toggle="modal" data-bs-target="#saveSearchModal"><i class="bi bi-save"></i> Save</a>
-        <a class="btn btn-secondary" href="#"><i class="bi bi-arrow-clockwise"></i> Reset</a>
+        <a class="btn btn-secondary hidden-mobile" href="#" data-bs-toggle="modal" data-bs-target="#saveSearchModal"><i class="bi bi-save"></i> Save</a>
+        <a class="btn btn-secondary hidden-mobile" href="#"><i class="bi bi-arrow-clockwise"></i> Reset</a>
         <div class="input-group d-inline">
-          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Saved searches</button>
+          <button class="btn btn-secondary dropdown-toggle hidden-mobile" type="button" data-bs-toggle="dropdown" aria-expanded="false">Saved searches</button>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">New requests</a></li>
             <li><a class="dropdown-item" href="#">My assessments</a></li>

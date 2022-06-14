@@ -1,0 +1,20 @@
+<div class="row gx-0 mt-3 p-3 search-bar">
+  <div class="col-md-5 p-1">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Name or reference" aria-label="Search by name or reference" aria-describedby="button-addon2">
+      <button class="btn btn-secondary" type="button" id="button-addon2"><i class="bi bi-search"></i> Search</button>
+    </div>
+  </div>
+  <div class="col-md-7 p-1">
+    <a class="btn btn-secondary" href="#" data-bs-toggle="collapse" data-bs-target="#search-filters"><i class="bi bi-filter"></i> Filter</a>
+    <a class="btn btn-secondary hidden-mobile" href="#"><i class="bi bi-arrow-clockwise"></i> Reset</a>
+  </div>
+</div>
+
+<div class="collapse p-3" id="search-filters">
+  <form class="row row-cols-sm-3 g-3">
+    <div class="col-12">
+      {% include filter-tasks.html %}
+    </div>
+  </form>
+</div>

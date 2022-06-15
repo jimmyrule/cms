@@ -341,9 +341,8 @@ tbody tr {
 .sidebar {
   height: calc(100% - 50px);
   background-color: var(--lightgrey);
-  padding: 24px;
-  margin: 16px 8px;
-  border-radius: 8px;
+  padding: 16px;
+  border-radius: 4px;
 }
 
 .list-group-item {
@@ -388,7 +387,11 @@ tbody tr {
 }
 
 .card {
-  border: 0;
+  border: 1px solid var(--lightgrey);
+}
+
+.parent-card {
+  border: 1;
 }
 
 .card-about, .card-plan {
@@ -519,6 +522,11 @@ tbody tr {
     overflow-y: auto;
   }
   /*.actions {position:sticky;}*/
+}
+
+.bulletless {
+  list-style: none;
+  padding-left: 0;
 }
 
 .form-toc ul, .admin-toc ul {

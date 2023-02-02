@@ -1,31 +1,39 @@
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="py-2 navbar top bg-primary main-header">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">
-        <span class="navbar-text">Product name</span>
-        <span class="navbar-text separator">|</span>
-        <span class="navbar-text customer-name" title="Customer name">Customer name</span>
+      <a class="d-block d-md-none text-white align-self-center px-4" role="button" data-bs-toggle="collapse" href="#idx-sidenav" aria-controls="idx-sidenav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="visually-hidden">Side menu</span><i class="far fa-bars" aria-hidden="true"></i>
       </a>
-      <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link me-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="bi bi-person-circle"></i> Margot Presley
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="/">Logout</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link me-3" href="/help" tabindex="-1" aria-disabled="true"><i class="bi bi-life-preserver"></i> Help</a>
-          </li>
-        </ul>
+      <a href="/" class="navbar-brand text-white ms-4 pt-2 "><span class="d-none d-md-inline-block">EHC Hub&nbsp;|&nbsp;</span><span class="la-name">Edgehill Council</span></a>
+      <a class="d-block d-md-none text-white align-self-center px-4" role="button" data-bs-toggle="collapse" href="#idx-usernav" aria-controls="idx-usernav" aria-expanded="false" aria-label="Toggle user options">
+          <span class="visually-hidden">User menu</span><i class="far fa-user-circle idx-nav-icon" aria-hidden="true"></i>
+      </a>
+      <div class="d-none d-md-block pull-right">
+        <a class="text-white me-4" href="#"><i class="fal fa-user-circle idx-nav-icon" aria-hidden="true" title="Profile"></i> Bob Schneider</a>
+        <a class="text-white me-4" href="/help"><i class="fal fa-question-circle idx-nav-icon" aria-hidden="true" title="Help"></i></a>
+        <a class="text-white me-4" data-bs-toggle="modal" data-bs-target="#logoutModal" type="button" tabindex="0"><i class="fal fa-sign-out idx-nav-icon" aria-hidden="true" title="Logout"></i></a>
       </div>
     </div>
   </nav>
+  {% include usernav.html %}
 </header>
+
+<!-- Modal -->
+<div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 no-border" id="logoutModalLabel">Logout</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure that you wish to logout of the EHC Hub?</p>
+        <p>Choose <strong>No</strong> to continue working or <strong>Yes, logout</strong> to leave the EHC Hub.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-neutral-50" data-bs-dismiss="modal">No</button>
+        <a type="button" class="btn btn-primary" href="/">Yes, logout</a>
+      </div>
+    </div>
+  </div>
+</div>

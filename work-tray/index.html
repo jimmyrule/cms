@@ -3,94 +3,97 @@ layout: default
 title: Work tray
 ---
 
-{% include side-nav-coordinator.html %}
-
-<div class="row container-fluid page-content g-0">
+<div class="d-flex flex-fill flex-column flex-md-row">
   <!-- Page content -->
-  <div class="col-12 col-xxl-10 offset-xxl-1 work-tray-content pt-4 pb-3">
-    <h2>My children and young people</h2>
-    <p class="hidden-mobile">Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur... <a href="#">read more</a></p>
-    <!-- Tabs -->
-    <ul class="nav nav-tabs">
-      <li class="nav-item">
-        <a class="nav-link tab active" aria-current="page" href="/work-tray">Cases (79)</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link tab" href="/tasks">Tasks (3)</a>
-      </li>
-    </ul>
-    <!-- Search cases -->
-    {% include search-cases.html %}
 
-    <div class="row">
-      <div class="col py-4">
-        <p class="text-muted"><strong>1-5</strong> of <strong>15</strong> children or young people based on your current search options <a href="#" data-bs-toggle="modal" data-bs-target="#guidanceModal"><i class="bi bi-question-circle"></i></a></p>
-          <!-- Search results -->
-          <div class="table-responsive">
-            <table class="table table-borderless align-middle">
-              <thead>
-                <tr>
-                  <th scope="col"></th>
-                  <th scope="col">Name <i class="bi bi-sort-alpha-down"></i></th>
-                  <th scope="col">Year group</th>
-                  <th scope="col">Setting</th>
-                  <th scope="col">Status</th>
-                  <th scope="col">Next due</th>
-                  <th scope="col">Alert</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><img src="/assets/images/boy in a forest.jpg" class="rounded d-block avatar-card" alt="avatar"></td>
-                  <td><a href="/case-view">Hanson, Alvin</a></td>
-                  <td>Year 9</td>
-                  <td>Highfield Academy</td>
-                  <td>Stage 1</td>
-                  <td>17/12/2020</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td><img src="/assets/images/boy running.jpg" class="rounded d-block avatar-card" alt="avatar"></td>
-                  <td><a href="#">Holden, Ellery</a></td>
-                  <td>Year 4</td>
-                  <td>Oak Junior School</td>
-                  <td>Stage 1</td>
-                  <td>17/12/2020</td>
-                  <td><span class="badge rounded-pill bg-warning text-dark">Pending deadline</span></td>
-                </tr>
-                <tr>
-                  <td><img src="/assets/images/girl at school.jpg" class="rounded d-block avatar-card" alt="avatar"></td>
-                  <td><a href="#">Reid, Sienna</a></td>
-                  <td>Year 2</td>
-                  <td>St Mary's Primary</td>
-                  <td>Stage 1</td>
-                  <td>17/12/2020</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td><img src="/assets/images/teenager at college.jpg" class="rounded d-block avatar-card" alt="avatar"></td>
-                  <td><a href="#">Tate, Chandler</a></td>
-                  <td>Year 13</td>
-                  <td>Greenhill School</td>
-                  <td>Stage 1</td>
-                  <td>17/12/2020</td>
-                  <td><span class="badge rounded-pill bg-danger">Overdue deadline</span></td>
-                </tr>
-                <tr>
-                  <td><img src="/assets/images/placeholder.jpeg" class="rounded d-block avatar-card" alt="avatar"></td>
-                  <td><a href="#">Wagner, Victor</a></td>
-                  <td>Year 11</td>
-                  <td>Greenhill School</td>
-                  <td>Stage 1</td>
-                  <td>17/12/2020</td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          {% include pagination.html %}
-          <a href="/parent-dash">Switch to parent view</a>
-        </div>
+  {% include sidenav.html %}
+
+  <main id="content" class="main container-fluid mt-6 px-6 px-lg-8">
+    <div class="row gx-5 gy-2 px-xl-5">
+      <div class="col">
+        <h1>My cases in progress</h1>
+        <p>My assigned children and young people in the assessment, review or amendment pathway.</p>
+
+        {% include search-cases.html %}
+
+        <div class="row">
+         <div class="col">
+
+             <!-- Search results -->
+             <p class="mb-0"><strong>1 - 5</strong> of <strong>5</strong> children and young people based on your current search and filter options.</p>
+             <div class="table-responsive">
+               <table class="table table-hover table-borderless idx-results-table align-middle">
+                 <thead>
+                   <tr>
+                     <th scope="col" class="d-none d-md-table-cell">Photo</th>
+                     <th scope="col">Name <i class="fal fa-arrow-up idx-table-sort px-1" aria-hidden="true" title="Sort"></i></th>
+                     <th scope="col" class="d-none d-md-table-cell">Year group</th>
+                     <th scope="col">Setting</th>
+                     <th scope="col">Status</th>
+                     <th scope="col" class="d-none d-md-table-cell">Next due</th>
+                     <th scope="col" class="d-none d-md-table-cell">Alert</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr>
+                     <td class="d-none d-md-table-cell"><img src="/assets/images/boy in a forest.jpg" class="rounded d-block idx-avatar-card" alt="Photo of Alvin"></td>
+                     <td><a href="#">Hanson, Alvin</a></td>
+                     <td class="d-none d-md-table-cell">Year 9</td>
+                     <td>Highfield Academy</td>
+                     <td>Assessment in progress</td>
+                     <td class="d-none d-md-table-cell">17 Apr 2023</td>
+                     <td class="d-none d-md-table-cell"></td>
+                   </tr>
+                   <tr>
+                     <td class="d-none d-md-table-cell"><img src="/assets/images/boy running.jpg" class="rounded d-block idx-avatar-card" alt="Photo of Ellery"></td>
+                     <td><a href="/case-view">Holden, Ellery</a></td>
+                     <td class="d-none d-md-table-cell">Year 4</td>
+                     <td>Oak Junior School</td>
+                     <td>Draft EHC Plan</td>
+                     <td class="d-none d-md-table-cell">14 Jan 2023</td>
+                     <td class="d-none d-md-table-cell">
+                       <span class="badge rounded-pill bg-warning-300 text-dark">Pending deadline</span>
+                       <span class="badge rounded-pill bg-error-600" title="Safeguarding concern">SG</span>
+                       <span class="badge rounded-pill bg-success-700" title="Looked after child">LAC</span>
+                     </td>
+                   </tr>
+                   <tr>
+                     <td class="d-none d-md-table-cell"><img src="/assets/images/girl at school.jpg" class="rounded d-block idx-avatar-card" alt="Photo of  Sienna"></td>
+                     <td><a href="#">Reid, Sienna</a></td>
+                     <td class="d-none d-md-table-cell">Year 2</td>
+                     <td>St Mary's Primary</td>
+                     <td>Review: Report</td>
+                     <td class="d-none d-md-table-cell">17 Apr 2023</td>
+                     <td class="d-none d-md-table-cell"></td>
+                   </tr>
+                   <tr>
+                     <td class="d-none d-md-table-cell"><img src="/assets/images/teenager at college.jpg" class="rounded d-block idx-avatar-card" alt="Photo of Chandler"></td>
+                     <td><a href="#">Tate, Chandler</a></td>
+                     <td class="d-none d-md-table-cell">Year 13</td>
+                     <td>Greenhill School</td>
+                     <td>Request for assessment</td>
+                     <td class="d-none d-md-table-cell">17 Apr 2023</td>
+                     <td class="d-none d-md-table-cell"><span class="badge rounded-pill bg-danger">Overdue deadline</span></td>
+                   </tr>
+                   <tr>
+                     <td class="d-none d-md-table-cell"><img src="/assets/images/placeholder.jpeg" class="rounded d-block idx-avatar-card" alt="Photo of Victor"></td>
+                     <td><a href="#">Wagner, Victor</a></td>
+                     <td class="d-none d-md-table-cell">Year 11</td>
+                     <td>Greenhill School</td>
+                     <td>Review: Contribute views</td>
+                     <td class="d-none d-md-table-cell">17 Apr 2023</td>
+                     <td class="d-none d-md-table-cell"></td>
+                   </tr>
+                 </tbody>
+               </table>
+             </div>
+
+             <p class="mt-7"><a href="/parent-dash"><i class="fal fa-eye me-2"></i>Parent dashboard</a></p>
+
+           </div>
+         </div>
       </div>
     </div>
-  </div>
+  </main>
+
+</div>

@@ -1,0 +1,101 @@
+---
+layout: default
+title: Users
+---
+
+<div class="d-flex flex-fill flex-column flex-md-row">
+  <!-- Page content -->
+
+  {% include sidenav.html %}
+
+  <main id="content" class="main container-fluid mt-6 px-6 px-lg-8">
+    <div class="row gx-5 gy-2 px-xl-5">
+      <div class="col">
+
+        <aside class="mb-5">
+          <a href="/admin"><i class="fal fa-arrow-left me-2"></i>Back to Administration</a>
+        </aside>
+
+        <h1>Users</h1>
+        <p>Manage your EHC Hub users.</p>
+
+        {% include search-users.html %}
+
+        <p class="mb-0"><strong>1 - 5</strong> of <strong>5</strong> users based on your current search and filter options.</p>
+        <div class="table-responsive">
+         <table class="table table-hover table-borderless idx-results-table align-middle">
+           <thead>
+             <tr>
+               <th scope="col">Name <i class="fal fa-arrow-up idx-table-sort px-1" aria-hidden="true" title="Sort"></i></th>
+               <th scope="col">Email</th>
+               <th scope="col">Role</th>
+               <th scope="col">Status</th>
+               <th scope="col">Last login</th>
+               <th scope="col">Action</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <td class="text-muted">Alice Fields</td>
+               <td class="text-muted">alice@example.com</td>
+               <td class="text-muted">Setting admin</td>
+               <td><span class="badge text-bg-danger w-100">Suspended</span></td>
+               <td class="text-muted">2 Feb 2023 09:03</td>
+               <td>
+                 <a href="#" title="Edit user" class="me-3"><i class="fal fa-user-edit"></i></a>
+                 <a href="#" title="Re-activate user" ><i class="fal fa-user-check"></i></a>
+               </td>
+             </tr>
+             <tr>
+               <td>Gerald Sumner</td>
+               <td>gerald@example.com</td>
+               <td>Setting user</td>
+               <td><span class="badge text-bg-success w-100">Active</span></td>
+               <td>13 Feb 2023 16:42</td>
+               <td>
+                 <a href="#" title="Edit user" class="me-3"><i class="fal fa-user-edit"></i></a>
+                 <a href="#" title="Suspend user" ><i class="fal fa-user-slash"></i></a>
+               </td>
+             </tr>
+             <tr>
+               <td>Mehul Sandal</td>
+               <td>mehul@example.com</td>
+               <td>Co-ordinator</td>
+               <td><span class="badge text-bg-success w-100">Active</span></td>
+               <td>31 Jan 2023 12:11</td>
+               <td>
+                 <a href="#" title="Edit user" class="me-3"><i class="fal fa-user-edit"></i></a>
+                 <a href="#" title="Suspend user" ><i class="fal fa-user-slash"></i></a>
+               </td>
+             </tr>
+             <tr>
+               <td>Mohammed James Bashir</td>
+               <td>mohammed@example.com</td>
+               <td>Parent</td>
+               <td><span class="badge text-bg-info w-100">Invited</span></td>
+               <td class="text-muted">Never logged in</td>
+               <td>
+                 <a href="#" title="Edit user" class="me-3"><i class="fal fa-user-edit"></i></a>
+                 <a href="#" title="Re-invite user"><i class="fal fa-paper-plane"></i></a>
+               </td>
+             </tr>
+             <tr>
+               <td>Sally Graves</td>
+               <td>sally@example.com</td>
+               <td>Contributor</td>
+               <td><span class="badge text-bg-success w-100">Active</span></td>
+               <td>9 Mar 2022 20:59</td>
+               <td>
+                 <a href="#" title="Edit user" class="me-3"><i class="fal fa-user-edit"></i></a>
+                 <a href="#" title="Suspend user" ><i class="fal fa-user-slash"></i></a>
+               </td>
+             </tr>
+           </tbody>
+         </table>
+       </div>
+
+      </div>
+    </div>
+  </main>
+
+</div>

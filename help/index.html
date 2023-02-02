@@ -3,31 +3,58 @@ layout: default
 title: Help
 ---
 
-{% include side-nav-coordinator.html %}
+<div class="d-flex flex-fill flex-column flex-md-row">
+  <!-- Page content -->
 
-<div class="page-content">
+  {% include sidenav.html %}
 
-  <div class="row container-fluid">
+  <main id="content" class="main container-fluid mt-6 px-6 px-lg-8">
+    <div class="row gx-5 gy-2 px-xl-5">
+      <div class="col-md-8">
 
-    <div class="col-12 col-lg-8 offset-lg-2 mt-4">
+        <h1>Help</h1>
+        <p>For assistance using the EHC Hub, please refer to the guidance documents and videos below. Further assistance can be sought from an administrator of the EHC Hub within your local authority. Please refer to your service manager to help identify the relevant contact person.</p>
 
-      <!-- Onscreen guidance -->
-      <div class="stage-section">
-        <h2>Help</h2>
-        <p>Need help with something? On this page you'll find useful links and how to get in touch with our team of experts.</p>
-        <h4>Useful links</h4>
-        <ul class="bulletless">
-          <li><a href="#">A link to somewhere</a></li>
-          <li><a href="#">A link to over there</a></li>
-          <li><a href="#">A link to somewhere else</a></li>
-        </ul>
-        <h4>Contact us</h4>
-        <p>Email the team <a href="#">experts@cmsportal.com</a></p>
-        <p>Telephone the team <strong>01234 567890</strong>
+        <h2>Documents</h2>
+
+        <p><a href="#">Case Co-ordinator's guide</a></p>
+
+        <p><a href="#">Frequently Asked Questions</a></p>
+
+        <p><a href="#">Panel meetings guide</a></p>
+
+        <p><a href="#">Administrator's guide (Administrator only)</a></p>
+
+        <h2>Videos</h2>
+
+        <p><a href="#">Account registration</a></p>
+
+        <p><a href="#">How to close a case outside of process</a></p>
+
+        <p><a href="#"><a href="#">How to overturn a decision not to proceed</a></p>
+
+        <p><a href="#">How to record an exception</a></p>
+
+        <p><a href="#">How to re-open a completed request for advice</a></p>
+
+        <p><a href="#">How to reset a user’s two factor authentication settings (Administrator only)</a></p>
+
+        <h2>Technical support</h2>
+
+        <p>Details of obtaining technical support are only for administrators or case co-ordinators and must not be shared with persons outside of the local authority.
+
+        <p>Technical queries or issues can be raised to the Idox Service Desk Team using one of the following methods of contact:</p>
+
+        <p>Service desk portal: <a href="#">https://customer.servicedesk.idoxgroup.com/idoxsd</a></p>
+
+        <p>Email: <a href="#">servicedesk@idoxgroup.com</a></p>
+
+        <p>Telephone: 03330 111 668</p>
+
+        {% include product-info.html %}
+
       </div>
-
     </div>
-
-  </div>
+  </main>
 
 </div>

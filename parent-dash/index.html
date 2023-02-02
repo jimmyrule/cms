@@ -1,61 +1,107 @@
 ---
 layout: default
-title: Parent dashboard
+title: Parent dash
 ---
 
-{% include side-nav-parent.html %}
-
-<div class="row container-fluid page-content g-0">
+<div class="d-flex flex-fill flex-column flex-md-row">
   <!-- Page content -->
-  <div class="col-12 col-xxl-10 offset-xxl-1 work-tray-content pt-4 pb-3">
-    <h2>My children and young people</h2>
-    <p class="hidden-mobile">Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur... <a href="#">read more</a></p>
-    <!-- Tabs -->
-    <ul class="nav nav-tabs">
-      <li class="nav-item">
-        <a class="nav-link tab active" aria-current="page" href="/work-tray">Cases (2)</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link tab" href="#">Tasks (3)</a>
-      </li>
-    </ul>
 
-    <div class="row">
-      <div class="col py-4">
+  {% include sidenav-parent.html %}
 
-        <div class="card parent-card mb-3">
-          <div class="row g-0">
-            <div class="col-md-3">
-              <img src="/assets/images/boy in a forest.jpg" class="img-fluid rounded-start" alt="...">
+  <main id="content" class="main container-fluid mt-3 px-7 mt-xl-8 px-xl-8">
+    <div class="row gx-5 gy-2 px-xl-5">
+      <div class="col">
+
+        <ul class="nav idx-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Philip Tate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Lily-Rose Tate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gerry Tate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Graham Tate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Denise Tate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Andy Tate</a>
+          </li>
+        </ul>
+
+        <div class="d-flex flex-row pt-5">
+          <div class="pt-2 pe-2">
+            <img src="/assets/images/boy in a forest.jpg" class="rounded d-block idx-avatar-card" alt="avatar">
+          </div>
+          <div class="p-2">
+            <h2>Philip Tate</h2>
+            <p class="text-neutral-500">Request date: 28th Aug 2022<br>
+            Plan due: 14th Jan 2023</p>
+          </div>
+        </div>
+
+        <div class="alert alert-primary d-flex" role="alert">
+          <div class="align-self-center">
+            <i class="fal fa-info-circle text-secondary ps-1 pe-3" aria-hidden="true" title="comment"></i>
+          </div>
+          <div>
+            Philip has a Draft EHC Plan which is awaiting your comment.
+          </div>
+        </div>
+
+        <div class="accordion" id="accordion-parent-dash">
+          <div class="accordion-item bg-white">
+            <h2 class="accordion-header" id="accordion-parent-dash-headingOne">
+              <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-parent-dash-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                What does this mean?
+              </button>
+            </h2>
+            <div id="accordion-parent-dash-collapseOne" class="accordion-collapse collapse" aria-labelledby="accordion-parent-dash-headingOne">
+              <div class="accordion-body">
+                We have drafted Lillie’s EHC Plan and have shared that with you, Lillie’s education setting and other professionals who contributed to the assessment. We will also be consulting with appropriate education settings to make sure Lillie’s needs are properly met once the plan has been finalised.
+              </div>
             </div>
-            <div class="col-md-9">
-              <div class="card-body">
-                <h5 class="card-title">Alvin Hanson</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p class="card-text text-end"><a class="btn btn-secondary" href="/case-view"><i class="bi bi-arrow-right-circle"></i> View case details</a></p>
+          </div>
+          <div class="accordion-item bg-white">
+            <h2 class="accordion-header" id="accordion-parent-dash-headingTwo">
+              <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-parent-dash-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                What should I be doing right now?
+              </button>
+            </h2>
+            <div id="accordion-parent-dash-collapseTwo" class="accordion-collapse collapse" aria-labelledby="accordion-parent-dash-headingTwo">
+              <div class="accordion-body">
+                Now is your opportunity to read the draft plan and add your comments. This includes telling us your preferred education setting. Once you are happy with your comments you can submit them all to us. There is 15 days allowed for this part.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item bg-white">
+            <h2 class="accordion-header" id="accordion-parent-dash-headingThree">
+              <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-parent-dash-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                What happens next and when?
+              </button>
+            </h2>
+            <div id="accordion-parent-dash-collapseThree" class="accordion-collapse collapse" aria-labelledby="accordion-parent-dash-headingThree">
+              <div class="accordion-body">
+                We must issue a final EHC Plan for Lillie by 14 January 2023.
               </div>
             </div>
           </div>
         </div>
 
-        <div class="card parent-card mb-3">
-          <div class="row g-0">
-            <div class="col-md-3">
-              <img src="/assets/images/girl at school.jpg" class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-9">
-              <div class="card-body">
-                <h5 class="card-title">Lilly Hanson</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p class="card-text text-end"><a class="btn btn-secondary" href="/case-view"><i class="bi bi-arrow-right-circle"></i> View case details</a></p>
-              </div>
-            </div>
-          </div>
+        <div class="d-flex">
+          <a class="btn btn-success my-5 flex-fill" href="#">View draft plan</a>
         </div>
 
+        <div class="text-center">
+          <p><a href="#">Download Draft EHC Plan</a></p>
+        </div>
 
-        <a href="/work-tray">Switch to co-ordinator view</a>
       </div>
     </div>
-  </div>
+  </main>
+
 </div>

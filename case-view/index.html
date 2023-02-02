@@ -1,42 +1,136 @@
 ---
 layout: default
-title: Stage 5
+title: EHC Hub
 ---
 
-{% include side-nav-coordinator.html %}
+<div class="d-flex flex-fill flex-column flex-md-row">
+  <!-- Page content -->
 
-<div class="case-content">
+  {% include sidenav.html %}
 
-  <div class="row container-fluid g-0">
-    <div class="col-12 px-4 py-2 d-flex case-title justify-content-between">
-      <h5 class="m-0 p-0">Alvin Hanson</h5>
-      <p class="m-0 p-0">Plan issue due: 5 May 2021</p>
-    </div>
-  </div>
+  {% include sidenav-case.html %}
 
-  <div class="row container-fluid g-0">
+  <main id="content" class="main container-fluid mt-6 px-6 px-lg-8">
+    <div class="row gx-5 gy-2 px-xl-5">
+      <div class="col">
 
-    <div class="col-md-4 col-lg-3 col-xxl-2 order-2 order-md-2 px-3 mt-4">
+        {% include assessment-progress.html %}
 
-      {% include case-sidebar.html %}
+        <div class="d-flex justify-content-between text-neutral-500">
+          <p>Plan decision: 17 Dec 2022</p>
+          <p>Plan due: 14 Jan 2023</p>
+        </div>
 
-    </div>
+        <h1 class="no-border">Education, Health and Care Plan</h1>
+        <p>The plan is initially put together using all of the contributed advice and views from the Assessment stage. This can be changed and shaped in to a draft plan to share with the young person, parents, carers or guardians, education setting and proffessionals involved in the needs assessment.</p>
 
-    <div class="col-md-8 col-lg-9 col-xxl-8 offset-xxl-1 order-1 order-md-2 px-3">
+        {% include actions-plan.html %}
 
-      {% include assessment-progress.html %}
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
-      {% include actions-bar-plan.html %}
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-header">
+                <h5 class="m-0">Section A</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">All about me and my parent/carer's views</p>
+                <a href="#">Open</a>
+              </div>
+            </div>
+          </div>
 
-      <!-- Onscreen guidance -->
-      <div class="stage-section">
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur... <a href="#">read more</a></p>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-header">
+                <h5 class="m-0">Sections B, E, F</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Special Educational Needs, outcomes and provisions</p>
+                <a href="#">Open</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-header">
+                <h5 class="m-0">Sections C, E, G</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Health needs, outcomes and provisions</p>
+                <a href="#">Open</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-header">
+                <h5 class="m-0">Sections D, E, H1, H2</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Social care needs, outcomes and provisions</p>
+                <a href="#">Open</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-header">
+                <h5 class="m-0">Section I</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Education setting</p>
+                <a href="#">Open</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-header">
+                <h5 class="m-0">Section J</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Personal budget</p>
+                <a href="#">Open</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-header">
+                <h5 class="m-0">Section K</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Information and advice</p>
+                <a href="#">Open</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-header">
+                <h5 class="m-0">Downloads</h5>
+              </div>
+              <div class="card-body">
+                <ul class="list-unstyled">
+                  <li><a href="#">Draft plan document</a><span class="text-neutral-500 ms-2"><small>PDF</small></span></li>
+                  <li><a href="#">Draft plan document</a><span class="text-neutral-500 ms-2"><small>DOC</small></span></li>
+                  <li><a href="#">Draft plan letter</a><span class="text-neutral-500 ms-2"><small>PDF</small></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
-
-      {% include plan-stage.html %}
-
     </div>
-
-  </div>
+  </main>
 
 </div>

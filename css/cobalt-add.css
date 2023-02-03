@@ -67,7 +67,7 @@ nav a {
 }
 
 .idx-sidenav a:hover {
-	color: var(--primary-500);
+	color: var(--primary-500) !important;
 }
 
 .idx-links i {

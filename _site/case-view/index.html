@@ -51,8 +51,8 @@
     <nav class="collapse idx-links sticky-top d-block" aria-label="User options">
         <ul class="list-unstyled mb-0 ps-5 py-4 pt-5" id="idx-user-menu">
             <li class="pb-4"><a href="#"><i class="fal fa-user-circle idx-nav-icon me-2 fa-fw" aria-hidden="true" title="Profile"></i>Bob Schneider</a></li>
-            <li class="pb-4"><a href="/help"><i class="fal fa-question-circle idx-nav-icon me-2 fa-fw" aria-hidden="true" title="Help"></i>Help</a></li>
-            <li class="pb-4"><a class="text-neutral-500" data-bs-toggle="modal" data-bs-target="#logoutModal" type="button"><i class="fal fa-sign-out idx-nav-icon me-2 fa-fw" aria-hidden="true" title="Logout"></i>Logout</a></li>
+            <li class="pb-4"><a href="/help"><i class="fal fa-question-circle idx-nav-icon me-2 fa-fw" aria-hidden="true" title=""></i>Help</a></li>
+            <li class="pb-4"><a class="text-neutral-500" data-bs-toggle="modal" data-bs-target="#logoutModal" type="button"><i class="fal fa-sign-out idx-nav-icon me-2 fa-fw" aria-hidden="true" title=""></i>Logout</a></li>
         </ul>
     </nav>
     <!-- #EndLibraryItem -->
@@ -118,7 +118,7 @@
         <div class="idx-case-sidebar mb-0 pt-1 pb-5 px-1" id="idx-menu">
 
           <div class="d-flex justify-content-between align-items-start my-3 px-2">
-            <h5 class="mb-0">Ellery Holden</h5>
+            <h1 class="mb-0 fs-2 no-border">Ellery Holden</h1>
             <a href="#" title="Edit details">
               <span class="fa-stack text-neutral-500">
                 <i class="fal fa-ellipsis-h fa-stack-1x"></i>
@@ -131,27 +131,23 @@
             <img src="/assets/images/boy running.jpg" class="rounded d-block idx-avatar-card" alt="avatar">
           </div>
 
-          <div class="table-responsive my-3 px-2" id="table-case-sidebar">
-            <table class="table table-sm table-borderless my-0" role="presentation">
-              <tbody>
-                <tr>
-                  <td class="align-top idx-sidebar-accordion-text text-neutral-500" title="Date of birth">DoB</td>
-                  <td class="align-top idx-sidebar-accordion-text ">23 Jun 2016</td>
-                </tr>
-                <tr>
-                  <td class="align-top idx-sidebar-accordion-text text-neutral-500" title="National curriculum year">NCY</td>
-                  <td class="align-top idx-sidebar-accordion-text ">Year 4</td>
-                </tr>
-                <tr>
-                  <td class="align-top idx-sidebar-accordion-text text-neutral-500" title="Case reference">Ref</td>
-                  <td class="align-top idx-sidebar-accordion-text ">EHC/21/0183</td>
-                </tr>
-                <tr>
-                  <td class="align-top idx-sidebar-accordion-text text-neutral-500" title="Case status">Status</td>
-                  <td class="align-top idx-sidebar-accordion-text ">Draft EHC Plan</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="my-3 px-2">
+            <div class="d-flex justify-content-between">
+              <p class="idx-sidebar-accordion-text text-neutral-500 mb-1" title="">Date of birth</p>
+              <p class="idx-sidebar-accordion-text mb-1">23 Jun 2016</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="idx-sidebar-accordion-text text-neutral-500 mb-1" title="National curriculum year">Year group</p>
+              <p class="idx-sidebar-accordion-text mb-1">Year 4</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="idx-sidebar-accordion-text text-neutral-500 mb-1" title="Case reference">Reference</p>
+              <p class="idx-sidebar-accordion-text mb-1">EHC/21/0183</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="idx-sidebar-accordion-text text-neutral-500 mb-1" title="Case status">Status</p>
+              <p class="idx-sidebar-accordion-text mb-1">Draft EHC Plan</p>
+            </div>
           </div>
 
           <div id="subject-tags">
@@ -251,28 +247,22 @@
                 </button>
               </h2>
               <div id="accordion-case-sidebar-collapseFive" class="accordion-collapse collapse" aria-labelledby="accordion-case-sidebar-headingFive">
-                <div class="accordion-body idx-sidebar-accordion-text  px-1">
-                  <div class="table-responsive" id="table-case-sidebar">
-                    <table class="table table-sm table-borderless my-0" role="presentation">
-                      <tbody>
-                        <tr>
-                          <td class="align-top idx-sidebar-accordion-text  text-neutral-500" title="Date of birth">Request date</td>
-                          <td class="align-top idx-sidebar-accordion-text text-end">28 Aug 2022</td>
-                        </tr>
-                        <tr>
-                          <td class="align-top idx-sidebar-accordion-text  text-neutral-500" title="National curriculum year">Assess decision</td>
-                          <td class="align-top idx-sidebar-accordion-text text-end">8 Oct 2022</td>
-                        </tr>
-                        <tr>
-                          <td class="align-top idx-sidebar-accordion-text  text-neutral-500" title="Case reference">Plan decision</td>
-                          <td class="align-top idx-sidebar-accordion-text text-end">17 Dec 2022</td>
-                        </tr>
-                        <tr>
-                          <td class="align-top idx-sidebar-accordion-text  text-neutral-500" title="Case status">Plan due</td>
-                          <td class="align-top idx-sidebar-accordion-text text-end">14 Jan 2023</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                <div class="accordion-body idx-sidebar-accordion-text px-2">
+                  <div class="d-flex justify-content-between">
+                    <p class="idx-sidebar-accordion-text text-neutral-500 mb-1" title="Date of birth">Request date</p>
+                    <p class="idx-sidebar-accordion-text mb-1">28 Aug 2022</p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <p class="idx-sidebar-accordion-text text-neutral-500 mb-1" title="National curriculum year">Assess decision</p>
+                    <p class="idx-sidebar-accordion-text mb-1">8 Oct 2022</p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <p class="idx-sidebar-accordion-text text-neutral-500 mb-1" title="Case reference">Plan decision</p>
+                    <p class="idx-sidebar-accordion-text mb-1">17 Dec 2022</p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <p class="idx-sidebar-accordion-text text-neutral-500 mb-1" title="Case status">Plan due</p>
+                    <p class="idx-sidebar-accordion-text mb-1">14 Jan 2023</p>
                   </div>
                 </div>
               </div>
@@ -319,17 +309,33 @@
 </nav>
 
 
-        <div class="d-md-flex justify-content-md-between text-neutral-500">
-          <p>Plan decision: 17 Dec 2022</p>
+        <div class="d-flex justify-content-between text-neutral-500">
+          <p class="d-none d-md-block">Plan decision: 17 Dec 2022</p>
           <p>Plan due: 14 Jan 2023</p>
+          <div class="d-md-none dropdown">
+            <a class="idx-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">Stages<i class="fa fa-caret-down ms-1"></i></a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Request</a></li>
+              <li><a class="dropdown-item" href="#">Decision</a></li>
+              <li><a class="dropdown-item" href="#">Assessment</a></li>
+              <li><a class="dropdown-item" href="#">Decision</a></li>
+              <li><a class="dropdown-item" href="#">Plan</a></li>
+            </ul>
+          </div>
         </div>
 
         <h1 class="no-border">Education, Health and Care Plan</h1>
         <p>The plan is initially put together using all of the contributed advice and views from the Assessment stage. This can be changed and shaped in to a draft plan to share with the young person, parents, carers or guardians, education setting and proffessionals involved in the needs assessment.</p>
 
         <div class="row mb-6">
-  <div class="col-lg-6 d-flex align-items-center">
-    Draft version 1 <i class="fal fa-caret-down mx-2"></i> Shared 29 Dec 2022
+  <div class="dropdown col-lg-6 d-flex align-items-center">
+    <a class="idx-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">Draft version 1<i class="fa fa-caret-down ms-1"></i></a>
+    <span class="text-neutral-500 ms-2">shared 29 Dec 2022</span>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Draft version 1</a></li>
+      <li><a class="dropdown-item" href="#">Draft version 2</a></li>
+      <li><a class="dropdown-item" href="#">Draft version 3</a></li>
+    </ul>
   </div>
   <div class="col-lg-6 d-flex justify-content-lg-end mt-2 mt-lg-0">
     <a class="btn btn-neutral-50 me-2" href="#"><i class="fal fa-pencil-alt me-2"></i>Edit plan</a>
@@ -343,7 +349,7 @@
           <div class="col">
             <div class="card h-100">
               <div class="card-header bg-secondary-50">
-                <h5 class="m-0">Section A</h5>
+                <h2 class="m-0 fs-2 fw-normal text-neutral-600">Section A</h2>
               </div>
               <div class="card-body">
                 <p class="card-text">All about me and my parent/carer's views</p>
@@ -355,7 +361,7 @@
           <div class="col">
             <div class="card h-100">
               <div class="card-header bg-secondary-50">
-                <h5 class="m-0">Sections B, E, F</h5>
+                <h2 class="m-0 fs-2 fw-normal text-neutral-600">Sections B, E, F</h2>
               </div>
               <div class="card-body">
                 <p class="card-text">Special Educational Needs, outcomes and provisions</p>
@@ -367,7 +373,7 @@
           <div class="col">
             <div class="card h-100">
               <div class="card-header bg-secondary-50">
-                <h5 class="m-0">Sections C, E, G</h5>
+                <h2 class="m-0 fs-2 fw-normal text-neutral-600">Sections C, E, G</h2>
               </div>
               <div class="card-body">
                 <p class="card-text">Health needs, outcomes and provisions</p>
@@ -379,7 +385,7 @@
           <div class="col">
             <div class="card h-100">
               <div class="card-header bg-secondary-50">
-                <h5 class="m-0">Sections D, E, H1, H2</h5>
+                <h2 class="m-0 fs-2 fw-normal text-neutral-600">Sections D, E, H1, H2</h2>
               </div>
               <div class="card-body">
                 <p class="card-text">Social care needs, outcomes and provisions</p>
@@ -391,7 +397,7 @@
           <div class="col">
             <div class="card h-100">
               <div class="card-header bg-secondary-50">
-                <h5 class="m-0">Section I</h5>
+                <h2 class="m-0 fs-2 fw-normal text-neutral-600">Section I</h2>
               </div>
               <div class="card-body">
                 <p class="card-text">Education setting</p>
@@ -403,7 +409,7 @@
           <div class="col">
             <div class="card h-100">
               <div class="card-header bg-secondary-50">
-                <h5 class="m-0">Section J</h5>
+                <h2 class="m-0 fs-2 fw-normal text-neutral-600">Section J</h2>
               </div>
               <div class="card-body">
                 <p class="card-text">Personal budget</p>
@@ -415,7 +421,7 @@
           <div class="col">
             <div class="card h-100">
               <div class="card-header bg-secondary-50">
-                <h5 class="m-0">Section K</h5>
+                <h2 class="m-0 fs-2 fw-normal text-neutral-600">Section K</h2>
               </div>
               <div class="card-body">
                 <p class="card-text">Information and advice</p>
@@ -427,13 +433,13 @@
           <div class="col">
             <div class="card h-100">
               <div class="card-header bg-success-50">
-                <h5 class="m-0">Downloads</h5>
+                <h2 class="m-0 fs-2 fw-normal text-neutral-600">Downloads</h2>
               </div>
               <div class="card-body">
                 <ul class="list-unstyled">
-                  <li><a href="#">Draft plan document</a><span class="text-neutral-500 ms-2"><small>PDF</small></span></li>
-                  <li><a href="#">Draft plan document</a><span class="text-neutral-500 ms-2"><small>DOC</small></span></li>
-                  <li><a href="#">Draft plan letter</a><span class="text-neutral-500 ms-2"><small>PDF</small></span></li>
+                  <li class="mb-1"><a href="#">Draft plan document</a><span class="text-neutral-500 ms-2"><small>PDF</small></span></li>
+                  <li class="mb-1"><a href="#">Draft plan document</a><span class="text-neutral-500 ms-2"><small>DOC</small></span></li>
+                  <li class="mb-1"><a href="#">Draft plan letter</a><span class="text-neutral-500 ms-2"><small>PDF</small></span></li>
                 </ul>
               </div>
             </div>

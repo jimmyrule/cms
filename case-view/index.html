@@ -16,9 +16,19 @@ title: EHC Hub
 
         {% include assessment-progress.html %}
 
-        <div class="d-md-flex justify-content-md-between text-neutral-500">
-          <p>Plan decision: 17 Dec 2022</p>
+        <div class="d-flex justify-content-between text-neutral-500">
+          <p class="d-none d-md-block">Plan decision: 17 Dec 2022</p>
           <p>Plan due: 14 Jan 2023</p>
+          <div class="d-md-none dropdown">
+            <a class="idx-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">Stages<i class="fa fa-caret-down ms-1"></i></a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Request</a></li>
+              <li><a class="dropdown-item" href="#">Decision</a></li>
+              <li><a class="dropdown-item" href="#">Assessment</a></li>
+              <li><a class="dropdown-item" href="#">Decision</a></li>
+              <li><a class="dropdown-item" href="#">Plan</a></li>
+            </ul>
+          </div>
         </div>
 
         <h1 class="no-border">Education, Health and Care Plan</h1>
@@ -31,7 +41,7 @@ title: EHC Hub
           <div class="col">
             <div class="card h-100">
               <div class="card-header bg-secondary-50">
-                <h5 class="m-0">Section A</h5>
+                <h2 class="m-0 fs-2 fw-normal text-neutral-600">Section A</h2>
               </div>
               <div class="card-body">
                 <p class="card-text">All about me and my parent/carer's views</p>
@@ -43,7 +53,7 @@ title: EHC Hub
           <div class="col">
             <div class="card h-100">
               <div class="card-header bg-secondary-50">
-                <h5 class="m-0">Sections B, E, F</h5>
+                <h2 class="m-0 fs-2 fw-normal text-neutral-600">Sections B, E, F</h2>
               </div>
               <div class="card-body">
                 <p class="card-text">Special Educational Needs, outcomes and provisions</p>
@@ -55,7 +65,7 @@ title: EHC Hub
           <div class="col">
             <div class="card h-100">
               <div class="card-header bg-secondary-50">
-                <h5 class="m-0">Sections C, E, G</h5>
+                <h2 class="m-0 fs-2 fw-normal text-neutral-600">Sections C, E, G</h2>
               </div>
               <div class="card-body">
                 <p class="card-text">Health needs, outcomes and provisions</p>
@@ -67,7 +77,7 @@ title: EHC Hub
           <div class="col">
             <div class="card h-100">
               <div class="card-header bg-secondary-50">
-                <h5 class="m-0">Sections D, E, H1, H2</h5>
+                <h2 class="m-0 fs-2 fw-normal text-neutral-600">Sections D, E, H1, H2</h2>
               </div>
               <div class="card-body">
                 <p class="card-text">Social care needs, outcomes and provisions</p>
@@ -79,7 +89,7 @@ title: EHC Hub
           <div class="col">
             <div class="card h-100">
               <div class="card-header bg-secondary-50">
-                <h5 class="m-0">Section I</h5>
+                <h2 class="m-0 fs-2 fw-normal text-neutral-600">Section I</h2>
               </div>
               <div class="card-body">
                 <p class="card-text">Education setting</p>
@@ -91,7 +101,7 @@ title: EHC Hub
           <div class="col">
             <div class="card h-100">
               <div class="card-header bg-secondary-50">
-                <h5 class="m-0">Section J</h5>
+                <h2 class="m-0 fs-2 fw-normal text-neutral-600">Section J</h2>
               </div>
               <div class="card-body">
                 <p class="card-text">Personal budget</p>
@@ -103,7 +113,7 @@ title: EHC Hub
           <div class="col">
             <div class="card h-100">
               <div class="card-header bg-secondary-50">
-                <h5 class="m-0">Section K</h5>
+                <h2 class="m-0 fs-2 fw-normal text-neutral-600">Section K</h2>
               </div>
               <div class="card-body">
                 <p class="card-text">Information and advice</p>
@@ -115,13 +125,13 @@ title: EHC Hub
           <div class="col">
             <div class="card h-100">
               <div class="card-header bg-success-50">
-                <h5 class="m-0">Downloads</h5>
+                <h2 class="m-0 fs-2 fw-normal text-neutral-600">Downloads</h2>
               </div>
               <div class="card-body">
                 <ul class="list-unstyled">
-                  <li><a href="#">Draft plan document</a><span class="text-neutral-500 ms-2"><small>PDF</small></span></li>
-                  <li><a href="#">Draft plan document</a><span class="text-neutral-500 ms-2"><small>DOC</small></span></li>
-                  <li><a href="#">Draft plan letter</a><span class="text-neutral-500 ms-2"><small>PDF</small></span></li>
+                  <li class="mb-1"><a href="#">Draft plan document</a><span class="text-neutral-500 ms-2"><small>PDF</small></span></li>
+                  <li class="mb-1"><a href="#">Draft plan document</a><span class="text-neutral-500 ms-2"><small>DOC</small></span></li>
+                  <li class="mb-1"><a href="#">Draft plan letter</a><span class="text-neutral-500 ms-2"><small>PDF</small></span></li>
                 </ul>
               </div>
             </div>

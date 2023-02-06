@@ -26,6 +26,11 @@ nav a {
   text-decoration: none;
 }
 
+.idx-link {
+  color: #0a1f8f;
+  text-decoration: underline;
+}
+
 .la-name {
   font-family: var(--font-sans-serif);
 }
@@ -304,6 +309,10 @@ h3.idx-login-descriptor {
 
 .btn i {
   color: var(--secondary);
+}
+
+.no-wrap {
+  white-space: nowrap;
 }
 
 /* = Colour swatches

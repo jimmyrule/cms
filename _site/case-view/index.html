@@ -119,12 +119,18 @@
 
           <div class="d-flex justify-content-between align-items-start my-3 px-2">
             <h1 class="mb-0 fs-2 no-border">Ellery Holden</h1>
-            <a href="#" title="Edit details">
-              <span class="fa-stack text-neutral-500">
-                <i class="fal fa-ellipsis-h fa-stack-1x"></i>
-                <i class="fal fa-circle fa-stack-1x"></i>
-              </span>
-            </a>
+            <div class="dropdown">
+              <a class="idx-link text-neutral-500" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="fa-stack fa-w">
+                  <i class="fal fa-ellipsis-h fa-stack-1x fa-w"></i>
+                  <i class="fal fa-circle fa-stack-1x fa-w"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu idx-dropdown">
+                <li><a class="dropdown-item text-neutral-600" href="#">Edit details</a></li>
+                <li><a class="dropdown-item text-neutral-600" href="#">Change picture</a></li>
+              </ul>
+            </div>
           </div>
 
           <div class="my-3 px-2">
@@ -313,7 +319,7 @@
           <p class="d-none d-md-block">Plan decision: 17 Dec 2022</p>
           <p>Plan due: 14 Jan 2023</p>
           <div class="d-md-none dropdown">
-            <a class="idx-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">Stages<i class="fa fa-caret-down ms-1"></i></a>
+            <a class="idx-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">Stages<i class="fal fa-angle-down ms-1"></i></a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Request</a></li>
               <li><a class="dropdown-item" href="#">Decision</a></li>
@@ -329,7 +335,7 @@
 
         <div class="row mb-6">
   <div class="dropdown col-lg-6 d-flex align-items-center">
-    <a class="idx-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">Draft version 1<i class="fa fa-caret-down ms-1"></i></a>
+    <a class="idx-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">Draft version 1<i class="fal fa-angle-down ms-1"></i></a>
     <span class="text-neutral-500 ms-2">shared 29 Dec 2022</span>
     <ul class="dropdown-menu">
       <li><a class="dropdown-item" href="#">Draft version 1</a></li>

@@ -321,6 +321,10 @@ h3.idx-login-descriptor {
   text-decoration: none;
 }
 
+#tfa-info {
+  border-left: 2px solid var(--secondary-400);
+}
+
 /* = Colour swatches
 -------------------------------------------------------------------------- */
 

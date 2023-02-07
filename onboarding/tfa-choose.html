@@ -1,0 +1,51 @@
+---
+layout: no-banner
+title: EHC Hub
+---
+
+<div class="container-fluid">
+
+	<div class="row">
+
+		{% include login-aside.html %}
+
+		<main class="col-md-6 col-lg-4 p-7 idx-login-form">
+			<img src="/assets/images/idox-logo.gif" alt="Edgehill logo" height="90" class="ms-auto d-block mb-2">
+			<h2 class="idx-login-name">EHC Hub</h2>
+			<h3 class="idx-login-descriptor">Edgehill Council</h3>
+			<h4 class="idx-login-heading my-7">We need to send you a code each time you log in</h4>
+			<p>How would you like to receive your code?</p>
+
+			<div class="form-check">
+			  <input class="form-check-input" type="radio" name="flexRadioSMS" id="flexRadioSMS">
+			  <label class="form-check-label" for="flexRadioSMS">
+			    <p class="mb-1">Text message</p>
+					<p class="text-neutral-500">We'll send your code by text message (SMS). There is no cost to you.</p>
+			  </label>
+			</div>
+
+			<div class="form-check">
+			  <input class="form-check-input" type="radio" name="flexRadioApp" id="flexRadioApp">
+			  <label class="form-check-label" for="flexRadioApp">
+			    <p class="mb-1">Authentication app</p>
+					<p class="text-neutral-500">Look up your code without relying on mobile phone reception or if you don't wish the local authority to store your mobile phone number.</p>
+			  </label>
+			</div>
+
+			<a role="button" data-bs-toggle="collapse" href="#tfa-info" aria-controls="tfa-info" aria-expanded="false" aria-label="Toggle information">
+	      <span class="visually-hidden">More information</span>
+	      <i class="fas fa-caret-right me-1"></i>I need more information
+	    </a>
+
+      <div class="collapse my-2 px-4 py-2" id="tfa-info">
+				<p>When you log in to an online account, you're proving that you are who you say you are. Traditionally that is achieved by a username and a password.</p>
+				<p class="mb-0">When the account you’re accessing includes sensitive information, it’s expected that you provide an extra piece of information. The EHC Hub does this by asking you to enter a unique code each time you log in.</p>
+			</div>
+
+			<a class="btn btn-primary idx-login-btn mt-3 mb-6" href="tfa-app">Continue</a>
+
+		</main>
+
+	</div>
+
+</div>

@@ -1,0 +1,32 @@
+---
+layout: no-banner
+title: EHC Hub
+---
+
+<div class="container-fluid">
+
+	<div class="row">
+
+		{% include login-aside.html %}
+
+		<main class="col-md-6 col-lg-4 p-7 idx-login-form">
+			<img src="/assets/images/idox-logo.gif" alt="Edgehill logo" height="90" class="ms-auto d-block mb-2">
+			<h2 class="idx-login-name">EHC Hub</h2>
+			<h3 class="idx-login-descriptor">Edgehill Council</h3>
+			<h4 class="idx-login-heading my-7">Enter your mobile phone number</h4>
+			<p>You've chosen to receive your log in code by text message (SMS). It may take a few minutes to arrive.</p>
+
+			<div class="form mb-3">
+				<label for="mobileInput">Mobile phone number</label>
+				<input type="text" class="form-control" id="mobileInput" placeholder="eg. 07123456789">
+			</div>
+
+			<a class="btn btn-primary idx-login-btn mt-3 mb-6" href="tfa-sms-2">Send code</a>
+
+			<p>If you'd rather use an authentication app, <a href="tfa-choose">start again</a>.
+
+		</main>
+
+	</div>
+
+</div>

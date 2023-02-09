@@ -1,0 +1,37 @@
+---
+layout: no-banner
+title: EHC Hub
+---
+
+<div class="container-fluid">
+
+	<div class="row">
+
+		{% include login-aside.html %}
+
+		<main class="col-md-6 col-lg-4 p-7 idx-login-form">
+			<img src="/assets/images/idox-logo.gif" alt="Edgehill logo" height="90" class="ms-auto d-block mb-2">
+			<h2 class="idx-login-name">EHC Hub</h2>
+			<h3 class="idx-login-descriptor">Edgehill Council</h3>
+			<h4 class="idx-login-heading my-7">Choose a memorable word or phrase</h4>
+			<p>Your word or phrase must have no more than 11 characters, including spaces.</p>
+			<p>Each time you log in we'll ask for 3 characters from your word or phrase.</p>
+
+			<div class="form mb-3">
+				<label for="phraseInput">Phrase</label>
+				<input type="text" class="form-control" id="phraseInput" maxlength="11" placeholder="">
+			</div>
+			<div class="form mb-3">
+				<label for="confirm-phraseInput">Confirm phrase</label>
+				<input type="text" class="form-control" id="confirm-phraseInput" maxlength="11" placeholder="">
+			</div>
+
+			<a class="btn btn-primary idx-login-btn mt-3 mb-6" href="/work-tray">Continue</a>
+
+			<p>If you'd rather not use a word or phrase, <a href="tfa-choose">start again</a>.
+
+		</main>
+
+	</div>
+
+</div>

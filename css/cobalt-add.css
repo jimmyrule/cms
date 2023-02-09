@@ -196,7 +196,7 @@ table { margin-top: 1.5rem}
 }
 
 .idx-login-form {
-  height: 100vh;
+  /*height: 100vh;*/
   background-color: var(--white);
   overflow-y: scroll;
 }

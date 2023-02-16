@@ -6,8 +6,8 @@
  */
 
 header .fa-bars {
-  font-size:1.5rem;
-  color: #d2e8f8;
+  font-size:1.2rem;
+  color: var(--white);
 }
 
 main a:link:hover { text-decoration: none }
@@ -140,7 +140,7 @@ h3 {
 
 /* Increase padding for docs cards */
 .card {
-  border-radius: 4px;
+  border-radius: 0.25rem;
  }
 
 code { color: var(--neutral) }

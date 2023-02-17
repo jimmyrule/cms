@@ -7705,7 +7705,7 @@ textarea.form-control-lg {
 }
 
 .card-header {
-  padding: 1rem;
+  padding: 0.75rem 1rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
@@ -7865,7 +7865,7 @@ textarea.form-control-lg {
   z-index: 3;
   border-color: #1e8adc;
   outline: 0;
-  box-shadow: 0 0 0 2px #1e8adc, 0px 0px 0px 4px #FFF !important;
+  box-shadow: 0 0 0 1px #1e8adc, 0px 0px 0px 4px #FFF !important;
 }
 
 .accordion-header {
@@ -7882,6 +7882,7 @@ textarea.form-control-lg {
 .accordion-item:first-of-type {
   border-top-left-radius: 0.125rem;
   border-top-right-radius: 0.125rem;
+  border-top: 0;
 }
 .accordion-item:first-of-type .accordion-button {
   border-top-left-radius: calc(0.125rem - 1px);
@@ -7893,6 +7894,7 @@ textarea.form-control-lg {
 .accordion-item:last-of-type {
   border-bottom-right-radius: 0.125rem;
   border-bottom-left-radius: 0.125rem;
+  border-bottom: 0;
 }
 .accordion-item:last-of-type .accordion-button.collapsed {
   border-bottom-right-radius: calc(0.125rem - 1px);
@@ -18344,13 +18346,17 @@ h3, .h3 {
   border-left: 1px solid #e0e0e0;
   border-right: 1px solid #e0e0e0;
 }*/
+
+.table th, .table td {
+  padding: 0.25rem 0.75rem;
+}
+
 .table th.idx-table-actions-col,
 .table td.idx-table-actions-col {
   width: 10% !important;
 }
 .table th {
   background: #fcfcfc;
-  padding: 0.25rem 0.5rem;
 }
 .table th.idx-table-checkbox-col {
   width: 1rem;

@@ -65,14 +65,21 @@ nav a {
 .idx-sidenav a {
 	color: var(--neutral-500);
 	text-decoration: none;
-	/* border-left: 3px solid transparent;
-	padding-left:0.75rem; */
 	font-size:0.875rem;
+  padding: 0.5rem;
   width: auto;
 }
 
-.idx-sidenav a:hover {
+.idx-sidenav a:hover, .idx-sidenav a:focus, .idx-sidenav a:active {
 	color: var(--primary-500) !important;
+  border: 1px solid var(--neutral-200);
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.435rem;
+}
+
+#idx-sidenav-case a, #idx-sidenav-case a:hover {
+  border: none;
+  padding: 0;
 }
 
 .idx-links i {
@@ -210,11 +217,12 @@ h2.idx-login-name {
     font-size: 2.25rem;
     color: var(--primary-500);
     margin-bottom: 0;
+    font-weight: 400;
 }
 
 h3.idx-login-descriptor {
     font-size:1.125rem;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--neutral-500);
 }
 
@@ -305,7 +313,7 @@ h3.idx-login-descriptor {
 }
 
 .idx-badge-m {
-  left: 20px !important;
+  left: 25px !important;
 }
 
 .btn i {

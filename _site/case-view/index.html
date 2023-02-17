@@ -22,12 +22,12 @@
         </div>
     	</div>
 
-			<div class="alert alert-info alert-dismissible fade show m-0" role="alert">
+			<!-- <div class="alert alert-info alert-dismissible fade show m-0" role="alert">
   <i class="fal fa-lightbulb-on me-2"></i>
   This is a prototype.
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
-
+ -->
 
 			<header>
   <nav class="py-2 navbar top bg-primary main-header">
@@ -35,13 +35,13 @@
       <a class="d-block d-md-none text-white align-self-center px-4" role="button" data-bs-toggle="collapse" href="#idx-sidenav" aria-controls="idx-sidenav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="visually-hidden">Side menu</span><i class="far fa-bars" aria-hidden="true"></i>
       </a>
-      <a href="/" class="navbar-brand text-white ms-4 pt-2 "><span class="d-none d-md-inline-block">EHC Hub<span class="px-3">|</span></span><span class="la-name">Edgehill Council</span></a>
+      <a href="/" class="navbar-brand text-white ms-4 pt-2 "><span class="d-none d-md-inline-block">Idox EHC Hub<span class="px-3">|</span></span><span class="la-name">Edgehill Council</span></a>
       <a class="d-block d-md-none text-white align-self-center px-3" role="button" data-bs-toggle="collapse" href="#idx-usernav" aria-controls="idx-usernav" aria-expanded="false" aria-label="Toggle user options">
-          <span class="visually-hidden">User menu</span><i class="far fa-user-circle idx-nav-icon" aria-hidden="true"></i>
+          <span class="visually-hidden">User menu</span><i class="far fa-question-circle idx-nav-icon" aria-hidden="true"></i>
       </a>
       <div class="d-none d-md-block pull-right">
         <a class="text-white me-4" href="#"><i class="fal fa-user-circle idx-nav-icon" aria-hidden="true" title="Profile"></i> Bob Schneider</a>
-        <a class="text-white me-4" href="/help"><i class="fal fa-question-circle idx-nav-icon" aria-hidden="true" title="Help"></i></a>
+        <a class="text-white me-4" href="/help"><i class="fal fa-question-circle idx-nav-icon" aria-hidden="true" title="Help"></i></a>        
         <a class="text-white me-4" data-bs-toggle="modal" data-bs-target="#logoutModal" type="button" tabindex="0"><i class="fal fa-sign-out idx-nav-icon" aria-hidden="true" title="Logout"></i></a>
       </div>
     </div>
@@ -50,8 +50,8 @@
     <!-- #BeginLibraryItem "/Library/Contents.lbi" -->
     <nav class="collapse idx-links sticky-top d-block" aria-label="User options">
         <ul class="list-unstyled mb-0 ps-5 py-4 pt-5" id="idx-user-menu">
-            <li class="pb-4"><a href="#"><i class="fal fa-user-circle idx-nav-icon me-2 fa-fw" aria-hidden="true" title="Profile"></i>Bob Schneider</a></li>
             <li class="pb-4"><a href="/help"><i class="fal fa-question-circle idx-nav-icon me-2 fa-fw" aria-hidden="true" title=""></i>Help</a></li>
+            <li class="pb-4"><a href="#"><i class="fal fa-user-circle idx-nav-icon me-2 fa-fw" aria-hidden="true" title="Profile"></i>My profile</a></li>            
             <li class="pb-4"><a class="text-neutral-500" data-bs-toggle="modal" data-bs-target="#logoutModal" type="button"><i class="fal fa-sign-out idx-nav-icon me-2 fa-fw" aria-hidden="true" title=""></i>Logout</a></li>
         </ul>
     </nav>
@@ -87,12 +87,12 @@
   <aside class="idx-sidenav d-md-block border-end" id="idx-sidenav">
     <!-- #BeginLibraryItem "/Library/Contents.lbi" -->
     <nav class="collapse idx-links sticky-top d-block" aria-label="EHC Hub navigation">
-        <ul class="list-unstyled d-flex flex-column mb-0 pt-1 pb-5 px-4" id="idx-menu">
+        <ul class="list-unstyled d-flex flex-column mb-0 pt-1 pb-5 px-3" id="idx-menu">
             <li class="pt-5 pb-1 mx-md-auto"><a href="/work-tray" data-bs-toggle="tooltip" data-bs-title="My cases in progress"><i class="fal fa-user idx-nav-icon fa-fw" aria-hidden="true"></i><span class="d-md-none ms-2">My cases in progress</span></a></li>
             <li class="pt-6 pb-1 mx-md-auto"><a href="#" data-bs-toggle="tooltip" data-bs-title="My live cases"><i class="fal fa-file-user idx-nav-icon fa-fw" aria-hidden="true"></i><span class="d-md-none ms-2">My live cases</span></a></li>
             <li class="pt-6 pb-1 mx-md-auto position-relative">
-              <a href="#">
-                <i class="fal fa-inbox idx-nav-icon fa-fw" aria-hidden="true" title="New requests and unassigned cases"></i>
+              <a href="#" data-bs-toggle="tooltip" data-bs-title="New requests and unassigned cases">
+                <i class="fal fa-inbox idx-nav-icon fa-fw" aria-hidden="true"></i>
                 <span class="d-md-none ms-2">New requests and unassigned cases</span>
                 <span class="position-absolute top-50 idx-badge-m translate-middle badge rounded-pill bg-danger">
                   7
@@ -100,12 +100,12 @@
                 </span>
               </a>
             </li>
-            <li class="pt-6 pb-1 mx-md-auto"><a href="#"><i class="fal fa-users idx-nav-icon fa-fw" aria-hidden="true" title="All cases"></i><span class="d-md-none ms-2">All cases</span></a></li>
-            <li class="pt-6 pb-1 mx-md-auto"><a href="#"><i class="fal fa-calendar-alt idx-nav-icon fa-fw" aria-hidden="true" title="Panel meetings"></i><span class="d-md-none ms-2">Panel meetings</span></a></li>
-            <li class="pt-6 pb-1 mx-md-auto"><a href="#"><i class="fal fa-file-plus idx-nav-icon fa-fw" aria-hidden="true" title="New request"></i><span class="d-md-none ms-2">New request</span></a></li>
-            <li class="pt-6 pb-1 mx-md-auto"><a href="#"><i class="fal fa-file-upload idx-nav-icon fa-fw" aria-hidden="true" title="Import plan"></i><span class="d-md-none ms-2">Import plan</span></a></li>
-            <li class="pt-6 pb-1 mx-md-auto"><a href="/reports"><i class="fal fa-chart-bar idx-nav-icon fa-fw" aria-hidden="true" title="Reports"></i><span class="d-md-none ms-2">Reports</span></a></li>
-            <li class="pt-6 pb-1 mx-md-auto"><a href="/admin"><i class="fal fa-cog idx-nav-icon fa-fw" aria-hidden="true" title="Admin"></i><span class="d-md-none ms-2">Admin</span></a></li>
+            <li class="pt-6 pb-1 mx-md-auto"><a href="#" data-bs-toggle="tooltip" data-bs-title="All cases"><i class="fal fa-users idx-nav-icon fa-fw" aria-hidden="true"></i><span class="d-md-none ms-2">All cases</span></a></li>
+            <li class="pt-6 pb-1 mx-md-auto"><a href="#" data-bs-toggle="tooltip" data-bs-title="Panel meetings"><i class="fal fa-calendar-alt idx-nav-icon fa-fw" aria-hidden="true"></i><span class="d-md-none ms-2">Panel meetings</span></a></li>
+            <li class="pt-6 pb-1 mx-md-auto"><a href="#" data-bs-toggle="tooltip" data-bs-title="Start a new request"><i class="fal fa-file-plus idx-nav-icon fa-fw" aria-hidden="true"></i><span class="d-md-none ms-2">New request</span></a></li>
+            <li class="pt-6 pb-1 mx-md-auto"><a href="#" data-bs-toggle="tooltip" data-bs-title="Import plan"><i class="fal fa-file-upload idx-nav-icon fa-fw" aria-hidden="true"></i><span class="d-md-none ms-2">Import plan</span></a></li>
+            <li class="pt-6 pb-1 mx-md-auto"><a href="/reports" data-bs-toggle="tooltip" data-bs-title="Reports"><i class="fal fa-chart-bar idx-nav-icon fa-fw" aria-hidden="true"></i><span class="d-md-none ms-2">Reports</span></a></li>
+            <li class="pt-6 pb-1 mx-md-auto"><a href="/admin" data-bs-toggle="tooltip" data-bs-title="Administration"><i class="fal fa-cog idx-nav-icon fa-fw" aria-hidden="true"></i><span class="d-md-none ms-2">Administration</span></a></li>
         </ul>
     </nav>
     <!-- #EndLibraryItem -->
@@ -116,8 +116,10 @@
   <div class="d-flex d-md-none justify-content-between align-items-start idx-border-b mt-3 px-6 pb-2">
     <h1 class="mb-0 fs-2 no-border">Ellery Holden</h1>
     <a class="d-block d-md-none align-self-center" role="button" data-bs-toggle="collapse" href="#idx-sidenav-case" aria-controls="idx-sidenav-case" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="visually-hidden">Case side menu</span>
-      <i class="fal fa-info-circle fs-2 text-neutral-600"></i>
+      <!-- <span class="visually-hidden">Case side menu</span> -->
+      Details
+      <!-- <i class="fal fa-info-circle fs-2 text-neutral-600"></i> -->
+      <i class="fal fa-angle-down ms-1 text-neutral-600"></i>
     </a>
   </div>
 
@@ -318,7 +320,7 @@
     <li class="d-flex align-items-center"><i class="fal fa-angle-right"></i></li>
     <li class="nav-item mx-auto">
       <a class="nav-link" aria-current="page" href="#"><i class="fal fa-file-contract text-secondary-500"></i></a>
-      5. Plan
+      5. EHC Plan
     </li>
   </ul>
 </nav>
@@ -326,7 +328,7 @@
 
         <div class="d-flex justify-content-between text-neutral-500">
           <p class="d-none d-md-block">Plan decision: 17 Dec 2022</p>
-          <p>Plan due: 14 Jan 2023</p>
+          <p>EHC Plan due: 14 Jan 2023</p>
           <div class="d-md-none dropdown">
             <a class="idx-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">Stages<i class="fal fa-angle-down ms-1"></i></a>
             <ul class="dropdown-menu">
@@ -334,12 +336,12 @@
               <li><a class="dropdown-item" href="#">Decision</a></li>
               <li><a class="dropdown-item" href="#">Assessment</a></li>
               <li><a class="dropdown-item" href="#">Decision</a></li>
-              <li><a class="dropdown-item" href="#">Plan</a></li>
+              <li><a class="dropdown-item" href="#">EHC Plan</a></li>
             </ul>
           </div>
         </div>
 
-        <h1 class="no-border">Education, Health and Care Plan</h1>
+        <h1 class="no-border">EHC Plan</h1>
         <p>The plan is initially put together using all of the contributed advice and views from the Assessment stage. This can be changed and shaped in to a draft plan to share with the young person, parents, carers or guardians, education setting and proffessionals involved in the needs assessment.</p>
 
         <div class="row mb-6">

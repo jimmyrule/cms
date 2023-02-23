@@ -66,15 +66,15 @@ nav a {
 	color: var(--neutral-500);
 	text-decoration: none;
 	font-size:0.875rem;
-  padding: 0.5rem;
+  /*padding: 0.5rem;*/
   width: auto;
 }
 
 .idx-sidenav a:hover, .idx-sidenav a:focus, .idx-sidenav a:active {
 	color: var(--primary-500) !important;
-  border: 1px solid var(--neutral-200);
+  /*border: 1px solid var(--neutral-200);
   border-radius: 0.25rem;
-  padding: 0.5rem 0.435rem;
+  padding: 0.5rem 0.435rem;*/
 }
 
 #idx-sidenav-case a, #idx-sidenav-case a:hover {
@@ -313,7 +313,7 @@ h3.idx-login-descriptor {
 }
 
 .idx-badge-m {
-  left: 25px !important;
+  left: 20px !important;
 }
 
 .btn i {

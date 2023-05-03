@@ -44,7 +44,7 @@ title: Parent guidance
                 </div>
               </div>
               <div class="card-footer text-end">
-                <button type="submit" class="btn btn-primary">Save changes</button>
+                <button type="submit" class="btn btn-primary" id="successToastBtn">Save changes</button>
               </div>
             </div>
 
@@ -56,7 +56,7 @@ title: Parent guidance
                 </div>
               </div>
               <div class="card-footer text-end">
-                <button type="submit" class="btn btn-primary">Save changes</button>
+                <button type="submit" class="btn btn-primary" id="dangerToastBtn">Save changes</button>
               </div>
             </div>
 
@@ -78,5 +78,28 @@ title: Parent guidance
       </div>
     </div>
   </main>
+
+
+
+  <!-- Toast -->
+  <div class="toast-container position-fixed top-0 end-0 p-3">
+    <div id="successToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          Changes successfully saved.
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+
+    <div id="dangerToast" class="toast align-items-center text-bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          There was a problem saving your changes. Please try again later.
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
 
 </div>

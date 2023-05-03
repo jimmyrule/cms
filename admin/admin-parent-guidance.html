@@ -1,0 +1,82 @@
+---
+layout: default
+title: Parent guidance
+---
+
+<div class="d-flex flex-fill flex-column flex-md-row">
+  <!-- Page content -->
+
+  {% include sidenav.html %}
+
+  <main id="content" class="main container-fluid mt-6 px-6 px-lg-8">
+    <div class="row gx-5 gy-2 px-xl-5">
+      <div class="col">
+
+        <aside class="mb-5">
+          <a href="/admin"><i class="fal fa-arrow-left me-2"></i>Back to Administration</a>
+        </aside>
+
+        <h1>Parent guidance</h1>
+        <p>This area allows you to edit the guidance available to parents and carers on their dashboard. It adds extra context to the information that they see about the current status of their child or young person's case.</p>
+
+        <!-- Tab nav -->
+        <ul class="nav idx-tabs my-5">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">What does this mean?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">What should I be doing right now?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">What happens next and when?</a>
+          </li>
+        </ul>
+
+        <!-- Text areas to configure guidance text -->
+        <div class="row">
+          <div class="col-xl-8">
+
+            <div class="card mb-5">
+              <div class="card-body">
+                <h5 class="card-title">New request for assessment (information gathering)</h5>
+                <div class="my-4 card-text">
+                  <textarea class="form-control" id="Textarea1" aria-label="New request for assessment (information gathering)" rows="5">We have received a request for an EHC needs assessment for {first name} and have shared this with you. If the request did not come from yourself, in most cases it means it has come from the education setting. There is opportunity to gather more information from you and the education setting to make sure that we have all the information necessary to make an informed decision on the next step.</textarea>
+                </div>
+              </div>
+              <div class="card-footer text-end">
+                <button type="submit" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+
+            <div class="card mb-5">
+              <div class="card-body">
+                <h5 class="card-title">Decision to assess pending</h5>
+                <div class="my-4 card-text">
+                  <textarea class="form-control" id="Textarea2" aria-label="Decision to assess pending" rows="5">We are reviewing all of the information provided in the request for an EHC needs assessment for {first name}.</textarea>
+                </div>
+              </div>
+              <div class="card-footer text-end">
+                <button type="submit" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+
+            <div class="card mb-5">
+              <div class="card-body">
+                <h5 class="card-title">Decision made not to assess</h5>
+                <div class="my-4 card-text">
+                  <textarea class="form-control" id="Textarea3" aria-label="Decision made not to assess" rows="5">We have decided not to proceed with an EHC needs assessment for {first name}. This is based on the information provided to us in the request.</textarea>
+                </div>
+              </div>
+              <div class="card-footer text-end">
+                <button type="submit" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+</div>

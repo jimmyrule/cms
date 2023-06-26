@@ -333,6 +333,10 @@ h3.idx-login-descriptor {
   border-left: 2px solid var(--secondary-400);
 }
 
+.img-about {
+  height: 75px;
+}
+
 /* = Colour swatches
 -------------------------------------------------------------------------- */
 

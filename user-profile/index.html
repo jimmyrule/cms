@@ -15,151 +15,136 @@ title: EHC Hub
         <h1>Profile</h1>
         <p>Manage your personal details and login information to keep your profile up to date.</p>
 
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item my-5">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                Personal details
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show">
-              <div class="accordion-body">
+        <div class="card mb-5">
+          <div class="card-body">
+            <h5 class="card-title">Personal details</h5>
 
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <label for="exampleInputText1" class="form-label">Name</label>
-                      <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
-                      <div id="textHelp" class="form-text">This is how your name will appear to other people.</div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <label for="exampleInputRole1" class="form-label">Role</label>
-                      <input class="form-control" id="exampleInputRole1" type="text" value="Co-ordinator" aria-label="Role" disabled readonly aria-describedby="textHelp2">
-                      <div id="textHelp2" class="form-text">Your level of access in the EHC Hub and cannot be changed.</div>
-                    </div>
-                  </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="exampleInputText1" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+                  <div id="textHelp" class="form-text">This is how your name will appear to other people.</div>
                 </div>
-
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                      <div id="emailHelp" class="form-text">This is used to login to your account and receive email notifications.</div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <label for="exampleInputEmail2" class="form-label">Confirm email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp2">
-                      <div id="emailHelp2" class="form-text">This is necessary to avoid mistakes when updating your email address.</div>
-                    </div>
-                  </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="exampleInputRole1" class="form-label">Role</label>
+                  <input class="form-control" id="exampleInputRole1" type="text" value="Co-ordinator" aria-label="Role" disabled readonly aria-describedby="textHelp2">
+                  <div id="textHelp2" class="form-text">Your level of access in the EHC Hub and cannot be changed.</div>
                 </div>
+              </div>
+            </div>
 
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <label for="exampleInputTextJob1" class="form-label">Job title</label>
-                      <input type="text" class="form-control" id="exampleInputTextJob1" aria-describedby="jobHelp">
-                      <div id="jobHelp" class="form-text">This can provide the family context to your involvement with a child/young person.</div>
-                    </div>
-                  </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">This is used to login to your account and receive email notifications.</div>
                 </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="exampleInputEmail2" class="form-label">Confirm email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp2">
+                  <div id="emailHelp2" class="form-text">This is necessary to avoid mistakes when updating your email address.</div>
+                </div>
+              </div>
+            </div>
 
-                <div class="col-md-6">
-                  <div class="mb-3">
-                    <label for="checkbox-group" class="form-label">Preferred method of contact</label>
-                    <div id="checkbox-group">
-                      <div class="mb-3 form-check-inline">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Email</label>
-                      </div>
-                      <div class="mb-3 form-check-inline">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Phone</label>
-                      </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="exampleInputTextJob1" class="form-label">Job title</label>
+                  <input type="text" class="form-control" id="exampleInputTextJob1" aria-describedby="jobHelp">
+                  <div id="jobHelp" class="form-text">This can provide the family context to your involvement with a child/young person.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="checkbox-group" class="form-label">Preferred method of contact</label>
+                  <div id="checkbox-group">
+                    <div class="mb-3 form-check-inline">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Email</label>
+                    </div>
+                    <div class="mb-3 form-check-inline">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Phone</label>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
           </div>
-          <div class="accordion-item my-5">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Security
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse show">
-              <div class="accordion-body">
+        </div>
 
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">New password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <label for="exampleInputPassword2" class="form-label">Confirm new password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword2">
-                    </div>
-                  </div>
+        <div class="card mb-5">
+          <div class="card-body">
+            <h5 class="card-title">Security</h5>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">New password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
-
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="my-5">
-                      <p class="text-muted">Two factor authentication is not currently enabled.</p>
-                    </div>
-                  </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="exampleInputPassword2" class="form-label">Confirm new password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword2">
                 </div>
-
               </div>
             </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="my-5">
+                  <p class="text-muted">Two factor authentication is not currently enabled.</p>
+                </div>
+              </div>
+            </div>
+
           </div>
-          <div class="accordion-item my-5">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Further information
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse show">
-              <div class="accordion-body">
+        </div>
 
-                <div class="row">
-                  <div class="col-6 col-sm-4 col-md-3 col-xl-2">
-                    Account created
-                  </div>
-                  <div class="col-6 col-sm-4 col-md-3 col-xl-2 text-end">
-                    26 May 2020 10:23
-                  </div>
-                </div>
+        <div class="card mb-5">
+          <div class="card-body">
+            <h5 class="card-title">Further information</h5>
 
-                <div class="row">
-                  <div class="col-6 col-sm-4 col-md-3 col-xl-2">
-                    Last login
-                  </div>
-                  <div class="col-6 col-sm-4 col-md-3 col-xl-2 text-end">
-                    21 June 2023 09:57
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-6 col-sm-4 col-md-3 col-xl-2">
-                    Password changed
-                  </div>
-                  <div class="col-6 col-sm-4 col-md-3 col-xl-2 text-end">
-                    26 May 2020 13:44
-                  </div>
-                </div>
-
+            <div class="row">
+              <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                Account created
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-xl-2 text-end">
+                26 May 2020 10:23
               </div>
             </div>
+
+            <div class="row">
+              <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                Last login
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-xl-2 text-end">
+                21 June 2023 09:57
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                Password changed
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-xl-2 text-end">
+                26 May 2020 13:44
+              </div>
+            </div>
+
           </div>
         </div>
 

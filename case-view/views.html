@@ -1,0 +1,357 @@
+---
+layout: default
+title: EHC Hub
+---
+
+<div class="d-flex flex-fill flex-column flex-md-row">
+  <!-- Page content -->
+
+  {% include sidenav.html %}
+
+
+  <div class="d-flex d-md-none justify-content-between align-items-start idx-border-b mt-3 px-6 pb-2">
+    <h1 class="mb-0 fs-2 no-border">Victor Wagner</h1>
+    <a class="d-block d-md-none align-self-center" role="button" data-bs-toggle="collapse" href="#idx-sidenav-case" aria-controls="idx-sidenav-case" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- <span class="visually-hidden">Case side menu</span> -->
+      Details
+      <!-- <i class="fal fa-info-circle fs-2 text-neutral-600"></i> -->
+      <i class="fal fa-angle-down ms-1 text-neutral-600"></i>
+    </a>
+  </div>
+
+  {% include sidenav-case-alt.html %}
+
+  <main id="content" class="main container-fluid mt-6 px-6 px-lg-8">
+    <div class="row gx-5 gy-2 px-xl-5">
+      <div class="col">
+
+        {% include review-progress.html %}
+
+        <div class="d-flex justify-content-between text-neutral-500">
+          <p class="d-none d-md-block">Review meeting: 21 Jan 2023</p>
+          <p>Views due by: 7 Jan 2023</p>
+          <div class="d-md-none dropdown">
+            <a class="idx-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">Stages<i class="fal fa-angle-down ms-1"></i></a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Arrange</a></li>
+              <li><a class="dropdown-item" href="#">Views</a></li>
+              <li><a class="dropdown-item" href="#">Meeting</a></li>
+              <li><a class="dropdown-item" href="#">Report</a></li>
+              <li><a class="dropdown-item" href="#">Decision</a></li>
+              <li><a class="dropdown-item" href="#">EHC Plan</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <h1 class="no-border">Contribute views</h1>
+        <p>This page allows you to request information from involved professionals, teams or organisations invited to the EHC Plan review meeting. To allow sufficient time for a response, it is advised the request for information is made at least 6 weeks prior to the scheduled meeting.</p>
+        <p>It is an opportunity to consult on how progress is being made towards the outcomes set out in the current EHC Plan, and to gather any updated information, reports or assessments ahead of the meeting. <a href="#">Read more</a></p>
+
+        {% include actions-views.html %}
+
+        <!-- Requests for information -->
+        <div class="mb-5">
+          <h2>Requests for information</h2>
+          <div class="table-responsive">
+           <table class="table table-striped table-hover table-borderless idx-results-table align-middle mt-0">
+             <thead>
+               <tr>
+                 <th scope="col">Name <i class="fal fa-arrow-up idx-table-sort px-1" aria-hidden="true" title="Sort"></i></th>
+                 <th scope="col">Job title</th>
+                 <th scope="col">Specialism</th>
+                 <th scope="col">Request completed</th>
+                 <th scope="col">Status</th>
+                 <th scope="col">Action</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>Robyn Sayer</td>
+                 <td>SENCo</td>
+                 <td>Education</td>
+                 <td></td>
+                 <td><span class="badge text-bg-warning w-100">Pending</span></td>
+                 <td class="no-wrap">
+                   <a href="#" title="Edit user" class="me-3"><i class="fal fa-times-circle me-1"></i>Close</a>
+                 </td>
+               </tr>
+               <tr>
+                 <td>Peter Jameson</td>
+                 <td>Educational Psychologist</td>
+                 <td>Education</td>
+                 <td>10 Nov 2022</td>
+                 <td><span class="badge text-bg-danger w-100">Closed</span></td>
+                 <td class="no-wrap">
+                   <a href="#" title="Edit user" class="me-3"><i class="fal fa-redo me-1"></i>Re-open</a>
+                 </td>
+               </tr>
+               <tr>
+                 <td>Helen Clarkson</td>
+                 <td>OT</td>
+                 <td>Health</td>
+                 <td>6 Nov 2022</td>
+                 <td><span class="badge text-bg-success w-100">Completed</span></td>
+                 <td class="no-wrap">
+                   <a href="#" title="Edit user" class="me-3"><i class="fal fa-redo me-1"></i>Re-open</a>
+                 </td>
+               </tr>
+               <tr>
+                 <td>Kerry Holmes</td>
+                 <td>Social Worker</td>
+                 <td>27 Sep 2022</td>
+                 <td></td>
+                 <td><span class="badge text-bg-warning w-100">Pending</span></td>
+                 <td class="no-wrap">
+                   <a href="#" title="Edit user" class="me-3"><i class="fal fa-times-circle me-1"></i>Close</a>
+                 </td>
+               </tr>
+             </tbody>
+           </table>
+         </div>
+         <div class="d-flex justify-content-lg-end mt-2 mt-lg-0">
+           <a class="btn btn-neutral-50" href="#"><i class="fal fa-plus-circle me-2"></i>Add request</a>
+         </div>
+       </div>
+
+       <!-- About me -->
+       <div class="my-5">
+         <h2>Victor's views</h2>
+         <p>This section is about what is important to the child or young person. Where possible, this section should be completed by the child or young person themselves. Where support has been given or where it has been completed on behalf of the child or young person, it should be made clear in each section whether the child has directly quoted the statements or if they have been summarised. The content from this section may later update Section A of the EHC Plan if the decision following the review is to amend the EHC Plan.</p>
+
+         <div class="row my-3 g-4">
+           <div class="col">
+
+             <div class="card">
+               <div class="card-body">
+                 <p class="card-text form-label">Do you feel that you are making progress towards some or all of the outcomes set out in your EHC Plan?</p>
+                   <div class="mb-3">
+                     <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                      <label class="form-check-label" for="inlineRadio1">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <label class="form-check-label" for="inlineRadio2">No</label>
+                    </div>
+                    <a href="#">Clear selection</a>
+                  </div>
+                  <div class="mb-3">
+                    <label for="workingWellFormControl" class="form-label">What do you feel has been working well?</label>
+                    <textarea class="form-control" id="workingWellFormControl" rows="3"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="notWorkingWellFormControl" class="form-label">What do you feel is not working well and would like to be different?</label>
+                    <textarea class="form-control" id="notWorkingWellFormControl" rows="3"></textarea>
+                  </div>
+               </div>
+             </div>
+
+           </div>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-3">
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-img-top bg-success-50 p-2">
+                  <img src="/assets/images/about_1.png" class="img-about" alt="Cartooon canvas on easel">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Things that are important to me</p>
+                  <a href="#">Open</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-img-top bg-success-50 p-2">
+                  <img src="/assets/images/about_2.png" class="img-about" alt="Cartooon canvas on easel">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Things that are working well at home and school</p>
+                  <a href="#">Open</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-img-top bg-success-50 p-2">
+                  <img src="/assets/images/about_3.png" class="img-about" alt="Cartooon canvas on easel">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Other information I think is important to know about me</p>
+                  <a href="#">Open</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-img-top bg-success-50 p-2">
+                  <img src="/assets/images/about_4.png" class="img-about" alt="Cartooon canvas on easel">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Important things to know about my past</p>
+                  <a href="#">Open</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-img-top bg-success-50 p-2">
+                  <img src="/assets/images/about_5.png" class="img-about" alt="Cartooon canvas on easel">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Things that I enjoy doing</p>
+                  <a href="#">Open</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-img-top bg-success-50 p-2">
+                  <img src="/assets/images/about_6.png" class="img-about" alt="Cartooon canvas on easel">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">How to communicate with me</p>
+                  <a href="#">Open</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-img-top bg-success-50 px-2 pt-2">
+                  <img src="/assets/images/about_7.png" class="img-about" alt="Cartooon canvas on easel">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">My hope, dreams and aspirations for the future</p>
+                  <a href="#">Open</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-img-top bg-success-50 p-2">
+                  <img src="/assets/images/about_8.png" class="img-about" alt="Cartooon canvas on easel">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Things I would like to change at home and at school</p>
+                  <a href="#">Open</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Parent/carer views -->
+        <div class="my-5">
+          <h2>Victor's parent/carer's views</h2>
+          <p>This section is for the child or young person’s parents/carers to give their views. The content from this section may later update Section A of the EHC Plan if the decision following the review is to amend the EHC Plan.</p>
+
+          <div class="row my-3 g-4">
+            <div class="col">
+
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text form-label">Do you feel that Victor is making progress towards some or all of the outcomes set out in the EHC Plan?</p>
+                    <div class="mb-3">
+                      <div class="form-check form-check-inline">
+                       <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                       <label class="form-check-label" for="inlineRadio1">Yes</label>
+                     </div>
+                     <div class="form-check form-check-inline">
+                       <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                       <label class="form-check-label" for="inlineRadio2">No</label>
+                     </div>
+                     <a href="#">Clear selection</a>
+                   </div>
+                   <div class="mb-3">
+                     <label for="workingWellFormControl" class="form-label">What do you feel has been working well?</label>
+                     <textarea class="form-control" id="workingWellFormControl" rows="3"></textarea>
+                   </div>
+                   <div class="mb-3">
+                     <label for="notWorkingWellFormControl" class="form-label">What do you feel is not working well and would like to be different?</label>
+                     <textarea class="form-control" id="notWorkingWellFormControl" rows="3"></textarea>
+                   </div>
+                </div>
+              </div>
+
+            </div>
+           </div>
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-3">
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-img-top bg-warning-100 p-2">
+                  <img src="/assets/images/parent_1.png" class="img-about" alt="Cartooon canvas on easel">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Things that are important to me</p>
+                  <a href="#">Open</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-img-top bg-warning-100 p-2">
+                  <img src="/assets/images/parent_2.png" class="img-about" alt="Cartooon canvas on easel">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Things that are working well at home and school</p>
+                  <a href="#">Open</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-img-top bg-warning-100 p-2">
+                  <img src="/assets/images/parent_3.png" class="img-about" alt="Cartooon canvas on easel">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Other information I think is important to know about me</p>
+                  <a href="#">Open</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-img-top bg-warning-100 p-2">
+                  <img src="/assets/images/parent_4.png" class="img-about" alt="Cartooon canvas on easel">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Important things to know about my past</p>
+                  <a href="#">Open</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-img-top bg-warning-100 p-2">
+                  <img src="/assets/images/parent_5.png" class="img-about" alt="Cartooon canvas on easel">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Things that I enjoy doing</p>
+                  <a href="#">Open</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+</div>

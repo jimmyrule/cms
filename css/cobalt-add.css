@@ -161,6 +161,7 @@ code { color: var(--neutral) }
 table { margin-top: 1.5rem}
 /*td {vertical-align: top !important;}*/
 
+
 .fa-stack {
     line-height: inherit !important;
     width: 1rem !important;
@@ -335,6 +336,15 @@ h3.idx-login-descriptor {
 
 .img-about {
   height: 75px;
+}
+
+@media (min-width:768px) {
+  .table-case {
+    width: calc(100% - 281px);
+  }
+  .table-no-case {
+    width: calc(100% - 57px);
+  }
 }
 
 /* = Colour swatches

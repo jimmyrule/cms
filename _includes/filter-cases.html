@@ -1,33 +1,38 @@
 <div class="bg-white idx-border p-4">
   <div class="row">
     <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-      <div class="me-3 mb-4">
-        <label for="case-statusDataList" class="form-label">Case status</label>
-        <input class="form-control" list="case-status-datalistOptions" id="case-statusDataList" placeholder="All">
-        <datalist id="case-status-datalistOptions">
-          <option value="New request">
-          <option value="Request (information gathering)">
-          <option value="Assessment decision pending">
-          <option value="Declined to assess">
-          <option value="Assessment">
-          <option value="Plan decision pending">
-          <option value="Declined to issue plan">
-          <option value="Draft plan (not yet shared)">
-          <option value="Draft plan (shared)">
-          <option value="Pending review">
-          <option value="Arrange review">
-          <option value="Contribute views">
-          <option value="Review meeting">
-          <option value="Review report">
-          <option value="Review decision pending">
-          <option value="Proposed amendment (not yet shared)">
-          <option value="Proposed amendment (shared)">
-          <option value="Proposed to cease">
-          <option value="Plan ceased">
-          <option value="Proposed amendment w/o review (not yet shared)">
-          <option value="Proposed amendment w/o review (shared)">
-          <option value="Closed outside of process">
-        </datalist>
+      <div class="dropdown idox-status-dropdown">
+        <label for="caseStatusDropdown" class="form-label">Case status</label>
+        <a id="caseStatusDropdown" class="btn btn-outline-light w-100 d-flex align-items-between text-muted" role="button" data-bs-toggle="dropdown" aria-expanded="false">All</a>
+        <ul class="dropdown-menu">
+          <li><h6 class="dropdown-header">Assessment and planning</h6></li>
+          <li><a class="dropdown-item" href="#">Draft request</a></li>
+          <li><a class="dropdown-item" href="#">New request</a></li>
+          <li><a class="dropdown-item" href="#">Information gathering</a></li>
+          <li><a class="dropdown-item" href="#">Pending assessment decision</a></li>
+          <li><a class="dropdown-item" href="#">Assessment declined</a></li>
+          <li><a class="dropdown-item" href="#">Assessment</a></li>
+          <li><a class="dropdown-item" href="#">Pending EHCP decision</a></li>
+          <li><a class="dropdown-item" href="#">EHCP declined</a></li>
+          <li><a class="dropdown-item" href="#">Drafting EHCP</a></li>
+          <li><a class="dropdown-item" href="#">EHCP consultation</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><h6 class="dropdown-header">EHCP review</h6></li>
+          <li><a class="dropdown-item" href="#">Review pending</a></li>
+          <li><a class="dropdown-item" href="#">Review arranged</a></li>
+          <li><a class="dropdown-item" href="#">Review meeting</a></li>
+          <li><a class="dropdown-item" href="#">Drafting review report</a></li>
+          <li><a class="dropdown-item" href="#">Pending review decision</a></li>
+          <li><a class="dropdown-item" href="#">Drafting amendment</a></li>
+          <li><a class="dropdown-item" href="#">Amendment consultation</a></li>
+          <li><a class="dropdown-item" href="#">Pending cease</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><h6 class="dropdown-header">Without pathway</h6></li>
+          <li><a class="dropdown-item" href="#">Drafting amendment</a></li>
+          <li><a class="dropdown-item" href="#">Amendment consultation</a></li>
+          <li><a class="dropdown-item" href="#">EHCP ceased</a></li>
+          <li><a class="dropdown-item" href="#">Case stopped</a></li>
+        </ul>
       </div>
     </div>
     <div class="col-6 col-sm-4 col-lg-3 col-xl-2">

@@ -375,6 +375,10 @@ ul.timeline {
   color: var(--neutral-500);
 }
 
+.idox-more-link > i {
+  color: var(--secondary);
+}
+
 /*
 
 .timeline:before {

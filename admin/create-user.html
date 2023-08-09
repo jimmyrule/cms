@@ -1,0 +1,125 @@
+---
+layout: default
+title: EHC Hub
+---
+
+<div class="d-flex flex-fill flex-column flex-md-row">
+  <!-- Page content -->
+
+  {% include sidenav.html %}
+
+  <main id="content" class="main container-fluid mt-6 px-6 px-lg-8">
+    <div class="row gx-5 gy-2 px-xl-5">
+      <div class="col">
+
+        <h1>Add user</h1>
+        <p>Create a new user with a unique email address and assign the relevant permissions.
+
+        <div class="card mb-5">
+          <div class="card-body">
+            <h5 class="card-title">Personal details</h5>
+
+            <div class="row">
+              <div class="col">
+                <div class="mb-3">
+                  <label for="exampleInputText1" class="form-label"><span class="text-danger me-1">*</span>Name</label>
+                  <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+                  <div id="textHelp" class="form-text">This is how their name will appear to other people.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"><span class="text-danger me-1">*</span>Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="exampleInputEmail2" class="form-label"><span class="text-danger me-1">*</span>Confirm email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail2">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="exampleInputTextJob1" class="form-label">Job title</label>
+                  <input type="text" class="form-control" id="exampleInputTextJob1" aria-describedby="jobHelp">
+                  <div id="jobHelp" class="form-text">This can provide context to others in the EHC Hub.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="checkbox-group" class="form-label">Preferred method of contact</label>
+                  <div id="checkbox-group">
+                    <div class="mb-3 form-check-inline">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Email</label>
+                    </div>
+                    <div class="mb-3 form-check-inline">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Phone</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="card mb-5">
+          <div class="card-body">
+            <h5 class="card-title">Role</h5>
+
+            <div class="row">
+              <div class="col">
+                <div class="mb-3">
+                  <label for="checkbox-group" class="form-label"><span class="text-danger me-1">*</span>Choose a role</label>
+                  <div id="checkbox-group-role" aria-describedby="roleHelp">
+                    <div class="mb-3 form-check-inline">
+                      <input type="checkbox" class="form-check-input" id="checkRoleCoordinator">
+                      <label class="form-check-label" for="checkRoleCoordinator" data-bs-toggle="tooltip" data-bs-title="Managing cases on behalf of the local authority.">Co-ordinator</label>
+                    </div>
+                    <div class="mb-3 form-check-inline">
+                      <input type="checkbox" class="form-check-input" id="checkRoleSettingUser">
+                      <label class="form-check-label" for="checkRoleSettingUser" data-bs-toggle="tooltip" data-bs-title="Working with a child/young person in an education setting, typically a SENCo.">Setting user</label>
+                    </div>
+                    <div class="mb-3 form-check-inline">
+                      <input type="checkbox" class="form-check-input" id="checkRoleSettingAdmin">
+                      <label class="form-check-label" for="checkRoleSettingAdmin" data-bs-toggle="tooltip" data-bs-title="Administering activity within an education setting, but cannot be a named engagement for a child/young person.">Setting administrator</label>
+                    </div>
+                    <div class="mb-3 form-check-inline">
+                      <input type="checkbox" class="form-check-input" id="checkRoleContributor">
+                      <label class="form-check-label" for="checkRoleContributor" data-bs-toggle="tooltip" data-bs-title="Advice giver in Education, Health or Social Care (including a Social Worker).">Contributor</label>
+                    </div>
+                    <div class="mb-3 form-check-inline">
+                      <input type="checkbox" class="form-check-input" id="checkRoleParent">
+                      <label class="form-check-label" for="checkRoleParent" data-bs-toggle="tooltip" data-bs-title="Typically a parent, but includes a family member, carer, guardian, the young person or advocate (excluding a Social Worker).">Parent</label>
+                    </div>
+                  </div>
+                  <div id="roleHelp" class="form-text">Only 1 role can be chosen and cannot be changed once the user account has been created.</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-lg-end mt-2 mt-lg-0">
+          <a class="btn btn-neutral-50 me-2" href="/admin/admin-users"><i class="fal fa-times-circle me-2"></i>Cancel</a>
+          <a class="btn btn-primary disabled" href="/admin/admin-users"><i class="fal fa-paper-plane text-white me-2"></i>Confirm</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+</div>

@@ -167,6 +167,10 @@ table { margin-top: 1.5rem}
     width: 1rem !important;
 }
 
+.idx-results-table thead th {
+  background-color: var(--neutral-50);
+}
+
 .idx-results-table tr {
   border: 1px solid var(--neutral-200);
   border-radius: 3px;

@@ -2218,7 +2218,7 @@ progress {
   --table-bg: #ffffff;
   --table-accent-bg: transparent;
   --table-striped-color: #282828;
-  --table-striped-bg: var(--neutral-50);
+  --table-striped-bg: var(--neutral-25);
   --table-active-color: #282828;
   --table-active-bg: rgba(0, 0, 0, 0.1);
   --table-hover-color: #282828;

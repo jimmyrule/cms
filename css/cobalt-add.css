@@ -396,6 +396,18 @@ ul.timeline {
   overflow-y: scroll;
 }
 
+.fixed-message {
+  position: absolute;
+  z-index: 10000;
+  width: 300px;
+  bottom: 0;
+  right: 0;
+  margin: 0 1em 1em 0;
+  padding: 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
+
 /* = Colour swatches
 -------------------------------------------------------------------------- */
 

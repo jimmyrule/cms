@@ -22,7 +22,7 @@ title: Reporting
             <a class="nav-link" href="/reports">Standard exports</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active"  aria-current="page" href="#">SEN2</a>
+            <a class="nav-link active"  aria-current="page" href="/reports/sen2">SEN2</a>
           </li>
         </ul>
 
@@ -34,7 +34,13 @@ title: Reporting
 
             <h5 class="my-5">On-demand export</h5>
 
-            <a href="/reports/sen2-progress" class="btn btn-neutral-50"><i class="fal fa-file-plus me-2"></i>Create file</a>
+            <a href="#" class="btn btn-neutral-50 disabled mb-5"><i class="fal fa-file-plus me-2"></i>Create file</a>
+
+            <div class="alert alert-success m-0" role="alert">
+              <div>
+                <i class="fal fa-hourglass-half me-2"></i>A file is currently being created and will be available to download from the below table in 5-10 minutes.
+              </div>
+            </div>
 
             <div class="table-responsive">
              <table class="table table-hover table-borderless idx-results-table align-middle">
@@ -64,7 +70,7 @@ title: Reporting
              <p class="text-muted">This table includes 5 of the most recently created on-demand files.</p>
            </div>
 
-           <h5>Scheduled export</h5>
+           <h5 class="my-5">Scheduled export</h5>
            <div class="alert alert-info m-0" role="alert">
              <div>
                <i class="fal fa-info-circle me-2"></i>The next snapshot file is scheduled for 18 January 2024 at 22:20 and will overwrite the previous file.

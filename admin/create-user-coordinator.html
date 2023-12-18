@@ -104,10 +104,10 @@ title: EHC Hub
             <div class="row">
               <div class="col">
                 <div class="mb-3">
-                  <label for="checkbox-group" class="form-label"><span class="text-danger me-1">*</span>Choose a role</label>
+                  <label for="checkbox-group" class="form-label"><span class="text-danger me-1">*</span>Choose a role.</label>
                   <div id="checkbox-group-role" aria-describedby="roleHelp">
                     <div class="mb-3 form-check-inline">
-                      <input type="checkbox" class="form-check-input" id="checkRoleCoordinator">
+                      <input type="checkbox" class="form-check-input" id="checkRoleCoordinator" checked>
                       <label class="form-check-label" for="checkRoleCoordinator" data-bs-toggle="tooltip" data-bs-title="Managing cases on behalf of the local authority.">Co-ordinator</label>
                     </div>
                     <div class="mb-3 form-check-inline">
@@ -128,6 +128,43 @@ title: EHC Hub
                     </div>
                   </div>
                   <div id="roleHelp" class="form-text">Only 1 role can be chosen and cannot be changed once the user account has been created.</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="card mb-5">
+          <div class="card-body">
+            <h5 class="card-title">Account details</h5>
+            <p>Select additional permissions for the user.</p>
+
+            <div class="row">
+              <div class="col">
+                <div class="mb-3">
+                  <div id="checkbox-group">
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="checkAmendDate">
+                      <label class="form-check-label" for="checkAmendDate" data-bs-toggle="tooltip" data-bs-title="Amend the issue date of an EHC Plan.">Amend issue date</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="checkAdmin">
+                      <label class="form-check-label" for="checkAdmin" data-bs-toggle="tooltip" data-bs-title="Administer areas of the EHC Hub.">LA Admin</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="checkPanels">
+                      <label class="form-check-label" for="checkPanels" data-bs-toggle="tooltip" data-bs-title="Create, edit and view all panel meetings.">Manage panel meetings</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="checkAllCases">
+                      <label class="form-check-label" for="checkAllCases" data-bs-toggle="tooltip" data-bs-title="Access and manage any case.">Manage all cases</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="checkDocuments">
+                      <label class="form-check-label" for="checkDocuments" data-bs-toggle="tooltip" data-bs-title="Regenerate case documents created by the system.">Regenerate documents</label>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

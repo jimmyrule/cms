@@ -82,7 +82,7 @@ title: EHC Hub
                   <label for="checkbox-group" class="form-label">Preferred method of contact</label>
                   <div id="checkbox-group">
                     <div class="mb-3 form-check-inline">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck2" checked>
                       <label class="form-check-label" for="exampleCheck2">Email</label>
                     </div>
                     <div class="mb-3 form-check-inline">
@@ -104,7 +104,7 @@ title: EHC Hub
             <div class="row">
               <div class="col">
                 <div class="mb-3">
-                  <label for="checkbox-group" class="form-label"><span class="text-danger me-1">*</span>Choose a role.</label>
+                  <label for="checkbox-group-role" class="form-label"><span class="text-danger me-1">*</span>Choose a role.</label>
                   <div id="checkbox-group-role" aria-describedby="roleHelp">
                     <div class="mb-3 form-check-inline">
                       <input type="checkbox" class="form-check-input" id="checkRoleCoordinator" checked>
@@ -141,15 +141,15 @@ title: EHC Hub
             <p>Select additional permissions for the user.</p>
 
             <div class="row">
-              <div class="col">
-                <div class="mb-3">
-                  <div id="checkbox-group">
+              <div class="col-sm-6">
+                <div class="mb-5">
+                  <div id="checkbox-group-permissions">
                     <div class="mb-3 form-check">
                       <input type="checkbox" class="form-check-input" id="checkAmendDate">
                       <label class="form-check-label" for="checkAmendDate" data-bs-toggle="tooltip" data-bs-title="Amend the issue date of an EHC Plan.">Amend issue date</label>
                     </div>
                     <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="checkAdmin">
+                      <input type="checkbox" class="form-check-input" id="checkAdmin" checked>
                       <label class="form-check-label" for="checkAdmin" data-bs-toggle="tooltip" data-bs-title="Administer areas of the EHC Hub.">LA Admin</label>
                     </div>
                     <div class="mb-3 form-check">
@@ -164,6 +164,31 @@ title: EHC Hub
                       <input type="checkbox" class="form-check-input" id="checkDocuments">
                       <label class="form-check-label" for="checkDocuments" data-bs-toggle="tooltip" data-bs-title="Regenerate case documents created by the system.">Regenerate documents</label>
                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <label for="checkbox-group-admin" class="form-label">LA Admin Access</label>
+                <div id="checkbox-group-admin">
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="check2" checked>
+                    <label class="form-check-label" for="check2" data-bs-toggle="tooltip" data-bs-title="Manage users.">Manage users</label>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="check3" checked>
+                    <label class="form-check-label" for="check3" data-bs-toggle="tooltip" data-bs-title="Manage education settings.">Manage settings</label>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="check4" checked>
+                    <label class="form-check-label" for="check4" data-bs-toggle="tooltip" data-bs-title="Manage teams of contributors.">Manage teams</label>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="check5" checked>
+                    <label class="form-check-label" for="check5" data-bs-toggle="tooltip" data-bs-title="Manage document and email templates, onscreen guidance and help.">Manage communications</label>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="check6" checked>
+                    <label class="form-check-label" for="check6" data-bs-toggle="tooltip" data-bs-title="Manage system configurations, e.g. picklist options.">Manage system</label>
                   </div>
                 </div>
               </div>

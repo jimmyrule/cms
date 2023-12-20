@@ -1,0 +1,139 @@
+---
+layout: default
+title: EHC Hub
+---
+
+<div class="d-flex flex-fill flex-column flex-md-row">
+  <!-- Page content -->
+
+  {% include sidenav.html %}
+
+
+  <div class="d-flex d-md-none justify-content-between align-items-start idx-border-b mt-3 px-6 pb-2">
+    <h1 class="mb-0 fs-2 no-border">Victor Wagner</h1>
+    <a class="d-block d-md-none align-self-center" role="button" data-bs-toggle="collapse" href="#idx-sidenav-case" aria-controls="idx-sidenav-case" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- <span class="visually-hidden">Case side menu</span> -->
+      Details
+      <!-- <i class="fal fa-info-circle fs-2 text-neutral-600"></i> -->
+      <i class="fal fa-angle-down ms-1 text-neutral-600"></i>
+    </a>
+  </div>
+
+  {% include sidenav-case-alt.html %}
+
+  <main id="content" class="main container-fluid mt-6 px-6 px-lg-8 table-case">
+    <div class="row gx-5 gy-2 px-xl-5">
+      <div class="col">
+
+        <h1>Summary</h1>
+        <p>On this page you will find quick links to various stages of a child or young person’s EHC case. For some children and young people, their EHC journey may not have started on this EHC Hub and so historic case information may be limited. Please contact the Case Coordinator for further information.</p>
+
+        {% include actions-summary.html %}
+
+        <!-- EHCP chronology -->
+        <div class="card mb-5">
+          <h3 class="card-header">EHC Plan</h3>
+          <div class="card-body">
+            <p class="card-text">A chronology of Victor's EHC Plans.</p>
+            <div class="table-responsive mb-3">
+              <table class="table table-striped table-hover table-borderless idx-results-table align-middle mt-0">
+                <thead>
+                 <tr>
+                   <th scope="col"># <i class="fal fa-arrow-up idx-table-sort px-1" aria-hidden="true" title="Sort"></i></th>
+                   <th scope="col">Status</th>
+                   <th scope="col">Issued</th>
+                   <th scope="col">Pathway</th>
+                   <th scope="col">Action</th>
+                 </tr>
+                </thead>
+                <tbody>
+                 <tr>
+                   <td>2</td>
+                   <td><span class="badge text-bg-primary w-80">Active</span></td>
+                   <td>02 Sep 2019</td>
+                   <td>Review</td>
+                   <td class="no-wrap">
+                     <a href="#" title="View" class="me-3"><i class="fal fa-arrow-right me-1"></i>View</a>
+                     <a href="#" title="Download" class="me-3"><i class="fal fa-file-download me-1"></i>Download</a>
+                     <a href="#" title="Amend issue date" class="me-3"><i class="fal fa-pencil-alt me-1"></i>Amend date</a>
+                   </td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td><span class="badge text-bg-success w-80">Archived</span></td>
+                    <td>15 Dec 2018</td>
+                    <td>Assessment and planning</td>
+                    <td class="no-wrap">
+                      <a href="#" title="View" class="me-3"><i class="fal fa-arrow-right me-1"></i>View</a>
+                      <a href="#" title="Download" class="me-3"><i class="fal fa-file-download me-1"></i>Download</a>
+                      <a href="#" title="Amend issue date" class="me-3"><i class="fal fa-pencil-alt me-1"></i>Amend date</a>
+                    </td>
+                   </tr>
+                </tbody>
+              </table>
+             </div>
+             <a class="btn btn-neutral-50 me-2 disabled" href="#"><i class="fal fa-pencil-alt me-2"></i>Amend EHCP</a>
+          </div>
+        </div>
+
+        <!-- EHCP reviews -->
+        <div class="card mb-5">
+          <h3 class="card-header">EHC Plan Reviews</h3>
+          <div class="card-body">
+            <p class="card-text">A record of Victor's EHC Plan reviews.</p>
+            <div class="alert alert-warning" role="alert">
+              The EHC Plan must be reviewed by <strong>2 December 2020</strong>. This is the date by when the local authority must publish their decision on the outcome of the review. To meet this deadline, it's recommended that the next review be started no later than <strong>12 August 2020</strong>.
+            </div>
+            <div class="table-responsive mb-3">
+              <table class="table table-striped table-hover table-borderless idx-results-table align-middle mt-0">
+                <thead>
+                 <tr>
+                   <th scope="col"># <i class="fal fa-arrow-up idx-table-sort px-1" aria-hidden="true" title="Sort"></i></th>
+                   <th scope="col">Status</th>
+                   <th scope="col">Outcome</th>
+                   <th scope="col">Outcome date</th>
+                   <th scope="col">Action</th>
+                 </tr>
+                </thead>
+                <tbody>
+                 <tr>
+                   <td>2</td>
+                   <td><span class="badge text-bg-primary w-80">In progress</span></td>
+                   <td></td>
+                   <td></td>
+                   <td class="no-wrap">
+                     <a href="#" title="View" class="me-3"><i class="fal fa-arrow-right me-1"></i>View</a>
+                     <a href="#" title="Close review" class="me-3"><i class="fal fa-times me-1"></i>Close review</a>
+                   </td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td><span class="badge text-bg-success w-80">Completed</span></td>
+                    <td>Amend EHCP</td>
+                    <td>15 Dec 2018</td>
+                    <td class="no-wrap">
+                      <a href="#" title="View" class="me-3"><i class="fal fa-arrow-right me-1"></i>View</a>
+                    </td>
+                   </tr>
+                </tbody>
+              </table>
+             </div>
+             <a class="btn btn-neutral-50 me-2 disabled" href="#"><i class="fal fa-arrow-circle-right me-2"></i>Start review</a>
+          </div>
+        </div>
+
+        <!-- Assessment pathway -->
+        <div class="card mb-5">
+          <h3 class="card-header">Assessment and planning</h3>
+          <div class="card-body">
+            <p class="card-text">Victor's assessment and planning pathway was completed by the issuing of an EHC Plan on <strong>15 December 2018</strong>.</p>
+            <a class="btn btn-neutral-50" href="#"><i class="fal fa-arrow-circle-right me-2"></i>View pathway</a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </main>
+
+</div>

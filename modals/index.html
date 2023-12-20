@@ -1,0 +1,47 @@
+---
+layout: headerless
+title: Modals
+---
+{% include header-anon.html %}
+
+<div class="d-flex flex-fill flex-column flex-md-row">
+  <!-- Page content -->
+
+
+
+  <main id="content" class="main container-fluid mt-3 px-7 mt-xl-8 px-xl-8">
+    <div class="row gx-5 gy-2 px-xl-5">
+      <div class="col-md-8 break-word">
+
+        <h1>Modals</h1>
+        <p>A collection of modals used in the EHC Hub.</p>
+
+        <a data-bs-toggle="modal" data-bs-target="#commentModal" type="button" tabindex="0" class="btn btn-neutral-50 me-2 my-5"><i class="fal fa-paper-plane me-2"></i>Submit comments</a>
+
+        <!-- comment modal -->
+        <div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="commentModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 no-border" id="commentModalLabel">Submit your comments?</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Are you sure that you have finished commenting on the draft EHC Plan and wish to submit your views?</p>
+                <p>This may be your final opportunity to do so before the EHC Plan is issued.</p>
+                <p>You are able to add your views to any section from A to I, including stating your preferred education setting as part of Section I.</p>
+                <p>Choose <strong>No</strong> to continue commenting or <strong>Yes</strong> to submit your comments.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-neutral-50" data-bs-dismiss="modal">No</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Yes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+</div>

@@ -9,7 +9,10 @@
     </ul>
   </div>
   <div class="col-lg-6 d-flex justify-content-lg-end mt-2 mt-lg-0">
+    <a data-bs-toggle="modal" data-bs-target="#revertPlanModal" class="btn btn-neutral-50 me-2"><i class="fal fa-step-backward me-2"></i>Revert stage</a>
     <a class="btn btn-neutral-50 me-2" href="#"><i class="fal fa-pencil-alt me-2"></i>Edit plan</a>
     <a class="btn btn-neutral-50" href="#"><i class="fal fa-paper-plane me-2"></i>Issue plan</a>
   </div>
 </div>
+
+{% include modal-revert-plan.html %}

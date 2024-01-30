@@ -1,0 +1,40 @@
+<div class="modal fade" id="revertPlanModal" tabindex="-1" aria-labelledby="revertPlanModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 no-border" id="revertPlanModalLabel">Revert stage</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <p>Reverting this stage has the following implications:</p>
+        <ul>
+          <li>The case will return to the point before the plan decision was published.</li>
+          <li>All changes made at the Plan stage will be lost.</li>
+          <li>Persons attached to the case will not be notified.</li>
+          <li>Statutory timeframes for this case will not be altered.</li>
+          <li>The entered reason will be added to the case timeline.</li>
+        </ul>
+        <div class="mb-4">
+          <label for="revertReasonDataList" class="form-label"><span class="text-danger me-1">*</span>Choose a reason</label>
+          <input class="form-control" list="revertReasonDataListOptions" id="revertReasonDataList" placeholder="Choose a reason">
+          <datalist id="revertReasonDataListOptions">
+            <option value="Correct a mistake">
+            <option value="Other">
+          </datalist>
+        </div>
+        <div class="mb-3">
+          <label for="revertReasonDetailTextarea" class="form-label"><span class="text-danger me-1">*</span>Supporting comment</label>
+          <textarea class="form-control" id="revertReasonDetail" rows="3"></textarea>
+        </div>
+        <hr>
+        <p>Are you sure that you wish to revert this case to the plan decision stage?</p>
+        <p>Choose <strong>No</strong> to continue working or <strong>Yes, revert</strong> to revert this case to the decision stage.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-neutral-50" data-bs-dismiss="modal">No</button>
+        <a type="button" class="btn btn-primary" href="/">Yes, revert</a>
+      </div>
+    </div>
+  </div>
+</div>

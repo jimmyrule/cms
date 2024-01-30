@@ -158,7 +158,7 @@ $h6-font-size:              $font-size-base;*/
   --body-font-weight: 400;
   --body-line-height: 1.5;
   --body-color: #282828;
-  --body-bg: #fcfcfd;
+  --body-bg: /*#fcfcfd;*/ #f8f9fa;
 }
 
 *,
@@ -13531,7 +13531,7 @@ textarea.form-control-lg {
 
 .bg-body {
   --bg-opacity: 1;
-  background-color: rgba(var(--body-bg-rgb), var(--bg-opacity)) !important;
+  background-color: rgba(var(--body-bg), var(--bg-opacity)) !important;
 }
 
 .bg-transparent {

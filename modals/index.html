@@ -18,6 +18,8 @@ title: Modals
 
         <a data-bs-toggle="modal" data-bs-target="#commentModal" type="button" tabindex="0" class="btn btn-neutral-50 me-2 my-5"><i class="fal fa-paper-plane me-2"></i>Submit comments</a>
 
+        <a data-bs-toggle="modal" data-bs-target="#deleteDocumentModal" type="button" tabindex="0" class="btn btn-neutral-50 me-2 my-5"><i class="fal fa-trash-alt me-2"></i>Delete document</a>
+
         <!-- comment modal -->
         <div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="commentModalLabel" aria-hidden="true">
           <div class="modal-dialog">
@@ -35,6 +37,31 @@ title: Modals
               <div class="modal-footer">
                 <button type="button" class="btn btn-neutral-50" data-bs-dismiss="modal">No</button>
                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Yes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- delete document -->
+        <div class="modal fade" id="deleteDocumentModal" tabindex="-1" aria-labelledby="deleteDocumentModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 no-border" id="deleteDocumentModalLabel">Remove file</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Are you sure that you want to remove the file [filename]?</p>
+                <ul>
+                  <li>Removing a file cannot be undone.</li>
+                  <li>Persons attached to the case will not be notified.</li>
+                  <li>A record of this activity will not be included in the case timeline. However, an audit of this removal will be available to administrators.</li>
+                </ul>
+                <p>Choose <strong>No</strong> to close the window or <strong>Yes, remove</strong> to remove this file.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-neutral-50" data-bs-dismiss="modal">No</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Yes, remove</button>
               </div>
             </div>
           </div>

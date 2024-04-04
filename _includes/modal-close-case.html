@@ -1,0 +1,41 @@
+<div class="modal fade" id="closeCaseModal" tabindex="-1" aria-labelledby="closeCaseModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 no-border" id="closeCaseModalLabel">Case closed details</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <p>Ellery's case has been closed outside of the expected process. Below are the details recorded at the time of closure:</p>
+        <div class="mb-4">
+          <label for="closeCaseDataList" class="form-label">Reason</label>
+          <input class="form-control" list="closeCaseDataListOptions" id="closeCaseDataList" placeholder="Child/young person has moved out of authority" readonly>
+          <datalist id="revertReasonDataListOptions">
+            <option value="Correct a mistake">
+            <option value="Other">
+          </datalist>
+        </div>
+        <div class="mb-3">
+          <label for="closeCaseTextArea" class="form-label">Additional comments</label>
+          <textarea class="form-control" id="closeCaseTextArea" rows="3" readonly>This is exemplar text.</textarea>
+        </div>
+        <div class="mb-3">
+          <label for="closeCaseBy" class="form-label">Case closed by</label>
+          <input class="form-control" id="closeCaseBy" placeholder="Jeremy Boyle" readonly>
+        </div>
+        <div class="mb-3">
+          <label for="closeCaseDate" class="form-label">Closed date</label>
+          <input class="form-control" id="closeCaseDate" placeholder="17 Feb 2023" readonly>
+        </div>
+        <hr>
+        <p>Case status at the time of closure:</p>
+        <p>Review in progress : A review meeting has been arranged</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-neutral-50" data-bs-dismiss="modal"><i class="fal fa-ban me-2"></i>Cancel</button>
+        <a type="button" class="btn btn-neutral-50" href="/"><i class="fal fa-redo me-2"></i>Re-open case</a>
+      </div>
+    </div>
+  </div>
+</div>

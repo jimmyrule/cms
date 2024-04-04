@@ -20,6 +20,8 @@ title: Modals
 
         <a data-bs-toggle="modal" data-bs-target="#deleteDocumentModal" type="button" tabindex="0" class="btn btn-neutral-50 me-2 my-5"><i class="fal fa-trash-alt me-2"></i>Delete document</a>
 
+        <a data-bs-toggle="modal" data-bs-target="#closeCaseModal"><i class="fal fa-times fa-fw me-1 mb-2"></i>Close case</a>
+
         <!-- comment modal -->
         <div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="commentModalLabel" aria-hidden="true">
           <div class="modal-dialog">
@@ -70,5 +72,7 @@ title: Modals
       </div>
     </div>
   </main>
+
+  {% include modal-close-case.html %}
 
 </div>

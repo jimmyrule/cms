@@ -425,6 +425,10 @@ li i:hover {
   color: #081972 !important;
 }
 
+.login-list {
+  list-style-type: none;
+}
+
 /* = Colour swatches
 -------------------------------------------------------------------------- */
 

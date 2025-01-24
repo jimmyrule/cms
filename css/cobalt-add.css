@@ -36,7 +36,7 @@ nav a {
 }
 
 .navbar-brand {
-  font-family: "DM Serif Text", 'Times New Roman', Times, serif;
+  /*font-family: var(--font-serif);*/
 }
 
 .idx-nav-icon {
@@ -184,10 +184,11 @@ table { margin-top: 1.5rem}
 }
 
 .idx-message-headline {
-  font-family: "DM Serif Text", 'Times New Roman', Times, serif;
+  /*font-family: var(--font-serif);*/
   font-size: 56px;
   line-height: 3.5rem;
   color: var(--white);
+  font-weight: 700;
 }
 
 .idx-message-body {
@@ -203,7 +204,7 @@ table { margin-top: 1.5rem}
   height: 100vh;
   background-image: url(/assets/images/bg.jpg);
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: color;
 }
 
@@ -218,11 +219,11 @@ table { margin-top: 1.5rem}
 }
 
 h2.idx-login-name {
-    font-family: "DM Serif Text", "Times New Roman", Times, serif;
+    /*font-family: var(--font-serif);*/
     font-size: 2.25rem;
     color: var(--primary-500);
     margin-bottom: 0;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 h3.idx-login-descriptor {

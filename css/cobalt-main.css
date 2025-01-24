@@ -5,7 +5,9 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Text&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 /*Load SASS modules*/
 /*$h1-font-size:            $font-size-base * 2;
 $h2-font-size:              $font-size-base * 1.8;
@@ -149,7 +151,8 @@ $h6-font-size:              $font-size-base;*/
   --black-rgb: 0, 0, 0;
   --body-color-rgb: 40, 40, 40;
   --body-bg-rgb: 252, 252, 253;
-  --font-sans-serif: "DM Sans", Arial, sans-serif;
+  --font-sans-serif: "Inter", serif;
+  --font-serif: "DM Serif Text", serif;
   --font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --body-font-family: var(--font-sans-serif);
@@ -17921,7 +17924,7 @@ h3, .h3 {
   padding-bottom: 0.125rem;
 }
 .idx-navbar .navbar-brand {
-  font-family: "DM Serif Text", "Times New Roman", Times, serif;
+  /*font-family: var(--font-serif);*/
 }
 .idx-navbar .nav-link i {
   font-size: 1.125rem;
@@ -17993,7 +17996,7 @@ h3, .h3 {
   background-repeat: no-repeat;
 }
 .idx-login h1, .idx-login .h1 {
-  font-family: "DM Serif Text", "Times New Roman", Times, serif;
+  /*font-family: var(--font-serif);*/
   font-size: 2rem;
 }
 .idx-login form {
@@ -18323,7 +18326,7 @@ h3, .h3 {
 .swatch h2, .swatch .h2,
 .swatch-lg h2,
 .swatch-lg .h2 {
-  font-family: "DM Serif Text", "Times New Roman", Times, serif;
+  /*font-family: var(--font-serif);*/
 }
 
 .swatch {

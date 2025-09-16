@@ -181,6 +181,7 @@ table { margin-top: 1.5rem}
   height: 100px;
   width: 100px;
   object-fit: cover;
+  outline: 1px solid var(--light);
 }
 
 .idx-message-headline {
@@ -435,4 +436,20 @@ li i:hover {
 
 .spacing-unit {
   background-color: #D111CA
+}
+
+.callout {
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.callout p {
+  margin-bottom: 0;
+}
+
+.callout-info {
+  color: var(--callout-color-info);
+  background-color: var(--callout-bg-info);
+  border-left: .25rem solid var(--callout-border-info);
 }

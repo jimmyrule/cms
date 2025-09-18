@@ -20,16 +20,16 @@ title: Case summary
             <h2 class="text-dark mb-0">Chandler<br>Tate</h2>
           </div>
 
-          <div class="vr d-none d-sm-block mx-3 mx-lg-8"></div>
+          <div class="vr d-none d-md-block mx-3 mx-lg-8"></div>
 
-          <div class="row nbm no-wrap">
-            <div class="col d-none d-sm-block">
+          <div class="row d-none d-md-flex nbm no-wrap">
+            <div class="col">
               <span class="text-muted"><small>Date of birth</small></span>
               <p>01/02/2007 (16)</p>
               <span class="text-muted"><small>Case ID</small></span>
               <p>EHC/21/0123</p>
             </div>
-            <div class="col d-none d-md-block">
+            <div class="col">
               <span class="text-muted"><small>Setting</small></span>
               <p>Greenhill School (Year 13)</p>
               <span class="text-muted"><small>Tags</small></span>
@@ -37,7 +37,10 @@ title: Case summary
             </div>
           </div>
 
-          <div class="ms-auto">
+          <div class="d-flex ms-auto">
+            <a class="btn btn-neutral-50 d-md-none" role="button" data-bs-toggle="collapse" href="#case-details" aria-controls="case-details" aria-expanded="false" aria-label="Toggle details">
+              <span class="visually-hidden">Details</span><i class="far fa-info-circle" aria-hidden="true"></i>
+            </a>
             <div class="dropdown ps-2">
               <a class="btn btn-neutral-50" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fal fa-ellipsis-v-alt px-1"></i>
@@ -52,6 +55,21 @@ title: Case summary
                 <li><a class="dropdown-item" href="#">EHC/15/0198</a></li>
               </ul>
             </div>
+          </div>
+        </div>
+
+        <div class="collapse d-md-none row nbm no-wrap mt-3" id="case-details">
+          <div class="col">
+            <span class="text-muted"><small>Date of birth</small></span>
+            <p>01/02/2007 (16)</p>
+            <span class="text-muted"><small>Case ID</small></span>
+            <p>EHC/21/0123</p>
+          </div>
+          <div class="col">
+            <span class="text-muted"><small>Setting</small></span>
+            <p>Greenhill School (Year 13)</p>
+            <span class="text-muted"><small>Tags</small></span>
+            <p><span class="badge rounded-pill bg-error-600 me-1" data-bs-toggle="tooltip" data-bs-title="Safeguarding concern">SG</span><span class="badge rounded-pill bg-success-700" data-bs-toggle="tooltip" data-bs-title="Looked After Child">LAC</span></p>
           </div>
         </div>
 

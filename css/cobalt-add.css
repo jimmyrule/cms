@@ -453,3 +453,7 @@ li i:hover {
   background-color: var(--callout-bg-info);
   border-left: .25rem solid var(--callout-border-info);
 }
+
+.nbm p {
+  margin-bottom: 0;
+}

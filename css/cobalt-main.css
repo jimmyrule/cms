@@ -230,6 +230,7 @@ h3, .h3 {
 
 h4, .h4 {
   font-size: calc(1.25625rem + 0.075vw);
+  color: var(--primary);
 }
 @media (min-width: 1200px) {
   h4, .h4 {
@@ -6704,7 +6705,7 @@ textarea.form-control-lg {
 
 .dropdown-menu {
   position: absolute;
-  z-index: 1000;
+  z-index: 2000;
   display: none;
   min-width: 10rem;
   padding: 0.5rem 0;
@@ -17915,12 +17916,10 @@ textarea.form-control-lg {
 }*/
 h2, .h2 {
   font-weight: 500;
-  color: #0a1f8f;
 }
 
 h3, .h3 {
   font-weight: 700;
-  color: #0a0a0a;
 }
 
 .idx-navbar {

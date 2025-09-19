@@ -8,8 +8,8 @@ title: EHC Hub
 
   {% include sidenav.html %}
 
-  <main id="content" class="main container-fluid mt-5 px-6 px-lg-8">
-    <div class="row gx-5 gy-2 px-xl-5">
+  <main id="content" class="main container-fluid mt-5 px-6 px-lg-8 table-no-case">
+    <div class="row">
       <div class="col">
 
         {% include case-details.html %}
@@ -23,32 +23,32 @@ title: EHC Hub
               <li class="breadcrumb-item active" aria-current="page">Assessment</li>
             </ol>
           </nav>
-          <p class="mb-0">Plan decision due: 14 Jan 2023</p>
+          <p class="mb-0">Decision due: 14 Jan 2023</p>
         </div>
 
         <!-- Callout -->
         <div class="callout callout-info mb-0">
-          <h5>EHC Needs Assessment</h5>
-          <p>Assessment process under Section 36 (1) of the Children and Families Act 2014. Please ensure that all relevant professional contributors have been requested to provide advice and the family have appropriate support in place to complete the "About me" and "Parent/carer's views" below.</p>
+          <h3>EHC Needs Assessment</h3>
+          <p>Assessment process under Section 36 (1) of the Children and Families Act 2014. Please ensure that all relevant professional contributors have been requested to provide advice and the family have appropriate support in place to complete "About me" and "Parent/carer's views" below.</p>
         </div>
 
         {% include actions-assessment-alternate.html %}
 
         <!-- Requests for advice -->
-        <h2>Requests for advice</h2>
+        <h4>Requests for advice</h4>
 
         <div class="mb-5 table-responsive">
            <table class="table table-striped table-hover table-borderless idx-results-table align-middle mt-0">
              <thead>
                <tr>
-                 <th scope="col">#</th>
-                 <th scope="col">Name <i class="fal fa-arrow-up idx-table-sort px-1" aria-hidden="true" title="Sort"></i></th>
-                 <th scope="col">Job title</th>
-                 <th scope="col">Specialism</th>
-                 <th scope="col">Requested</th>
-                 <th scope="col">Due</th>
-                 <th scope="col">Completed</th>
-                 <th scope="col">Status</th>
+                 <th scope="col">#<i class="fa fa-sort ms-1"></i></th>
+                 <th scope="col">Name<i class="fa fa-sort ms-1"></i></th>
+                 <th scope="col">Job title<i class="fa fa-sort ms-1"></i></th>
+                 <th scope="col">Specialism<i class="fa fa-sort ms-1"></i></th>
+                 <th scope="col">Requested<i class="fa fa-sort ms-1"></i></th>
+                 <th scope="col">Due<i class="fa fa-sort ms-1"></i></th>
+                 <th scope="col">Completed<i class="fa fa-sort ms-1"></i></th>
+                 <th scope="col">Status<i class="fa fa-sort ms-1"></i></th>
                  <th scope="col">Action</th>
                </tr>
              </thead>
@@ -154,7 +154,7 @@ title: EHC Hub
 
        <!-- About me -->
        <div class="mb-5">
-         <h2>About me</h2>
+         <h4>About me</h4>
          <p>This section is about what is important to the child or young person. Where possible, this section should be completed by the child or young person themselves. Where support has been given or where it has been completed on behalf of the child or young person, it should be made clear in each section whether the child has directly quoted the statements or if they have been summarised. The content from this section will later be included in Section A of the EHC Plan if the local authority decide to issue one.</p>
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
@@ -258,7 +258,7 @@ title: EHC Hub
 
         <!-- Parent/carer views -->
         <div class="my-5">
-          <h2>Parent/carer's views</h2>
+          <h4>Parent/carer's views</h4>
           <p>This section is for the child or young person’s parents/carers to give their views. The content from this section will later be included in Section A of the EHC Plan if the local authority decide to issue one.</p>
 
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">

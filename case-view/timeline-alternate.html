@@ -1,0 +1,190 @@
+---
+layout: default
+title: EHC Hub
+---
+
+<div class="d-flex flex-fill flex-column flex-md-row">
+  <!-- Page content -->
+
+  {% include sidenav.html %}
+
+  <main id="content" class="main container-fluid mt-5 px-6 px-lg-8 table-no-case">
+    <div class="row">
+      <div class="col">
+
+        {% include case-details.html %}
+
+        <hr>
+
+        <div class="d-flex justify-content-between text-neutral-500">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item"><a href="/summary">Case home</a></li>
+              <li class="breadcrumb-item"><a href="/case-view/assessment-alternate">Assessment</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Timeline</li>
+            </ol>
+          </nav>
+          <p class="mb-0"></p>
+        </div>
+
+        <!-- Callout -->
+        <div class="callout callout-info mb-0">
+          <h3>Timeline</h3>
+          <p>The timleine includes case activity in chronological order, including by whom and when. Case notes can also be added by the Case Co-ordinator.</p>
+        </div>
+
+        {% include actions-timeline.html %}
+
+        <ul class="timeline mb-5 fa-ul">
+          <li>
+            <span class="fa-li"><i class="fa fa-circle"></i></span>
+            <div class="card">
+
+              <ul class="list-group list-group-flush">
+
+                <li class="list-group-item timeline-header d-flex justify-content-between">
+                  <span class="flex-grow-1">Max Schneider</span>
+                  <a href="#" title="Remove case note"><i class="fal fa-trash-alt text-neutral-500 me-2"></i></a>
+                  <span class="badge text-bg-success me-2">Note</span>
+                  <span>12 Jul 2023 11:49</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                  Phone call today at 9:50am with SENDIASS to discuss options to support Ellery's family through this process. Agreed action is for SENDIASS representative to meet with Shane Holden on Friday at the school.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <span class="fa-li"><i class="fa fa-circle"></i></span>
+            <div class="card">
+
+              <ul class="list-group list-group-flush">
+
+                <li class="list-group-item timeline-header d-flex justify-content-between">
+                  <span class="flex-grow-1">Max Schneider</span>
+                  <span class="badge text-bg-primary  me-2">System</span>
+                  <span>12 Jul 2023 11:49</span>
+                </li>
+                <li class="list-group-item">
+                  Max Schneider was assigned as a Co-ordinator.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <span class="fa-li"><i class="fa fa-circle"></i></span>
+            <div class="card">
+
+              <ul class="list-group list-group-flush">
+
+                <li class="list-group-item timeline-header d-flex justify-content-between">
+                  <span class="flex-grow-1">Max Schneider</span>
+                  <span class="badge text-bg-primary  me-2">System</span>
+                  <span>12 Jul 2023 11:49</span>
+                </li>
+                <li class="list-group-item">
+                  <p>Reverted Ellery's case to the Plan Decision stage.</p>
+                  <p>
+                    <strong>Reason:</strong> Correct a mistake.<br>
+                    <strong>Supporting comment:</strong> Incorrect decision published and family informed.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <span class="fa-li"><i class="fa fa-circle"></i></span>
+            <div class="card">
+
+              <ul class="list-group list-group-flush">
+
+                <li class="list-group-item timeline-header d-flex justify-content-between">
+                  <span class="flex-grow-1">Max Schneider</span>
+                  <span class="badge text-bg-primary  me-2">System</span>
+                  <span>12 Jul 2023 11:49</span>
+                </li>
+                <li class="list-group-item">
+                  Updated Ellery's details.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <span class="fa-li"><i class="fa fa-circle"></i></span>
+            <div class="card">
+              <ul class="list-group list-group-flush">
+
+                <li class="list-group-item timeline-header d-flex justify-content-between">
+                  <span class="flex-grow-1">Max Schneider</span>
+                  <span class="badge text-bg-primary  me-2">System</span>
+                  <span>12 Jul 2023 11:49</span>
+                </li>
+                <li class="list-group-item">
+                  Requested information ahead of a review meeting from Educational Psychology Team. A notification email was sent to <a href="mailto:inbox@educational-psychcology.org">inbox@educational-psychcology.org</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <span class="fa-li"><i class="fa fa-circle"></i></span>
+            <div class="card">
+              <ul class="list-group list-group-flush">
+
+                <li class="list-group-item timeline-header d-flex justify-content-between">
+                  <span class="flex-grow-1">Max Schneider</span>
+                  <span class="badge text-bg-primary  me-2">System</span>
+                  <span>12 Jul 2023 11:49</span>
+                </li>
+                <li class="list-group-item">
+                  Invited Helen Glass to a review meeting. A notification email was sent to <a href="mailto:helen.glass@example.com">helen.glass@example.com</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <span class="fa-li"><i class="fa fa-circle"></i></span>
+            <div class="card">
+              <ul class="list-group list-group-flush">
+
+                <li class="list-group-item timeline-header d-flex justify-content-between">
+                  <span class="flex-grow-1">Max Schneider</span>
+                  <span class="badge text-bg-primary  me-2">System</span>
+                  <span>12 Jul 2023 11:49</span>
+                </li>
+                <li class="list-group-item">
+                  Started a review of Ellery's EHC Plan.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <span class="fa-li"><i class="fa fa-circle"></i></span>
+            <div class="card">
+              <ul class="list-group list-group-flush">
+
+                <li class="list-group-item timeline-header d-flex justify-content-between">
+                  <span class="flex-grow-1">Max Schneider</span>
+                  <span class="badge text-bg-primary  me-2">System</span>
+                  <span>12 Jul 2023 11:49</span>
+                </li>
+                <li class="list-group-item">
+                  Imported Ellery's EHC Plan.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </main>
+
+</div>

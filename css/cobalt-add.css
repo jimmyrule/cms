@@ -444,7 +444,7 @@ li i:hover {
   margin-bottom: 1.25rem;
 }
 
-.callout p {
+.callout p:last-child {
   margin-bottom: 0;
 }
 

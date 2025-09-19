@@ -13538,7 +13538,7 @@ textarea.form-control-lg {
 
 .bg-body {
   --bg-opacity: 1;
-  background-color: rgba(var(--body-bg), var(--bg-opacity)) !important;
+  background-color: var(--body-bg) !important;
 }
 
 .bg-transparent {

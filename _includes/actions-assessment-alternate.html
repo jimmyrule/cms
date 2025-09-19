@@ -1,6 +1,18 @@
-<div class="row sticky-top bg-body py-3">
-  <div class="d-flex flex-column flex-md-row justify-content-lg-end">
-    <a class="btn btn-neutral-50 me-2" href="#"><i class="fal fa-arrow-circle-left me-2"></i>Previous stage :: Decision</a>
-    <a class="btn btn-neutral-50" href="#"><i class="fal fa-arrow-circle-right me-2"></i>Progress to decision</a>
+<div class="row sticky-top bg-body py-3 my-2">
+  <div class="d-flex justify-content-between">
+    <a class="btn btn-neutral-50 me-2" href="#"><i class="fal fa-arrow-circle-left"></i><span class="d-none d-md-inline-block ms-2">View decision</span></a>
+    <div class="d-flex">
+      <a class="btn btn-neutral-50 disabled" href="#"><i class="fal fa-arrow-circle-right"></i><span class="d-none d-md-inline-block ms-2">Progress to decision<span></a>
+      <div class="dropdown ps-2">
+        <a class="btn btn-neutral-50" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fal fa-ellipsis-v-alt px-1"></i>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Download all advice</a></li>
+          <li><a class="dropdown-item" href="#">Regenerate documents</a></li>
+          <li><a class="dropdown-item" href="#">Revert stage</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>

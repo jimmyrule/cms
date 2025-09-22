@@ -161,7 +161,7 @@ $h6-font-size:              $font-size-base;*/
   --body-font-weight: 400;
   --body-line-height: 1.5;
   --body-color: #282828;
-  --body-bg: /*#fcfcfd;*/ #f8f9fa;
+  --body-bg: var(--neutral-50);
   --callout-color-info: #055160;
   --callout-bg-info: #cff4fc;
   --callout-border-info: #9eeaf9;
@@ -7948,7 +7948,11 @@ textarea.form-control-lg {
   content: var(--breadcrumb-divider, "/") /* rtl: var(--breadcrumb-divider, "/") */;
 }
 .breadcrumb-item.active {
-  color: #6c757d;
+  color: var(--neutral-600);
+}
+
+.breadcrumb-item a {
+  text-decoration: underline;
 }
 
 .pagination {

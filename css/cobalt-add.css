@@ -46,7 +46,7 @@ nav a {
 
 .idx-sidenav {
   max-width: 14rem;
-  background-color: var(--body-bg);
+  background-color: var(--ice-white);
 }
 
 .idx-sidenav [aria-current="page"] {
@@ -354,9 +354,10 @@ h3.idx-login-descriptor {
 }
 
 .timeline-header {
-  background-color: var(--secondary-100);
+  background-color: var(--error-50);
 }
 
+/*
 ul.timeline {
   position: relative;
   &:before{
@@ -380,6 +381,7 @@ ul.timeline {
   top: 0.6em;
   color: var(--neutral-500);
 }
+*/
 
 .idox-more-link > i {
   color: var(--secondary);
@@ -412,6 +414,7 @@ ul.timeline {
 
 footer {
   border-top: 1px solid #0a1f8f1a !important;
+  background-color: var(--ice-white);
 }
 
 .footer-links ul {
@@ -450,7 +453,7 @@ li i:hover {
 
 .callout-info {
   color: var(--callout-color-info);
-  background-color: var(--callout-bg-info);
+  background-color: var(--secondary-100);
   border-left: .25rem solid var(--callout-border-info);
 }
 

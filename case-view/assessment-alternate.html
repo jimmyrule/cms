@@ -16,7 +16,7 @@ title: EHC Hub
 
         <hr>
 
-        <div class="d-flex justify-content-between text-neutral-500">
+        <div class="d-flex justify-content-between text-neutral-600">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb mb-0">
               <li class="breadcrumb-item"><a href="/summary">Case home</a></li>
@@ -49,7 +49,7 @@ title: EHC Hub
                  <th scope="col">Due<i class="fa fa-sort ms-1"></i></th>
                  <th scope="col">Completed<i class="fa fa-sort ms-1"></i></th>
                  <th scope="col">Status<i class="fa fa-sort ms-1"></i></th>
-                 <th scope="col">Action</th>
+                 <th scope="col" class="text-center">Actions</th>
                </tr>
              </thead>
              <tbody>
@@ -62,8 +62,15 @@ title: EHC Hub
                  <td>08/11/2022</td>
                  <td></td>
                  <td><span class="badge text-bg-warning w-100">Pending</span></td>
-                 <td class="no-wrap">
-                   <a href="#" title="Close request" class="me-3" data-bs-toggle="tooltip" data-bs-title="Close request"><i class="fal fa-times-circle me-1"></i></a>
+                 <td class="text-center">
+                   <div class="dropdown dropstart">
+                     <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       <i class="fal fa-ellipsis-v-alt"></i>
+                     </a>
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="#">Close</a></li>
+                     </ul>
+                   </div>
                  </td>
                </tr>
                <tr>
@@ -75,8 +82,15 @@ title: EHC Hub
                  <td>08/11/2022</td>
                  <td>10/11/2022</td>
                  <td><span class="badge text-bg-danger w-100">Closed</span></td>
-                 <td class="no-wrap">
-                   <a href="#" title="Re-open request" class="me-3" data-bs-toggle="tooltip" data-bs-title="Re-open request"><i class="fal fa-redo me-1"></i></a>
+                 <td class="text-center">
+                   <div class="dropdown dropstart">
+                     <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       <i class="fal fa-ellipsis-v-alt"></i>
+                     </a>
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="#">Re-open</a></li>
+                     </ul>
+                   </div>
                  </td>
                </tr>
                <tr>
@@ -88,9 +102,16 @@ title: EHC Hub
                  <td>08/11/2022</td>
                  <td>06/11/2022</td>
                  <td><span class="badge text-bg-success w-100">Completed</span></td>
-                 <td class="no-wrap">
-                   <a href="#" title="Read response" class="me-3" data-bs-toggle="tooltip" data-bs-title="Read response"><i class="fal fa-book-open me-1"></i></a>
-                   <a href="#" title="Re-open request" class="me-3" data-bs-toggle="tooltip" data-bs-title="Re-open request"><i class="fal fa-redo me-1"></i></a>
+                 <td class="text-center">
+                   <div class="dropdown dropstart">
+                     <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       <i class="fal fa-ellipsis-v-alt"></i>
+                     </a>
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="#">Read</a></li>
+                       <li><a class="dropdown-item" href="#">Re-open</a></li>
+                     </ul>
+                   </div>
                  </td>
                </tr>
                <tr>
@@ -102,8 +123,15 @@ title: EHC Hub
                  <td>08/11/2022</td>
                  <td></td>
                  <td><span class="badge text-bg-warning w-100">Pending</span></td>
-                 <td class="no-wrap">
-                   <a href="#" title="Close request" class="me-3" data-bs-toggle="tooltip" data-bs-title="Close request"><i class="fal fa-times-circle me-1"></i></a>
+                 <td class="text-center">
+                   <div class="dropdown dropstart">
+                     <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       <i class="fal fa-ellipsis-v-alt"></i>
+                     </a>
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="#">Close</a></li>
+                     </ul>
+                   </div>
                  </td>
                </tr>
                <tr>
@@ -114,8 +142,15 @@ title: EHC Hub
                  <td></td>
                  <td></td>
                  <td><span class="badge text-bg-warning w-100">Pending</span></td>
-                 <td class="no-wrap">
-                   <a href="#" title="Close request" class="me-3" data-bs-toggle="tooltip" data-bs-title="Close request"><i class="fal fa-times-circle me-1"></i></a>
+                 <td class="text-center">
+                   <div class="dropdown dropstart">
+                     <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       <i class="fal fa-ellipsis-v-alt"></i>
+                     </a>
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="#">Close</a></li>
+                     </ul>
+                   </div>
                  </td>
                </tr>
                <tr>
@@ -126,9 +161,16 @@ title: EHC Hub
                  <td></td>
                  <td></td>
                  <td><span class="badge text-bg-success w-100">Completed</span></td>
-                 <td class="no-wrap">
-                   <a href="#" title="Read response" class="me-3" data-bs-toggle="tooltip" data-bs-title="Read response"><i class="fal fa-book-open me-1"></i></a>
-                   <a href="#" title="Re-open request" class="me-3" data-bs-toggle="tooltip" data-bs-title="Re-open request"><i class="fal fa-redo me-1"></i></a>
+                 <td class="text-center">
+                   <div class="dropdown dropstart">
+                     <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       <i class="fal fa-ellipsis-v-alt"></i>
+                     </a>
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="#">Read</a></li>
+                       <li><a class="dropdown-item" href="#">Re-open</a></li>
+                     </ul>
+                   </div>
                  </td>
                </tr>
                <tr>
@@ -140,9 +182,16 @@ title: EHC Hub
                  <td>08/11/2022</td>
                  <td>06/11/2022</td>
                  <td><span class="badge text-bg-success w-100">Completed</span></td>
-                 <td class="no-wrap">
-                   <a href="#" title="Read response" class="me-3" data-bs-toggle="tooltip" data-bs-title="Read response"><i class="fal fa-book-open me-1"></i></a>
-                   <a href="#" title="Re-open request" class="me-3" data-bs-toggle="tooltip" data-bs-title="Re-open request"><i class="fal fa-redo me-1"></i></a>
+                 <td class="text-center">
+                   <div class="dropdown dropstart">
+                     <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       <i class="fal fa-ellipsis-v-alt"></i>
+                     </a>
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="#">Read</a></li>
+                       <li><a class="dropdown-item" href="#">Re-open</a></li>
+                     </ul>
+                   </div>
                  </td>
                </tr>
              </tbody>

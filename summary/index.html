@@ -16,7 +16,7 @@ title: Case summary
 
         <hr>
 
-        <div class="d-flex justify-content-between text-neutral-500">
+        <div class="d-flex justify-content-between text-neutral-600">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb mb-0">
               <li class="breadcrumb-item active" aria-current="page">Case home</li>
@@ -40,71 +40,6 @@ title: Case summary
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
 
-          <!-- Key info card -->
-          <div class="col">
-            <div class="card h-100">
-              <div class="card-body">
-                <div class="d-flex align-items-center">
-                  <i class="fal fa-info-circle fa-2x me-3 text-secondary" aria-hidden="true"></i>
-                  <h5 class="card-title mb-0">Key information</h5>
-                  <div class="dropdown ms-auto">
-                    <a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class="fal fa-cog" aria-hidden="true"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <span class="badge text-bg-primary my-2">Review pending</span>
-                <p class="card-text">Important case information at a glance.</p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <span class="text-muted"><small>Next milestone</small></span><br>
-                      EHCP Review
-                    </div>
-                    <div class="text-end">
-                      <span class="text-muted"><small>Due</small></span><br>
-                      1 Jan 2026
-                    </div>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <span class="text-muted"><small>Co-ordinator</small></span><br>
-                      Mehul Sandal
-                    </div>
-                    <div class="text-end">
-                      <span class="text-muted"><small></small></span><br>
-
-                    </div>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <span class="text-muted"><small>Next phase transfer</small></span><br>
-                      Year 14
-                    </div>
-                    <div class="text-end">
-                      <span class="text-muted"><small>Due</small></span><br>
-                      31 Mar 2027
-                    </div>
-                  </div>
-                </li>
-              </ul>
-              <div class="card-footer">
-                <a href="#" class="card-link"><i class="fal fa-users me-2" aria-hidden="true"></i>Case access</a>
-              </div>
-            </div>
-          </div>
-
           <!-- EHCPs card -->
           <div class="col">
             <div class="card h-100">
@@ -117,9 +52,14 @@ title: Case summary
                       <i class="fal fa-cog" aria-hidden="true"></i>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><h6 class="dropdown-header">EHCP options</h6></li>
+                      <li><a class="dropdown-item" href="#">Amend EHCP</a></li>
+                      <li><a class="dropdown-item" href="#">Amend issue date</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><h6 class="dropdown-header">Card options</h6></li>
+                      <li><a class="dropdown-item" href="#">Hide card</a></li>
+                      <li><a class="dropdown-item" href="#">Move up</a></li>
+                      <li><a class="dropdown-item" href="#">Move down</a></li>
                     </ul>
                   </div>
                 </div>
@@ -182,21 +122,26 @@ title: Case summary
                       <i class="fal fa-cog" aria-hidden="true"></i>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><h6 class="dropdown-header">Review options</h6></li>
+                      <li><a class="dropdown-item" href="#">Start review</a></li>
+                      <li><a class="dropdown-item" href="#">Amend next phase transfer</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><h6 class="dropdown-header">Card options</h6></li>
+                      <li><a class="dropdown-item" href="#">Hide card</a></li>
+                      <li><a class="dropdown-item" href="#">Move up</a></li>
+                      <li><a class="dropdown-item" href="#">Move down</a></li>
                     </ul>
                   </div>
                 </div>
-                <span class="badge text-bg-warning my-2">In progress</span>
+                <span class="badge text-bg-warning my-2">Not started</span>
                 <p class="card-text">Reviewing outomes agreed in the EHC Plan.</p>
               </div>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">
                   <div class="d-flex justify-content-between">
                     <div>
-                      <span class="text-muted"><small>Annual</small></span><br>
-                      <a href="#">In progress</a>
+                      <span class="text-muted"><small>Next</small></span><br>
+                      Not started
                     </div>
                     <div class="text-end">
                       <span class="text-muted"><small>Due</small></span><br>
@@ -207,7 +152,7 @@ title: Case summary
                 <li class="list-group-item">
                   <div class="d-flex justify-content-between">
                     <div>
-                      <span class="text-muted"><small>Annual</small></span><br>
+                      <span class="text-muted"><small>Previous</small></span><br>
                       <a href="#">Maintain</a>
                     </div>
                     <div class="text-end">
@@ -219,12 +164,12 @@ title: Case summary
                 <li class="list-group-item">
                   <div class="d-flex justify-content-between">
                     <div>
-                      <span class="text-muted"><small>Phase transfer</small></span><br>
-                      <a href="#">Amend</a>
+                      <span class="text-muted"><small>Next phase transfer</small></span><br>
+                      Year 14
                     </div>
                     <div class="text-end">
-                      <span class="text-muted"><small>Completed</small></span><br>
-                      31 Feb 2023
+                      <span class="text-muted"><small>Due</small></span><br>
+                      31 Feb 2028
                     </div>
                   </div>
                 </li>
@@ -247,9 +192,10 @@ title: Case summary
                       <i class="fal fa-cog" aria-hidden="true"></i>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><h6 class="dropdown-header">Card options</h6></li>
+                      <li><a class="dropdown-item" href="#">Hide card</a></li>
+                      <li><a class="dropdown-item" href="#">Move up</a></li>
+                      <li><a class="dropdown-item" href="#">Move down</a></li>
                     </ul>
                   </div>
                 </div>
@@ -312,9 +258,10 @@ title: Case summary
                       <i class="fal fa-cog" aria-hidden="true"></i>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><h6 class="dropdown-header">Card options</h6></li>
+                      <li><a class="dropdown-item" href="#">Hide card</a></li>
+                      <li><a class="dropdown-item" href="#">Move up</a></li>
+                      <li><a class="dropdown-item" href="#">Move down</a></li>
                     </ul>
                   </div>
                 </div>
@@ -377,9 +324,10 @@ title: Case summary
                       <i class="fal fa-cog" aria-hidden="true"></i>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><h6 class="dropdown-header">Card options</h6></li>
+                      <li><a class="dropdown-item" href="#">Hide card</a></li>
+                      <li><a class="dropdown-item" href="#">Move up</a></li>
+                      <li><a class="dropdown-item" href="#">Move down</a></li>
                     </ul>
                   </div>
                 </div>
@@ -434,8 +382,22 @@ title: Case summary
 
         <!-- End of cards -->
 
+
+
       </div>
     </div>
+
+    <div class="row mt-5">
+      <div class="col">
+
+        <div class="d-flex justify-content-end">
+          <a href="#" class="btn btn-neutral-50 ms-2"><i class="fal fa-eye-slash me-2" aria-hidden="true"></i>Unhide cards</a>
+          <a href="#" class="btn btn-neutral-50 ms-2"><i class="fal fa-undo-alt me-2" aria-hidden="true"></i>Reset card order</a>
+        </div>
+
+      </div>
+    </div>
+
   </main>
 
 </div>

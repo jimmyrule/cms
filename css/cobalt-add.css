@@ -460,3 +460,7 @@ li i:hover {
 .nbm p {
   margin-bottom: 0;
 }
+
+.cursor-default {
+  cursor: default;
+}

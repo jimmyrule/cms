@@ -8055,6 +8055,7 @@ textarea.form-control-lg {
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: 0.25rem;
+  cursor: default;
 }
 .badge:empty {
   display: none;
@@ -12862,47 +12863,47 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --text-opacity: 1;
-  color: rgba(var(--primary-rgb), var(--text-opacity)) !important;
+  color: var(--primary), var(--text-opacity)) !important;
 }
 
 .text-secondary {
   --text-opacity: 1;
-  color: rgba(var(--secondary-rgb), var(--text-opacity)) !important;
+  color: var(--secondary), var(--text-opacity)) !important;
 }
 
 .text-neutral {
   --text-opacity: 1;
-  color: rgba(var(--neutral-rgb), var(--text-opacity)) !important;
+  color: var(--neutral), var(--text-opacity)) !important;
 }
 
 .text-success {
   --text-opacity: 1;
-  color: rgba(var(--success-rgb), var(--text-opacity)) !important;
+  color: var(--success), var(--text-opacity)) !important;
 }
 
 .text-info {
   --text-opacity: 1;
-  color: rgba(var(--info-rgb), var(--text-opacity)) !important;
+  color: var(--info, var(--text-opacity)) !important;
 }
 
 .text-warning {
   --text-opacity: 1;
-  color: rgba(var(--warning-rgb), var(--text-opacity)) !important;
+  color: var(--warning), var(--text-opacity)) !important;
 }
 
 .text-danger {
   --text-opacity: 1;
-  color: rgba(var(--danger-rgb), var(--text-opacity)) !important;
+  color: var(--danger), var(--text-opacity)) !important;
 }
 
 .text-light {
   --text-opacity: 1;
-  color: rgba(var(--light-rgb), var(--text-opacity)) !important;
+  color: var(--light), var(--text-opacity)) !important;
 }
 
 .text-dark {
   --text-opacity: 1;
-  color: rgba(var(--dark-rgb), var(--text-opacity)) !important;
+  color: var(--dark), var(--text-opacity)) !important;
 }
 
 .text-primary-500 {

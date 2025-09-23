@@ -22,7 +22,7 @@ title: Work tray
              <!-- Search results -->
              <p class="mb-0"><strong>1 - 5</strong> of <strong>15</strong> children and young people based on your current search and filter options.</p>
              <div class="table-responsive">
-               <table class="table table-hover table-borderless idx-results-table align-middle">
+               <table class="table table-hover table-borderless idx-results-table align-middle no-wrap">
                  <thead>
                    <tr>
                      <th scope="col" class="d-none d-md-table-cell">Photo</th>
@@ -33,7 +33,7 @@ title: Work tray
                      <th scope="col">Status<i class="fa fa-sort ms-1"></i></th>
                      <th scope="col" class="d-none d-md-table-cell">Next due<i class="fa fa-sort ms-1"></i></th>
                      <th scope="col" class="d-none d-md-table-cell">Updated<i class="fa fa-sort ms-1"></i></th>
-                     <th scope="col" class="d-none d-md-table-cell">Alert</th>
+                     <th scope="col" class="d-none d-md-table-cell">Alerts</th>
                    </tr>
                  </thead>
                  <tbody>
@@ -42,8 +42,8 @@ title: Work tray
                      <td><a href="#">Hanson, Alvin</a></td>
                      <td class="d-none d-md-table-cell">EHC/21/0123</td>
                      <td class="d-none d-md-table-cell">Year 9</td>
-                     <td>Highfield Academy</td>
-                     <td><span class="badge text-neutral-600 bg-secondary-100 w-100" data-bs-toggle="tooltip" data-bs-title="A needs assessment is in progress.">Assessment</span></td>
+                     <td class="text-truncate" style="max-width:150px"><span class="cursor-default" data-bs-toggle="tooltip" data-bs-title="Highfield Academy">Highfield Academy</span></td>
+                     <td><span class="badge rounded-pill text-neutral-600 bg-secondary-100 w-100" data-bs-toggle="tooltip" data-bs-title="A needs assessment is in progress.">Assessment</span></td>
                      <td class="d-none d-md-table-cell">17/04/2023</td>
                      <td class="d-none d-md-table-cell">17/04/2023</td>
                      <td class="d-none d-md-table-cell"></td>
@@ -53,14 +53,16 @@ title: Work tray
                      <td><a href="#">Holden, Ellery</a></td>
                      <td class="d-none d-md-table-cell">EHC/21/0123</td>
                      <td class="d-none d-md-table-cell">Year 4</td>
-                     <td>Oak Junior School</td>
-                     <td><span class="badge text-neutral-600 bg-secondary-100 w-100" data-bs-toggle="tooltip" data-bs-title="A decision whether to assess is pending.">Assessment decision</span></td>
+                     <td class="text-truncate" style="max-width:150px"><span class="cursor-default" data-bs-toggle="tooltip" data-bs-title="Oak Junior School">Oak Junior School</span></td>
+                     <td><span class="badge rounded-pill text-neutral-600 bg-secondary-100 w-100" data-bs-toggle="tooltip" data-bs-title="A decision whether to assess is pending.">Assessment decision</span></td>
                      <td class="d-none d-md-table-cell">14/01/2023</td>
                      <td class="d-none d-md-table-cell">17/04/2023</td>
                      <td class="d-none d-md-table-cell">
-                       <span class="badge rounded-pill bg-warning-300 text-dark" data-bs-toggle="tooltip" data-bs-title="Next due date is pending">Pending deadline</span>
-                       <span class="badge rounded-pill bg-error-600" title="Safeguarding concern" data-bs-toggle="tooltip" data-bs-title="Safeguarding">SG</span>
-                       <span class="badge rounded-pill bg-success-700" title="Looked after child" data-bs-toggle="tooltip" data-bs-title="Looked after child">LAC</span>
+                       <div class="d-flex align-items-center">
+                         <i class="fa fa-exclamation-triangle fa-lg text-warning me-1" data-bs-toggle="tooltip" data-bs-title="Pending deadline"></i>
+                         <span class="badge rounded-pill bg-error-600 me-1" title="Safeguarding concern" data-bs-toggle="tooltip" data-bs-title="Safeguarding">SG</span>
+                         <span class="badge rounded-pill bg-success-700 me-1" title="Looked after child" data-bs-toggle="tooltip" data-bs-title="Looked after child">LAC</span>
+                        </div>
                      </td>
                    </tr>
                    <tr>
@@ -68,8 +70,8 @@ title: Work tray
                      <td><a href="#">Reid, Sienna</a></td>
                      <td class="d-none d-md-table-cell">EHC/21/0123</td>
                      <td class="d-none d-md-table-cell">Year 2</td>
-                     <td>St Mary's Primary</td>
-                     <td><span class="badge text-neutral-600 bg-warning-100 w-100" data-bs-toggle="tooltip" data-bs-title="A proposed amendment outside review is being drafted.">Amending EHCP</span></td>
+                     <td class="text-truncate" style="max-width:150px"><span class="cursor-default" data-bs-toggle="tooltip" data-bs-title="St Mary's Primary">St Mary's Primary</span></td>
+                     <td><span class="badge rounded-pill text-neutral-600 bg-warning-100 w-100" data-bs-toggle="tooltip" data-bs-title="A proposed amendment outside review is being drafted.">Amending EHCP</span></td>
                      <td class="d-none d-md-table-cell">17/04/2023</td>
                      <td class="d-none d-md-table-cell">17/04/2023</td>
                      <td class="d-none d-md-table-cell"></td>
@@ -79,19 +81,23 @@ title: Work tray
                      <td><a href="/summary">Tate, Chandler</a></td>
                      <td class="d-none d-md-table-cell">EHC/21/0123</td>
                      <td class="d-none d-md-table-cell">Year 13</td>
-                     <td>Greenhill School</td>
-                     <td><span class="badge text-neutral-600 bg-error-100 w-100" data-bs-toggle="tooltip" data-bs-title="A review meeting has been arranged and views are being gathered.">Review arranged</span></td>
+                     <td class="text-truncate" style="max-width:150px"><span class="cursor-default" data-bs-toggle="tooltip" data-bs-title="Greenhill School">Greenhill School</span></td>
+                     <td><span class="badge rounded-pill text-neutral-600 bg-error-100 w-100" data-bs-toggle="tooltip" data-bs-title="A review meeting has been arranged and views are being gathered.">Review arranged</span></td>
                      <td class="d-none d-md-table-cell">17/04/2023</td>
                      <td class="d-none d-md-table-cell">17/04/2023</td>
-                     <td class="d-none d-md-table-cell"><span class="badge rounded-pill bg-danger" data-bs-toggle="tooltip" data-bs-title="Next due date is overdue">Overdue deadline</span></td>
+                     <td class="d-none d-md-table-cell">
+                       <div class="d-flex align-items-center">
+                         <i class="fa fa-exclamation-triangle fa-lg text-danger me-1" data-bs-toggle="tooltip" data-bs-title="Overdue deadline"></i>
+                        </div>
+                     </td>
                    </tr>
                    <tr>
                      <td class="d-none d-md-table-cell"><img src="/assets/images/placeholder.jpeg" class="rounded d-block idx-avatar-card" alt="Photo of Victor"></td>
                      <td><a href="#">Wagner, Victor</a></td>
                      <td class="d-none d-md-table-cell">EHC/21/0123</td>
                      <td class="d-none d-md-table-cell">Year 11</td>
-                     <td>Greenhill School</td>
-                     <td><span class="badge text-neutral-600 bg-error-100 w-100" data-bs-toggle="tooltip" data-bs-title="A review report is being drafted.">Review report</span></td>
+                     <td class="text-truncate" style="max-width:150px"><span class="cursor-default" data-bs-toggle="tooltip" data-bs-title="Greenhill School">Greenhill School</span></td>
+                     <td><span class="badge rounded-pill text-neutral-600 bg-error-100 w-100" data-bs-toggle="tooltip" data-bs-title="A review report is being drafted.">Review report</span></td>
                      <td class="d-none d-md-table-cell">17/04/2023</td>
                      <td class="d-none d-md-table-cell">17/04/2023</td>
                      <td class="d-none d-md-table-cell"></td>

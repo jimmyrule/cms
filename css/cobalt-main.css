@@ -90,7 +90,7 @@ $h6-font-size:              $font-size-base;*/
   --neutral-rgb: 103, 103, 103;
   --success-rgb: 4, 120, 87;
   --info-rgb: 30, 138, 220;
-  --warning-rgb: 180, 83, 9;
+  --warning-rgb: 255, 193, 7;
   --danger-rgb: 185, 28, 28;
   --light-rgb: 239, 239, 239;
   --dark-rgb: 10, 10, 10;
@@ -12863,47 +12863,47 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --text-opacity: 1;
-  color: var(--primary) !important;
+  color: rgba(var(--primary-rgb), var(--text-opacity)) !important;
 }
 
 .text-secondary {
   --text-opacity: 1;
-  color: var(--secondary) !important;
+  color: rgba(var(--secondary-rgb), var(--text-opacity)) !important;
 }
 
 .text-neutral {
   --text-opacity: 1;
-  color: var(--neutral) !important;
+  color: rgba(var(--neutral-rgb), var(--text-opacity)) !important;
 }
 
 .text-success {
   --text-opacity: 1;
-  color: var(--success) !important;
+  color: rgba(var(--success-rgb), var(--text-opacity)) !important;
 }
 
 .text-info {
   --text-opacity: 1;
-  color: var(--info) !important;
+  color: rgba(var(--info-rgb), var(--text-opacity)) !important; !important;
 }
 
 .text-warning {
   --text-opacity: 1;
-  color: var(--warning) !important;
+  color: rgba(var(--warning-rgb), var(--text-opacity)) !important;
 }
 
 .text-danger {
   --text-opacity: 1;
-  color: var(--danger) !important;
+  color: rgba(var(--danger-rgb), var(--text-opacity)) !important;
 }
 
 .text-light {
   --text-opacity: 1;
-  color: var(--light) !important;
+  color: rgba(var(--light-rgb), var(--text-opacity)) !important;
 }
 
 .text-dark {
   --text-opacity: 1;
-  color: var(--dark) !important;
+  color: rgba(var(--dark-rgb), var(--text-opacity)) !important;
 }
 
 .text-primary-500 {

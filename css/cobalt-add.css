@@ -331,6 +331,12 @@ h3.idx-login-descriptor {
   white-space: nowrap;
 }
 
+.table-name-label {
+  white-space: normal;
+  min-width: 150px;
+  max-width: 200px;
+}
+
 .idx-dropdown li a, .idx-dropdown li a:hover {
   color: var(--neutral-600) !important;
   text-decoration: none;

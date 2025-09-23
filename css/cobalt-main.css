@@ -12863,47 +12863,47 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --text-opacity: 1;
-  color: var(--primary), var(--text-opacity)) !important;
+  color: var(--primary) !important;
 }
 
 .text-secondary {
   --text-opacity: 1;
-  color: var(--secondary), var(--text-opacity)) !important;
+  color: var(--secondary) !important;
 }
 
 .text-neutral {
   --text-opacity: 1;
-  color: var(--neutral), var(--text-opacity)) !important;
+  color: var(--neutral) !important;
 }
 
 .text-success {
   --text-opacity: 1;
-  color: var(--success), var(--text-opacity)) !important;
+  color: var(--success) !important;
 }
 
 .text-info {
   --text-opacity: 1;
-  color: var(--info, var(--text-opacity)) !important;
+  color: var(--info) !important;
 }
 
 .text-warning {
   --text-opacity: 1;
-  color: var(--warning), var(--text-opacity)) !important;
+  color: var(--warning) !important;
 }
 
 .text-danger {
   --text-opacity: 1;
-  color: var(--danger), var(--text-opacity)) !important;
+  color: var(--danger) !important;
 }
 
 .text-light {
   --text-opacity: 1;
-  color: var(--light), var(--text-opacity)) !important;
+  color: var(--light) !important;
 }
 
 .text-dark {
   --text-opacity: 1;
-  color: var(--dark), var(--text-opacity)) !important;
+  color: var(--dark) !important;
 }
 
 .text-primary-500 {

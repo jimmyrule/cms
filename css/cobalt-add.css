@@ -445,13 +445,8 @@ footer {
   background-color: var(--ice-white);
 }
 
-.footer-links ul {
-  margin-bottom: 0;
-}
-
-.footer-links ul li {
-  display: inline-block;
-  padding: 1em;
+footer li {
+  list-style: none;
 }
 
 li i:hover {
@@ -461,9 +456,6 @@ li i:hover {
 .login-list {
   list-style-type: none;
 }
-
-/* = Colour swatches
--------------------------------------------------------------------------- */
 
 .spacing-unit {
   background-color: #D111CA
@@ -491,4 +483,13 @@ li i:hover {
 
 .cursor-default {
   cursor: default;
+}
+
+.toc li {
+  margin-bottom: 0.25rem;
+}
+
+.toc a {
+  text-decoration: none;
+  color: inherit;
 }

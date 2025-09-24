@@ -1,6 +1,6 @@
 ---
 layout: default
-title: EHC Hub
+title: Case summary
 ---
 
 <div class="d-flex flex-fill flex-column flex-md-row">
@@ -8,150 +8,394 @@ title: EHC Hub
 
   {% include sidenav.html %}
 
-
-  <div class="d-flex d-md-none justify-content-between align-items-start idx-border-b mt-3 px-6 pb-2">
-    <h1 class="mb-0 fs-2 no-border">Ellery Holden</h1>
-    <a class="d-block d-md-none align-self-center" role="button" data-bs-toggle="collapse" href="#idx-sidenav-case" aria-controls="idx-sidenav-case" aria-expanded="false" aria-label="Toggle navigation">
-      <!-- <span class="visually-hidden">Case side menu</span> -->
-      Details
-      <!-- <i class="fal fa-info-circle fs-2 text-neutral-600"></i> -->
-      <i class="fal fa-angle-down ms-1 text-neutral-600"></i>
-    </a>
-  </div>
-
-  {% include sidenav-case.html %}
-
-  <main id="content" class="main container-fluid mt-6 px-6 px-lg-8">
-    <div class="row gx-5 gy-2 px-xl-5">
+  <main id="content" class="main container-fluid mt-5 px-6 px-lg-8 table-no-case">
+    <div class="row">
       <div class="col">
 
-        {% include assessment-progress.html %}
+        {% include case-details.html %}
 
-        <div class="d-flex justify-content-between text-neutral-500">
-          <p class="d-none d-md-block">Plan decision: 17 Dec 2022</p>
-          <p>EHC Plan due: 14 Jan 2023</p>
-          <div class="d-md-none dropdown">
-            <a class="idx-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">Stages<i class="fal fa-angle-down ms-1"></i></a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Request</a></li>
-              <li><a class="dropdown-item" href="#">Decision</a></li>
-              <li><a class="dropdown-item" href="/case-view/assessment">Assessment</a></li>
-              <li><a class="dropdown-item" href="#">Decision</a></li>
-              <li><a class="dropdown-item" href="/case-view">EHC Plan</a></li>
-            </ul>
-          </div>
+        <hr>
+
+        <div class="d-flex flex-column flex-md-row justify-content-md-between text-neutral-600">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item active" aria-current="page">Case home</li>
+            </ol>
+          </nav>
+          <p class="mb-0">Plan decision due: 14 Jan 2023</p>
         </div>
 
-        <h1 class="no-border">EHC Plan</h1>
-        <p>The plan is initially put together using all of the contributed advice and views from the Assessment stage. This can be changed and shaped in to a draft plan to share with the young person, parents, carers or guardians, education setting and proffessionals involved in the needs assessment.</p>
+        <!-- Callout --
+        <div class="callout callout-info">
+          <p>The EHC Plan (EHCP) must be reviewed by <strong>1 Jan 2025</strong>. For phase transfers, this is the date by when an amended plan must be finalised. For all other reviews, this is the date by when the local authority must publish their decision on the review outcome. To meet this deadline, it's recommended the review be started by <strong>16 May 2024</strong>.
+          <div class="mt-2"><a href="/case-view/assessment-alternate" class="btn btn-neutral-50"><i class="fal fa-arrow-circle-right me-2" aria-hidden="true"></i>Start review</a></div>
+        </div> -->
 
-        {% include actions-plan.html %}
+        <div class="callout callout-info">
+          <p>An EHC needs assessment is in progress under Section 36 (1) of the Children and Families Act 2014. Please ensure that all relevant professional contributors have been requested to provide advice and the family have appropriate support in place to complete "About me" and "Parent/carer's views". A decision to issue an EHC Plan or not is due by <strong>14 Jan 2023</strong>.</p>
+          <div class="mt-2"><a href="/case-view/assessment" class="btn btn-neutral-50"><i class="fal fa-arrow-circle-right me-2" aria-hidden="true"></i>View assessment</a></div>
+        </div>
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Cards -->
 
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+
+          <!-- EHCPs card -->
           <div class="col">
             <div class="card h-100">
-              <div class="card-header bg-secondary-50">
-                <h2 class="m-0 fs-2 fw-normal text-neutral-600">Section A</h2>
-              </div>
               <div class="card-body">
-                <p class="card-text">All about me and my parent/carer's views</p>
-                <a href="#">Open</a>
+                <div class="d-flex align-items-center">
+                  <i class="fal fa-file-contract fa-2x me-3 text-secondary" aria-hidden="true"></i>
+                  <h5 class="card-title mb-0">EHC Plan</h5>
+                  <div class="dropdown ms-auto">
+                    <a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fal fa-cog" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><h6 class="dropdown-header">EHCP options</h6></li>
+                      <li><a class="dropdown-item" href="#">Amend EHCP</a></li>
+                      <li><a class="dropdown-item" href="#">Amend issue date</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><h6 class="dropdown-header">Card options</h6></li>
+                      <li><a class="dropdown-item" href="#">Hide card</a></li>
+                      <li><a class="dropdown-item" href="#">Move down</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <span class="badge rounded-pill text-bg-success my-2">Active</span>
+                <p class="card-text">All plans stored on the hub in chronological order.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <span class="text-muted"><small>Current</small></span><br>
+                      <a href="#">Amended</a>
+                    </div>
+                    <div class="text-end">
+                      <span class="text-muted"><small>Issued</small></span><br>
+                      1 Jan 2026
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <span class="text-muted"><small>Previous</small></span><br>
+                      <a href="#">EHCP</a>
+                    </div>
+                    <div class="text-end">
+                      <span class="text-muted"><small>Issued</small></span><br>
+                      31 Feb 2023
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <span class="text-muted"><small>First</small></span><br>
+                      <a href="#">EHCP</a>
+                    </div>
+                    <div class="text-end">
+                      <span class="text-muted"><small>Issued</small></span><br>
+                      31 Feb 2023
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="card-footer">
+                <a href="#" class="card-link"><i class="fal fa-history me-2" aria-hidden="true"></i>View history</a>
               </div>
             </div>
           </div>
 
+          <!-- Review card -->
           <div class="col">
             <div class="card h-100">
-              <div class="card-header bg-secondary-50">
-                <h2 class="m-0 fs-2 fw-normal text-neutral-600">Sections B, E, F</h2>
-              </div>
               <div class="card-body">
-                <p class="card-text">Special Educational Needs, outcomes and provisions</p>
-                <a href="#">Open</a>
+                <div class="d-flex align-items-center">
+                  <i class="fal fa-sync-alt fa-2x me-3 text-secondary" aria-hidden="true"></i>
+                  <h5 class="card-title mb-0">Reviews</h5>
+                  <div class="dropdown ms-auto">
+                    <a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fal fa-cog" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><h6 class="dropdown-header">Review options</h6></li>
+                      <li><a class="dropdown-item" href="#">Start review</a></li>
+                      <li><a class="dropdown-item" href="#">Amend next phase transfer</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><h6 class="dropdown-header">Card options</h6></li>
+                      <li><a class="dropdown-item" href="#">Hide card</a></li>
+                      <li><a class="dropdown-item" href="#">Move up</a></li>
+                      <li><a class="dropdown-item" href="#">Move down</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <span class="badge rounded-pill text-bg-warning my-2">Not started</span>
+                <p class="card-text">Reviewing outomes agreed in the EHC Plan.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <span class="text-muted"><small>Next</small></span><br>
+                      Not started
+                    </div>
+                    <div class="text-end">
+                      <span class="text-muted"><small>Due</small></span><br>
+                      1 Jan 2026
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <span class="text-muted"><small>Previous</small></span><br>
+                      <a href="#">Maintain</a>
+                    </div>
+                    <div class="text-end">
+                      <span class="text-muted"><small>Completed</small></span><br>
+                      1 Jan 2024
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <span class="text-muted"><small>Next phase transfer</small></span><br>
+                      Year 14
+                    </div>
+                    <div class="text-end">
+                      <span class="text-muted"><small>Due</small></span><br>
+                      31 Feb 2028
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="card-footer">
+                <a href="#" class="card-link"><i class="fal fa-history me-2" aria-hidden="true"></i>View history</a>
               </div>
             </div>
           </div>
 
+          <!-- Assessment card -->
           <div class="col">
             <div class="card h-100">
-              <div class="card-header bg-secondary-50">
-                <h2 class="m-0 fs-2 fw-normal text-neutral-600">Sections C, E, G</h2>
-              </div>
               <div class="card-body">
-                <p class="card-text">Health needs, outcomes and provisions</p>
-                <a href="#">Open</a>
+                <div class="d-flex align-items-center">
+                  <i class="fal fa-chalkboard-teacher fa-2x me-3 text-secondary" aria-hidden="true"></i>
+                  <h5 class="card-title mb-0">Assessment</h5>
+                  <div class="dropdown ms-auto">
+                    <a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fal fa-cog" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><h6 class="dropdown-header">Card options</h6></li>
+                      <li><a class="dropdown-item" href="#">Hide card</a></li>
+                      <li><a class="dropdown-item" href="#">Move up</a></li>
+                      <li><a class="dropdown-item" href="#">Move down</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <span class="badge rounded-pill text-bg-success my-2">Pathway completed</span>
+                <p class="card-text">The needs assessment and planning pathway.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <span class="text-muted"><small>Plan decision</small></span><br>
+                      <a href="#">Agree to issue</a>
+                    </div>
+                    <div class="text-end">
+                      <span class="text-muted"><small>Date</small></span><br>
+                      1 Jan 2026
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <span class="text-muted"><small>Assess decision</small></span><br>
+                      <a href="#">Proceed</a>
+                    </div>
+                    <div class="text-end">
+                      <span class="text-muted"><small>Date</small></span><br>
+                      11 Aug 2023
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <span class="text-muted"><small>Request</small></span><br>
+                      <a href="#">Received</a>
+                    </div>
+                    <div class="text-end">
+                      <span class="text-muted"><small>Date</small></span><br>
+                      31 Mar 2023
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="card-footer">
+                <a href="#" class="card-link"><i class="fal fa-arrow-circle-right me-2" aria-hidden="true"></i>View more</a>
               </div>
             </div>
           </div>
 
+          <!-- Letters card -->
           <div class="col">
             <div class="card h-100">
-              <div class="card-header bg-secondary-50">
-                <h2 class="m-0 fs-2 fw-normal text-neutral-600">Sections D, E, H1, H2</h2>
-              </div>
               <div class="card-body">
-                <p class="card-text">Social care needs, outcomes and provisions</p>
-                <a href="#">Open</a>
+                <div class="d-flex align-items-center">
+                  <i class="fal fa-file-alt fa-2x me-3 text-secondary" aria-hidden="true"></i>
+                  <h5 class="card-title mb-0">Letters</h5>
+                  <div class="dropdown ms-auto">
+                    <a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fal fa-cog" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><h6 class="dropdown-header">Card options</h6></li>
+                      <li><a class="dropdown-item" href="#">Hide card</a></li>
+                      <li><a class="dropdown-item" href="#">Move up</a></li>
+                      <li><a class="dropdown-item" href="#">Move down</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <span class="badge rounded-pill text-bg-success my-2">1 new</span>
+                <p class="card-text">Letters containing important information.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <span class="text-muted"><small>Subject</small></span><br>
+                      <a href="#">EHCP issued</a>
+                    </div>
+                    <div class="text-end">
+                      <span class="text-muted"><small>Date</small></span><br>
+                      1 Jan 2026
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <span class="text-muted"><small>Subject</small></span><br>
+                      <a href="#">Review decision</a>
+                    </div>
+                    <div class="text-end">
+                      <span class="text-muted"><small>Date</small></span><br>
+                      1 Jan 2025
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <span class="text-muted"><small>Subject</small></span><br>
+                      <a href="#">Review meeting</a>
+                    </div>
+                    <div class="text-end">
+                      <span class="text-muted"><small>Date</small></span><br>
+                      11 Aug 2024
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="card-footer">
+                <a href="#" class="card-link"><i class="fal fa-arrow-circle-right me-2" aria-hidden="true"></i>View more</a>
               </div>
             </div>
           </div>
 
+          <!-- Mediation card -->
           <div class="col">
             <div class="card h-100">
-              <div class="card-header bg-secondary-50">
-                <h2 class="m-0 fs-2 fw-normal text-neutral-600">Section I</h2>
-              </div>
               <div class="card-body">
-                <p class="card-text">Education setting</p>
-                <a href="#">Open</a>
+                <div class="d-flex align-items-center">
+                  <i class="fal fa-balance-scale fa-2x me-3 text-secondary" aria-hidden="true"></i>
+                  <h5 class="card-title mb-0">Mediation & Tribunal</h5>
+                  <div class="dropdown ms-auto">
+                    <a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fal fa-cog" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><h6 class="dropdown-header">Card options</h6></li>
+                      <li><a class="dropdown-item" href="#">Hide card</a></li>
+                      <li><a class="dropdown-item" href="#">Move up</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <span class="badge rounded-pill text-bg-secondary my-2 me-1">2 Mediation</span><span class="badge rounded-pill text-bg-secondary my-2">1 Tribunal</span>
+                <p class="card-text">A chronology of mediation and tribunal activity.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <span class="text-muted"><small>Tribunal</small></span><br>
+                      <a href="#">Tribunal order</a>
+                    </div>
+                    <div class="text-end">
+                      <span class="text-muted"><small>Date</small></span><br>
+                      1 Jan 2026
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <span class="text-muted"><small>Mediation</small></span><br>
+                      <a href="#">Certificate issued</a>
+                    </div>
+                    <div class="text-end">
+                      <span class="text-muted"><small>Date</small></span><br>
+                      1 Jan 2025
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <span class="text-muted"><small>Mediation</small></span><br>
+                      <a href="#">Meeting cancelled</a>
+                    </div>
+                    <div class="text-end">
+                      <span class="text-muted"><small>Date</small></span><br>
+                      11 Aug 2024
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="card-footer">
+                <a href="#" class="card-link"><i class="fal fa-arrow-circle-right me-2" aria-hidden="true"></i>View more</a>
               </div>
             </div>
           </div>
 
-          <div class="col">
-            <div class="card h-100">
-              <div class="card-header bg-secondary-50">
-                <h2 class="m-0 fs-2 fw-normal text-neutral-600">Section J</h2>
-              </div>
-              <div class="card-body">
-                <p class="card-text">Personal budget</p>
-                <a href="#">Open</a>
-              </div>
-            </div>
-          </div>
+        </div>
 
-          <div class="col">
-            <div class="card h-100">
-              <div class="card-header bg-secondary-50">
-                <h2 class="m-0 fs-2 fw-normal text-neutral-600">Section K</h2>
-              </div>
-              <div class="card-body">
-                <p class="card-text">Information and advice</p>
-                <a href="#">Open</a>
-              </div>
-            </div>
-          </div>
+        <!-- End of cards -->
 
-          <div class="col">
-            <div class="card h-100">
-              <div class="card-header bg-success-50">
-                <h2 class="m-0 fs-2 fw-normal text-neutral-600">Downloads</h2>
-              </div>
-              <div class="card-body">
-                <ul class="list-unstyled">
-                  <li class="mb-1"><a href="#">Draft plan document</a><span class="text-neutral-500 ms-2"><small>PDF</small></span></li>
-                  <li class="mb-1"><a href="#">Draft plan document</a><span class="text-neutral-500 ms-2"><small>DOC</small></span></li>
-                  <li class="mb-1"><a href="#">Draft plan letter</a><span class="text-neutral-500 ms-2"><small>PDF</small></span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
 
+
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col">
+
+        <div class="d-flex flex-column flex-md-row justify-content-md-end">
+          <a href="#" class="btn btn-neutral-50 me-auto mb-2 mb-md-0 me-md-0 ms-md-2"><i class="fal fa-eye-slash me-2" aria-hidden="true"></i>Unhide cards</a>
+          <a href="#" class="btn btn-neutral-50 me-auto mb-2 mb-md-0 me-md-0 ms-md-2"><i class="fal fa-undo-alt me-2" aria-hidden="true"></i>Reset card order</a>
         </div>
 
       </div>
     </div>
+
   </main>
 
 </div>

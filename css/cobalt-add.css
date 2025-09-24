@@ -346,6 +346,28 @@ h3.idx-login-descriptor {
   border-left: 2px solid var(--secondary-400);
 }
 
+.about-me img {
+  max-height: 100px;
+  padding: 1rem 0 1rem 0;
+}
+
+.about-me a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.about-me a .card {
+  border: 2px solid var(--neutral-200);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.about-me a .card:hover, .about-me a .card:focus, .about-me a .card:active {
+  border: 2px solid var(--neutral-400);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
 .img-about {
   height: 75px;
 }

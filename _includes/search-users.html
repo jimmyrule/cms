@@ -1,16 +1,23 @@
-<form class="row mt-7 mb-7">
-  <div class="col-md-8">
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="Search by name or email" aria-label="search" aria-describedby="button-addon2">
-      <button class="btn btn-primary" type="button" id="button-addon2"><i class="fal fa-search me-2 text-white" aria-hidden="true" title="Search"></i>Search</button>
+<form class="my-7">
+  
+  <div class="row my-7">
+    <div class="col d-flex">
+      <div class="flex-grow-1">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search by name or email" aria-label="search" aria-describedby="button-addon2">
+          <button class="btn btn-primary" type="button" id="button-addon2"><i class="fal fa-search text-white" aria-hidden="true" title="Search"></i><span class="d-none d-md-inline-block ms-2">Search</span></button>
+        </div>
+      </div>
+      <div class="d-flex justify-content-end">
+        <a class="btn btn-neutral-50 no-wrap ms-2" href="#" data-bs-toggle="collapse" data-bs-target="#search-filters"><i class="fal fa-filter"></i><span class="d-none d-md-inline-block ms-2">Filters</span></a>
+        <a class="btn btn-neutral-50 no-wrap ms-2" href="#"><i class="fal fa-undo"></i><span class="d-none d-md-inline-block ms-2">Clear</span></a>
+        <a class="btn btn-neutral-50 no-wrap ms-2" href="/admin/create-user"><i class="fal fa-user-plus"></i><span class="d-none d-md-inline-block ms-2">Add user</span></a>
+      </div>
     </div>
   </div>
-  <div class="col-md-4 mt-2 mt-lg-0">
-    <a class="btn btn-neutral-50" href="#" data-bs-toggle="collapse" data-bs-target="#search-filters"><i class="fal fa-filter me-2"></i>Filters</a>
-    <a class="btn btn-neutral-50" href="#"><i class="fal fa-undo me-2"></i>Clear</a>
-    <a class="btn btn-neutral-50" href="/admin/create-user"><i class="fal fa-user-plus fa-sm me-2"></i>Add user</a>
-  </div>
+
   <div class="collapse p-3" id="search-filters">
     {% include filter-users.html %}
   </div>
+
 </form>

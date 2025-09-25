@@ -40,31 +40,31 @@ title: EHC Hub
 
           <!-- Advice table of contents -->
           <div class="col-lg-2 d-none d-lg-block text-muted">
-            <div class="sticky-top toc" id="toc-advice">
+            <div class="sticky-top toc">
               <h5>Advice sections</h5>
               <hr>
-              <ul class="nav flex-column">
-                <li><a href="#response-details">Response Details</a></li>
-                <li><a href="#background">Background</a></li>
-                <li><a href="#cai">Communication and Interaction</a></li>
-                <li><a href="#cal">Cognition and Learning</a></li>
-                <li><a href="#semh">Social, Emotional and Mental Health</a></li>
-                <li><a href="#sph">Sensory and/or Physical Health</a></li>
-                <li><a href="#health">Health</a></li>
-                <li><a href="#sc">Social Care</a></li>
-                <li><a href="#documents">Documents</a></li>
-              </ul>
+              <nav class="d-flex flex-column gap-2" id="toc-advice">
+                <a href="#response-details">Response Details</a>
+                <a href="#background">Background</a>
+                <a href="#cai">Communication and Interaction</a>
+                <a href="#cal">Cognition and Learning</a>
+                <a href="#semh">Social, Emotional and Mental Health</a>
+                <a href="#sph">Sensory and/or Physical Health</a>
+                <a href="#health">Health</a>
+                <a href="#sc">Social Care</a>
+                <a href="#documents">Documents</a>
+              </nav>
             </div>
           </div>
 
           <!-- Advice form -->
-          <div class="col-lg-10">
+          <div class="col-lg-10" data-bs-spy="scroll" data-bs-target="#toc-advice" data-bs-offset="80" class="toc-scrollspy" tabindex="0">
 
             <div class="card mb-4 toc-anchor" id="response-details">
               <div class="card-header">
                 <div class="d-flex justify-content-between">
                   <span>Response Details</span>
-                  <span class="text-danger">Incomplete<i class="fal fa-exclamation-circle ms-1"></i></span>
+                  <span class="text-danger no-wrap">Incomplete<i class="fal fa-exclamation-circle ms-1"></i></span>
                 </div>
               </div>
               <div class="card-body px-6">
@@ -105,7 +105,7 @@ title: EHC Hub
               <div class="card-header">
                 <div class="d-flex justify-content-between">
                   <span>Background</span>
-                  <span class="text-success">Complete<i class="fal fa-check-circle ms-1"></i></span>
+                  <span class="text-success no-wrap">Complete<i class="fal fa-check-circle ms-1"></i></span>
                 </div>
               </div>
               <div class="card-body px-6">
@@ -142,7 +142,7 @@ title: EHC Hub
               <div class="card-header">
                 <div class="d-flex justify-content-between">
                   <span>Communication and Interaction</span>
-                  <span class="text-danger">Incomplete<i class="fal fa-exclamation-circle ms-1"></i></span>
+                  <span class="text-danger no-wrap">Incomplete<i class="fal fa-exclamation-circle ms-1"></i></span>
                 </div>
               </div>
               <div class="card-body px-6">
@@ -158,7 +158,7 @@ title: EHC Hub
                   </div>
                   <a href="#"><small>Clear selection</small></a>
                 </div>
-                <p class="card-text callout callout-info">If a decision is later made to provide an EHCP, the following may be used in Section B.</p>
+                <p class="card-text callout callout-info">If a decision is later made to issue an EHCP, the following may be used in Section B.</p>
                 <div class="mb-3">
                   <label for="exampleFormControlTextarea6" class="form-label">What are Chandler's strengths related to learning in this area?</label>
                   <textarea class="form-control" id="exampleFormControlTextarea6" rows="3"></textarea>
@@ -167,7 +167,46 @@ title: EHC Hub
                   <label for="exampleFormControlTextarea7" class="form-label">What are Chandler's needs related to learning in this area?</label>
                   <textarea class="form-control" id="exampleFormControlTextarea7" rows="3"></textarea>
                 </div>
-                <p class="card-text callout callout-info">Long-term outcomes for the next key-stage to help address Chandler's identified needs in this area. Outcomes should be SMART (Specific, Measurable, Achievable, Realistic and Time-bound) and specify if they relate to education or training. If a decision is later made to provide an EHCP, the following may be used in Section E.</p>
+                <p class="card-text callout callout-info">Long-term outcomes for the next key-stage to meet Chandler's identified needs in this area. Outcomes should be SMART (Specific, Measurable, Achievable, Realistic and Time-bound) and specify if they relate to education or training. If a decision is later made to issue an EHCP, the following may be used in Section E.</p>
+                <div class="mb-3 outcome">
+                  <label for="exampleFormControlTextarea8" class="form-label">Outcome 1</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea8" rows="3" aria-label="Disabled input example">Riley will independently use a taught strategy (e.g., visual organiser + sentence frames) to contribute at least two relevant points in four out of five structured class discussions per fortnight across English, Science, and Humanities, evidenced by teacher tallies/work samples.</textarea>
+                  <small>Preparing for adulthood themes: Employment, Good Health</small>
+                </div>
+                <div class="mb-3 outcome">
+                  <label for="exampleFormControlTextarea9" class="form-label">Outcome 2</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea9" rows="3" aria-label="Disabled input example">Riley will independently use a taught strategy (e.g., visual organiser + sentence frames) to contribute at least two relevant points in four out of five structured class discussions per fortnight across English, Science, and Humanities, evidenced by teacher tallies/work samples.</textarea>
+                  <small>Preparing for adulthood themes: Friends, Relationships and Community</small>
+                </div>
+                <a class="btn btn-neutral-50 me-2 mt-2" href="#"><i class="fal fa-plus-circle me-2"></i>Add outcome</a>
+                <p class="card-text callout callout-info">Provision to achieve Chandler's outcomes. If a decision is later made to issue an EHCP, the following may be used in Section F.</p>
+                <div class="mb-3 provision">
+                  <label for="exampleFormControlTextarea10" class="form-label">Provision 1</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea10" rows="3" aria-label="Disabled input example">Riley will independently use a taught strategy (e.g., visual organiser + sentence frames) to contribute at least two relevant points in four out of five structured class discussions per fortnight across English, Science, and Humanities, evidenced by teacher tallies/work samples.</textarea>
+                  <div class="row g-3 mt-1">
+                    <div class="col">
+                      <label for="providedBy" class="form-label">Provided by</label>
+                      <input type="text" class="form-control" id="providedBy" aria-label="Provided by">
+                    </div>
+                    <div class="col">
+                      <label for="ratio" class="form-label">Staff/student ratio</label>
+                      <input type="text" class="form-control" id="ratio" aria-label="Ratio">
+                    </div>
+                  </div>
+                  <div class="row g-3 mt-1">
+                    <div class="col">
+                      <label for="quantity" class="form-label">Quantity</label>
+                      <input type="text" class="form-control" id="quantity" aria-label="Quantity">
+                    </div>
+                    <div class="col">
+                      <label for="frequency" class="form-label">Frequency</label>
+                      <input type="text" class="form-control" id="frequency" aria-label="Frequency">
+                    </div>
+                  </div>
+                </div>
+                <a class="btn btn-neutral-50 me-2 mt-2" href="#"><i class="fal fa-plus-circle me-2"></i>Add provision</a>
+              </div>
+              <div class="card-footer">
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="checkDefault">
                   <label class="form-check-label" for="checkDefault">
@@ -181,7 +220,7 @@ title: EHC Hub
               <div class="card-header">
                 <div class="d-flex justify-content-between">
                   <span>Cognition and Learning</span>
-                  <span class="text-success">Complete<i class="fal fa-check-circle ms-1"></i></span>
+                  <span class="text-success no-wrap">Complete<i class="fal fa-check-circle ms-1"></i></span>
                 </div>
               </div>
               <div class="card-body px-6">
@@ -210,7 +249,7 @@ title: EHC Hub
               <div class="card-header">
                 <div class="d-flex justify-content-between">
                   <span>Social, Emotional and Mental Health</span>
-                  <span class="text-success">Complete<i class="fal fa-check-circle ms-1"></i></span>
+                  <span class="text-success no-wrap">Complete<i class="fal fa-check-circle ms-1"></i></span>
                 </div>
               </div>
               <div class="card-body px-6">
@@ -239,7 +278,7 @@ title: EHC Hub
               <div class="card-header">
                 <div class="d-flex justify-content-between">
                   <span>Sensory and/or Physical Health</span>
-                  <span class="text-success">Complete<i class="fal fa-check-circle ms-1"></i></span>
+                  <span class="text-success no-wrap">Complete<i class="fal fa-check-circle ms-1"></i></span>
                 </div>
               </div>
               <div class="card-body px-6">
@@ -268,7 +307,7 @@ title: EHC Hub
               <div class="card-header">
                 <div class="d-flex justify-content-between">
                   <span>Health</span>
-                  <span class="text-success">Complete<i class="fal fa-check-circle ms-1"></i></span>
+                  <span class="text-success no-wrap">Complete<i class="fal fa-check-circle ms-1"></i></span>
                 </div>
               </div>
               <div class="card-body px-6">
@@ -297,7 +336,7 @@ title: EHC Hub
               <div class="card-header">
                 <div class="d-flex justify-content-between">
                   <span>Social Care</span>
-                  <span class="text-success">Complete<i class="fal fa-check-circle ms-1"></i></span>
+                  <span class="text-success no-wrap">Complete<i class="fal fa-check-circle ms-1"></i></span>
                 </div>
               </div>
               <div class="card-body px-6">
@@ -326,7 +365,7 @@ title: EHC Hub
               <div class="card-header">
                 <div class="d-flex justify-content-between">
                   <span>Documents</span>
-                  <span class="text-success">Complete<i class="fal fa-check-circle ms-1"></i></span>
+                  <span class="text-success no-wrap">Complete<i class="fal fa-check-circle ms-1"></i></span>
                 </div>
               </div>
               <div class="card-body px-6">

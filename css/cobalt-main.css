@@ -7665,7 +7665,7 @@ textarea.form-control-lg {
   word-wrap: break-word;
   background-color: #ffffff;
   background-clip: border-box;
-  border: 2px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0;
 }
 .card > hr {

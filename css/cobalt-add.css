@@ -486,24 +486,35 @@ li i:hover {
 }
 
 .toc {
-  top: 5rem;
-}
-
-.toc li {
-  margin-bottom: 0.5rem;
-}
-
-.toc a {
-  text-decoration: none;
-  color: inherit;
+  top: 80px;
 }
 
 .toc-anchor {
-  scroll-margin-top: 4.75rem;
+  scroll-margin-top: 70px;
+}
+
+.toc a {
+  color: inherit;
+  border-left: 2px solid transparent;
+  padding-left: 5px;
+}
+
+.toc a.active {
+  border-left: 2px solid var(--neutral-500);
 }
 
 .required::before {
   content: "*";
   padding-right: 0.25rem;
   color: var(--danger);
+}
+
+.outcome {
+  border-left: 5px solid var(--success-300);
+  padding-left: 10px;
+}
+
+.provision {
+  border-left: 5px solid var(--warning-300);
+  padding-left: 10px;
 }

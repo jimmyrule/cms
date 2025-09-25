@@ -10,7 +10,7 @@ header .fa-bars {
   color: var(--white);
 }
 
-main a:link:hover { text-decoration: none }
+/*main a:link:hover { text-decoration: none }*/
 
 .examples td em { font-style: normal; color: #676767 }
 
@@ -145,11 +145,6 @@ h3 {
   font-weight:700;
 }
 
-/* Increase padding for docs cards */
-.card {
-  border-radius: 0.25rem;
- }
-
 code { color: var(--neutral) }
 
 /* Change BS default */
@@ -240,7 +235,7 @@ h3.idx-login-descriptor {
 
 .idx-border {
   border: 1px solid var(--neutral-200);
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .idx-table-sort {
@@ -357,13 +352,13 @@ h3.idx-login-descriptor {
 }
 
 .about-me a .card {
-  border: 2px solid var(--neutral-200);
+  border: 1px solid var(--neutral-200);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 .about-me a .card:hover, .about-me a .card:focus, .about-me a .card:active {
-  border: 2px solid var(--neutral-400);
+  border: 1px solid var(--neutral-400);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }

@@ -38,118 +38,306 @@ title: EHC Hub
 
         <div class="row g-8">
 
-          <div class="col-md-3 text-muted">
+          <!-- Advice table of contents -->
+          <div class="col-lg-2 d-none d-lg-block text-muted">
             <div class="sticky-top toc" id="toc-advice">
               <h5>Advice sections</h5>
               <hr>
               <ul class="nav flex-column">
-                <li><a href="#">Response Details</a></li>
-                <li><a href="#">Background</a></li>
-                <li><a href="#">Communication and Interaction</a></li>
-                <li><a href="#">Cognition and Learning</a></li>
-                <li><a href="#">Social, Emotional and Mental Health</a></li>
-                <li><a href="#">Sensory and/or Physical Health</a></li>
-                <li><a href="#">Health</a></li>
-                <li><a href="#">Social Care</a></li>
-                <li><a href="#">Documents</a></li>
+                <li><a href="#response-details">Response Details</a></li>
+                <li><a href="#background">Background</a></li>
+                <li><a href="#cai">Communication and Interaction</a></li>
+                <li><a href="#cal">Cognition and Learning</a></li>
+                <li><a href="#semh">Social, Emotional and Mental Health</a></li>
+                <li><a href="#sph">Sensory and/or Physical Health</a></li>
+                <li><a href="#health">Health</a></li>
+                <li><a href="#sc">Social Care</a></li>
+                <li><a href="#documents">Documents</a></li>
               </ul>
             </div>
           </div>
 
-          <div class="col-md-9">
+          <!-- Advice form -->
+          <div class="col-lg-10">
 
-            <div class="card mb-4">
+            <div class="card mb-4 toc-anchor" id="response-details">
               <div class="card-header">
                 <div class="d-flex justify-content-between">
                   <span>Response Details</span>
-                  <span class="text-danger">Not started<i class="fal fa-exclamation-circle ms-1"></i></span>
+                  <span class="text-danger">Incomplete<i class="fal fa-exclamation-circle ms-1"></i></span>
                 </div>
               </div>
-              <div class="card-body">
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
+              <div class="card-body px-6">
+                <form>
+                  <div class="mb-5">
+                    <p class="required fw-500">Are you providing a response on behalf of someone else?</p>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1">
+                      <label class="form-check-label" for="inlineRadio1">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">
+                      <label class="form-check-label" for="inlineRadio2">No</label>
+                    </div>
+                    <a href="#"><small>Clear selection</small></a>
+                  </div>
+                  <div class="mb-5">
+                    <label for="exampleInput1" class="form-label required">Name of the person providing advice</label>
+                    <input type="text" class="form-control" id="exampleInput1" aria-describedby="input1Help">
+                    <div id="input1Help" class="form-text">If the local authority later decide to issue an EHC Plan, this will be the name attributed to the advice submission in Section K.</div>
+                  </div>
+                  <div class="mb-5">
+                    <label for="exampleInput2" class="form-label required">Job title or role of the person providing advice</label>
+                    <input type="text" class="form-control" id="exampleInput2" aria-describedby="input2Help">
+                    <div id="input2Help" class="form-text">This will give greater context to your response for Chandler, their parent/carers and other professionals. This is saved in your profile should you wish to update it for future advice requests.</div>
+                  </div>
+                </form>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                  <label class="form-check-label" for="checkDefault">
+                    Section complete
+                  </label>
+                </div>
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card mb-4 toc-anchor" id="background">
               <div class="card-header">
                 <div class="d-flex justify-content-between">
                   <span>Background</span>
-                  <span class="text-success">Completed<i class="fal fa-check-circle ms-1"></i></span>
+                  <span class="text-success">Complete<i class="fal fa-check-circle ms-1"></i></span>
                 </div>
               </div>
-              <div class="card-body">
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
+              <div class="card-body px-6">
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">When did the child or young person first come into contact with your organisation?</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea2" class="form-label">Details of any discussions held between the child or young person and your organisation (if relevant)</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea3" class="form-label">Details of any discussions held between the parent(s) or carer(s) and your organisation (if relevant)</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea3" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea4" class="form-label">What has your organisation put in place already to support the child or young person's needs?</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea4" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea5" class="form-label">What has been the effect of any support or strategies already put in place by your organisation?</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea5" rows="3"></textarea>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                  <label class="form-check-label" for="checkChecked">
+                    Section complete
+                  </label>
+                </div>
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card mb-4 toc-anchor" id="cai">
               <div class="card-header">
                 <div class="d-flex justify-content-between">
-                  <span>Response Details</span>
-                  <span class="text-danger">Not started<i class="fal fa-exclamation-circle ms-1"></i></span>
+                  <span>Communication and Interaction</span>
+                  <span class="text-danger">Incomplete<i class="fal fa-exclamation-circle ms-1"></i></span>
                 </div>
               </div>
-              <div class="card-body">
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
+              <div class="card-body px-6">
+                <div class="mb-5">
+                  <p class="required fw-500">Is there an identified learning need in this area?</p>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio3" value="option1" checked>
+                    <label class="form-check-label" for="inlineRadio3">Yes</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio4" value="option2">
+                    <label class="form-check-label" for="inlineRadio4">No</label>
+                  </div>
+                  <a href="#"><small>Clear selection</small></a>
+                </div>
+                <p class="card-text callout callout-info">If a decision is later made to provide an EHCP, the following may be used in Section B.</p>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea6" class="form-label">What are Chandler's strengths related to learning in this area?</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea6" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea7" class="form-label">What are Chandler's needs related to learning in this area?</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea7" rows="3"></textarea>
+                </div>
+                <p class="card-text callout callout-info">Long-term outcomes for the next key-stage to help address Chandler's identified needs in this area. Outcomes should be SMART (Specific, Measurable, Achievable, Realistic and Time-bound) and specify if they relate to education or training. If a decision is later made to provide an EHCP, the following may be used in Section E.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                  <label class="form-check-label" for="checkDefault">
+                    Section complete
+                  </label>
+                </div>
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card mb-4 toc-anchor" id="cal">
               <div class="card-header">
                 <div class="d-flex justify-content-between">
-                  <span>Response Details</span>
-                  <span class="text-danger">Not started<i class="fal fa-exclamation-circle ms-1"></i></span>
+                  <span>Cognition and Learning</span>
+                  <span class="text-success">Complete<i class="fal fa-check-circle ms-1"></i></span>
                 </div>
               </div>
-              <div class="card-body">
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
+              <div class="card-body px-6">
+                <div class="mb-5">
+                  <p class="required fw-500">Is there an identified learning need in this area?</p>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions5" id="inlineRadio5" value="option1">
+                    <label class="form-check-label" for="inlineRadio5">Yes</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio6" value="option2" checked>
+                    <label class="form-check-label" for="inlineRadio6">No</label>
+                  </div>
+                  <a href="#"><small>Clear selection</small></a>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="checkDefault" checked>
+                  <label class="form-check-label" for="checkDefault">
+                    Section complete
+                  </label>
+                </div>
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card mb-4 toc-anchor" id="semh">
               <div class="card-header">
                 <div class="d-flex justify-content-between">
-                  <span>Response Details</span>
-                  <span class="text-danger">Not started<i class="fal fa-exclamation-circle ms-1"></i></span>
+                  <span>Social, Emotional and Mental Health</span>
+                  <span class="text-success">Complete<i class="fal fa-check-circle ms-1"></i></span>
                 </div>
               </div>
-              <div class="card-body">
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
-                <p class="card-text">Are you providing a response on behalf of someone else?</p>
+              <div class="card-body px-6">
+                <div class="mb-5">
+                  <p class="required fw-500">Is there an identified learning need in this area?</p>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions7" id="inlineRadio7" value="option1">
+                    <label class="form-check-label" for="inlineRadio7">Yes</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions8" id="inlineRadio8" value="option2" checked>
+                    <label class="form-check-label" for="inlineRadio8">No</label>
+                  </div>
+                  <a href="#"><small>Clear selection</small></a>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="checkDefault" checked>
+                  <label class="form-check-label" for="checkDefault">
+                    Section complete
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-4 toc-anchor" id="sph">
+              <div class="card-header">
+                <div class="d-flex justify-content-between">
+                  <span>Sensory and/or Physical Health</span>
+                  <span class="text-success">Complete<i class="fal fa-check-circle ms-1"></i></span>
+                </div>
+              </div>
+              <div class="card-body px-6">
+                <div class="mb-5">
+                  <p class="required fw-500">Is there an identified learning need in this area?</p>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions9" id="inlineRadio9" value="option1">
+                    <label class="form-check-label" for="inlineRadio9">Yes</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions10" id="inlineRadio10" value="option2" checked>
+                    <label class="form-check-label" for="inlineRadio10">No</label>
+                  </div>
+                  <a href="#"><small>Clear selection</small></a>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="checkDefault" checked>
+                  <label class="form-check-label" for="checkDefault">
+                    Section complete
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-4 toc-anchor" id="health">
+              <div class="card-header">
+                <div class="d-flex justify-content-between">
+                  <span>Health</span>
+                  <span class="text-success">Complete<i class="fal fa-check-circle ms-1"></i></span>
+                </div>
+              </div>
+              <div class="card-body px-6">
+                <div class="mb-5">
+                  <p class="required fw-500">Is there an identified learning need in this area?</p>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions11" id="inlineRadio11" value="option1">
+                    <label class="form-check-label" for="inlineRadio11">Yes</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions12" id="inlineRadio12" value="option2" checked>
+                    <label class="form-check-label" for="inlineRadio12">No</label>
+                  </div>
+                  <a href="#"><small>Clear selection</small></a>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="checkDefault" checked>
+                  <label class="form-check-label" for="checkDefault">
+                    Section complete
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-4 toc-anchor" id="sc">
+              <div class="card-header">
+                <div class="d-flex justify-content-between">
+                  <span>Social Care</span>
+                  <span class="text-success">Complete<i class="fal fa-check-circle ms-1"></i></span>
+                </div>
+              </div>
+              <div class="card-body px-6">
+                <div class="mb-5">
+                  <p class="required fw-500">Is there an identified learning need in this area?</p>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions13" id="inlineRadio13" value="option1">
+                    <label class="form-check-label" for="inlineRadio13">Yes</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions14" id="inlineRadio14" value="option2" checked>
+                    <label class="form-check-label" for="inlineRadio14">No</label>
+                  </div>
+                  <a href="#"><small>Clear selection</small></a>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="checkDefault" checked>
+                  <label class="form-check-label" for="checkDefault">
+                    Section complete
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-4 toc-anchor" id="documents">
+              <div class="card-header">
+                <div class="d-flex justify-content-between">
+                  <span>Documents</span>
+                  <span class="text-success">Complete<i class="fal fa-check-circle ms-1"></i></span>
+                </div>
+              </div>
+              <div class="card-body px-6">
+                <p class="card-text callout callout-info">Upload any additional documents which may evidence your advice.</p>
+                <p class="card-text">...</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="checkDefault" checked>
+                  <label class="form-check-label" for="checkDefault">
+                    Section complete
+                  </label>
+                </div>
               </div>
             </div>
 

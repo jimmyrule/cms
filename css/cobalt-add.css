@@ -485,11 +485,25 @@ li i:hover {
   cursor: default;
 }
 
+.toc {
+  top: 5rem;
+}
+
 .toc li {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .toc a {
   text-decoration: none;
   color: inherit;
+}
+
+.toc-anchor {
+  scroll-margin-top: 4.75rem;
+}
+
+.required::before {
+  content: "*";
+  padding-right: 0.25rem;
+  color: var(--danger);
 }

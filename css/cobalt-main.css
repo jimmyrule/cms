@@ -161,7 +161,7 @@ $h6-font-size:              $font-size-base;*/
   --body-font-weight: 400;
   --body-line-height: 1.5;
   --body-color: #282828;
-  --body-bg: var(--neutral-50);
+  --body-bg: var(--white);
   --callout-color-info: #055160;
   --callout-bg-info: #cff4fc;
   --callout-border-info: #9eeaf9;
@@ -187,7 +187,7 @@ body {
   line-height: var(--body-line-height);
   color: var(--body-color);
   text-align: var(--body-text-align);
-  /*background-color: var(--body-bg);*/
+  background-color: var(--body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }

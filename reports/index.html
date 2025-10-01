@@ -16,108 +16,343 @@ title: Reporting
 
         <ul class="nav idx-tabs my-5">
           <li class="nav-item">
-            <a class="nav-link" href="#">Management reports</a>
+            <a class="nav-link active" aria-current="page" href="/reports">Management reports</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Standard exports</a>
+            <a class="nav-link" href="exports">Standard exports</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/reports/sen2">SEN2</a>
+            <a class="nav-link" href="sen2">SEN2</a>
           </li>
         </ul>
 
-        <div class="table-responsive">
-         <table class="table table-striped table-hover table-borderless idx-results-table align-middle">
-           <thead>
-             <tr>
-               <th scope="col">Name<i class="fa fa-sort ms-1"></i></th>
-               <th scope="col" class="d-none d-md-table-cell">Description<i class="fa fa-sort ms-1"></i></th>
-               <th scope="col">Type</th>
-               <th scope="col">Action</th>
-             </tr>
-           </thead>
-           <tbody>
-             <tr>
-               <td>Assessment and planning</td>
-               <td class="d-none d-md-table-cell">Key information from the assessment and planning pathway.</td>
-               <td>CSV</td>
-               <td class="no-wrap"><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#"><i class="fal fa-file-download me-1"></i>Download</a></td>
-             </tr>
-             <tr>
-               <td>Education settings</td>
-               <td class="d-none d-md-table-cell">Details of all education settings in the Hub.</td>
-               <td>CSV</td>
-               <td class="no-wrap"><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#"><i class="fal fa-file-download me-1"></i>Download</a></td>
-             </tr>
-             <tr>
-               <td>Cases</td>
-               <td class="d-none d-md-table-cell">Key information for every case.</td>
-               <td>CSV</td>
-               <td class="no-wrap"><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#"><i class="fal fa-file-download me-1"></i>Download</a></td>
-             </tr>
-             <tr>
-               <td>Panel meetings</td>
-               <td class="d-none d-md-table-cell">Details of all panel meetings.</td>
-               <td>CSV</td>
-               <td class="no-wrap"><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#"><i class="fal fa-file-download me-1"></i>Download</a></td>
-             </tr>
-             <tr>
-               <td>Plans</td>
-               <td class="d-none d-md-table-cell">All draft and issued EHC Plans in the Hub.</td>
-               <td>CSV</td>
-               <td class="no-wrap"><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#"><i class="fal fa-file-download me-1"></i>Download</a></td>
-             </tr>
-             <tr>
-               <td>Requests for advice</td>
-               <td class="d-none d-md-table-cell">Details of every request for advice.</td>
-               <td>CSV</td>
-               <td class="no-wrap"><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#"><i class="fal fa-file-download me-1"></i>Download</a></td>
-             </tr>
-             <tr>
-               <td>Requests for information</td>
-               <td class="d-none d-md-table-cell">Details of all requests for information ahead of a review meeting.</td>
-               <td>CSV</td>
-               <td class="no-wrap"><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#"><i class="fal fa-file-download me-1"></i>Download</a></td>
-             </tr>
-             <tr>
-               <td>Reviews</td>
-               <td class="d-none d-md-table-cell">Every review of an EHC Plan carried out on the Hub.</td>
-               <td>CSV</td>
-               <td class="no-wrap"><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#"><i class="fal fa-file-download me-1"></i>Download</a></td>
-             </tr>
-             <tr>
-               <td>Setting consultations</td>
-               <td class="d-none d-md-table-cell">Details of all education setting consultations for draft and proposed amended EHC Plans.</td>
-               <td>CSV</td>
-               <td class="no-wrap"><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#"><i class="fal fa-file-download me-1"></i>Download</a></td>
-             </tr>
-             <tr>
-               <td>Subjects</td>
-               <td class="d-none d-md-table-cell">All children and young people in the Hub.</td>
-               <td>CSV</td>
-               <td class="no-wrap"><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#"><i class="fal fa-file-download me-1"></i>Download</a></td>
-             </tr>
-             <tr>
-               <td>Teams</td>
-               <td class="d-none d-md-table-cell">Details of all teams of professionals in the Hub.</td>
-               <td>CSV</td>
-               <td class="no-wrap"><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#"><i class="fal fa-file-download me-1"></i>Download</a></td>
-             </tr>
-             <tr>
-               <td>Users</td>
-               <td class="d-none d-md-table-cell">Details of every user account in the Hub.</td>
-               <td>CSV</td>
-               <td class="no-wrap"><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#"><i class="fal fa-file-download me-1"></i>Download</a></td>
-             </tr>
-           </tbody>
-         </table>
 
-         <p class="text-muted">Export files contain data which is current at the time of download.</p>
 
-       </div>
+        <div class="row row-cols-md-2 g-6">
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-header">
+                <div class="d-flex align-items-center">
+                  Activity
+                  <div class="dropdown ms-auto">
+                    <a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fal fa-cog" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><h6 class="dropdown-header">Chart options</h6></li>
+                      <li><a class="dropdown-item" href="#">All cases<i class="fal fa-check-circle ms-1 text-success"></i></a></li>
+                      <li><a class="dropdown-item" href="#">My cases</a></li>
+                      <li><a class="dropdown-item" href="#">Download CSV</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><h6 class="dropdown-header">Card options</h6></li>
+                      <li><a class="dropdown-item" href="#">Hide card</a></li>
+                      <li><a class="dropdown-item" href="#">Move down</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>An overview of activity on a chosen date.</p>
+                <div class="form-floating my-5">
+                  <input type="date" id="activityDate" class="form-control ms-auto my-3" aria-label="Default select example"></input>
+                  <label for="activityDate">Select a date</label>
+                </div>
+                <div class="mt-6 table-responsive">
+                   <table class="table table-striped table-hover table-borderless idx-results-table align-middle no-wrap mt-0">
+                     <thead>
+                       <tr>
+                         <th scope="col">Activity</th>
+                         <th scope="col">Total</th>
+                       </tr>
+                     </thead>
+                     <tbody>
+                       <tr>
+                         <td>EHC Plans</td>
+                         <td>10,894</td>
+                       </tr>
+                       <tr>
+                         <td>Active reviews</td>
+                         <td>2,387</td>
+                       </tr>
+                       <tr>
+                         <td>Active cases</td>
+                         <td>12,398</td>
+                       </tr>
+                       <tr>
+                         <td>NEET</td>
+                         <td>267</td>
+                       </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-header">
+                <div class="d-flex align-items-center">
+                  Number of Requests
+                  <div class="dropdown ms-auto">
+                    <a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fal fa-cog" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><h6 class="dropdown-header">Chart options</h6></li>
+                      <li><a class="dropdown-item" href="#">All cases<i class="fal fa-check-circle ms-1 text-success"></i></a></li>
+                      <li><a class="dropdown-item" href="#">My cases</a></li>
+                      <li><a class="dropdown-item" href="#">Download CSV</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><h6 class="dropdown-header">Card options</h6></li>
+                      <li><a class="dropdown-item" href="#">Hide card</a></li>
+                      <li><a class="dropdown-item" href="#">Move up</a></li>
+                      <li><a class="dropdown-item" href="#">Move down</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>Number of new requests for an EHC needs assessment.</p>
+                <div class="form-floating my-5">
+                  <select id="requestsYearList" class="form-select ms-auto my-3" aria-label="Default select example">
+                    <option selected>2025</option>
+                    <option value="1">2024</option>
+                    <option value="2">2023</option>
+                    <option value="3">2022</option>
+                  </select>
+                  <label for="requestsYearList">Year</label>
+                </div>
+                <canvas id="requestsChart"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-header">
+                <div class="d-flex align-items-center">
+                  EHCP Timeliness
+                  <div class="dropdown ms-auto">
+                    <a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fal fa-cog" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><h6 class="dropdown-header">Chart options</h6></li>
+                      <li><a class="dropdown-item" href="#">All cases<i class="fal fa-check-circle ms-1 text-success"></i></a></li>
+                      <li><a class="dropdown-item" href="#">My cases</a></li>
+                      <li><a class="dropdown-item" href="#">Download CSV</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><h6 class="dropdown-header">Card options</h6></li>
+                      <li><a class="dropdown-item" href="#">Hide card</a></li>
+                      <li><a class="dropdown-item" href="#">Move up</a></li>
+                      <li><a class="dropdown-item" href="#">Move down</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>Number of new EHC Plans issued against the 20-week timeframe.</p>
+                <div class="form-floating my-5">
+                  <select id="plansTimelinessYearList" class="form-select ms-auto my-3" aria-label="Default select example">
+                    <option selected>2025</option>
+                    <option value="1">2024</option>
+                    <option value="2">2023</option>
+                    <option value="3">2022</option>
+                  </select>
+                  <label for="plansTimelinessYearList">Year</label>
+                </div>
+                <div style="max-width:350px" class="mx-auto">
+                  <canvas id="planTimelinessChart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-header">
+                <div class="d-flex align-items-center">
+                  Advice Timeliness
+                  <div class="dropdown ms-auto">
+                    <a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fal fa-cog" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><h6 class="dropdown-header">Chart options</h6></li>
+                      <li><a class="dropdown-item" href="#">All cases<i class="fal fa-check-circle ms-1 text-success"></i></a></li>
+                      <li><a class="dropdown-item" href="#">My cases</a></li>
+                      <li><a class="dropdown-item" href="#">Download CSV</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><h6 class="dropdown-header">Card options</h6></li>
+                      <li><a class="dropdown-item" href="#">Hide card</a></li>
+                      <li><a class="dropdown-item" href="#">Move up</a></li>
+                      <li><a class="dropdown-item" href="#">Move down</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>Assessment advice due in the chosen month and submitted on time.</p>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-floating my-5">
+                      <select id="adviceTimelinessReportingYearList" class="form-select ms-auto my-3" aria-label="Default select example">
+                        <option selected>Sep 2025</option>
+                        <option value="1">Aug 2025</option>
+                        <option value="2">Jul 2025</option>
+                        <option value="3">Jun 2025</option>
+                      </select>
+                      <label for="adviceTimelinessReportingYearList">Reporting month</label>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-floating my-5">
+                      <select id="adviceTimelinessComparativeYearList" class="form-select ms-auto my-3" aria-label="Default select example">
+                        <option value="1">Sep 2025</option>
+                        <option selected>Aug 2025</option>
+                        <option value="2">Jul 2025</option>
+                        <option value="3">Jun 2025</option>
+                      </select>
+                      <label for="adviceTimelinessComparativeYearList">Comparative month</label>
+                    </div>
+                  </div>
+                </div>
+                <canvas id="adviceTimelinessChart"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-header">
+                <div class="d-flex align-items-center">
+                  Reviews Due
+                  <div class="dropdown ms-auto">
+                    <a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fal fa-cog" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><h6 class="dropdown-header">Chart options</h6></li>
+                      <li><a class="dropdown-item" href="#">All cases<i class="fal fa-check-circle ms-1 text-success"></i></a></li>
+                      <li><a class="dropdown-item" href="#">My cases</a></li>
+                      <li><a class="dropdown-item" href="#">Download CSV</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><h6 class="dropdown-header">Card options</h6></li>
+                      <li><a class="dropdown-item" href="#">Hide card</a></li>
+                      <li><a class="dropdown-item" href="#">Move up</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>Reviews due within a date range for a specific education setting or all settings.</p>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-floating">
+                      <input type="date" id="reviewDueStartDate" class="form-control ms-auto my-3" aria-label="Default select example"></input>
+                      <label for="reviewDueStartDate">Start date</label>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-floating">
+                      <input type="date" id="reviewDueEndDate" class="form-control ms-auto my-3" aria-label="Default select example"></input>
+                      <label for="reviewDueEndDate">End date</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-floating">
+                      <select id="reviewsDueSettingList" class="form-select ms-auto my-3" aria-label="Default select example">
+                        <option selected>All</option>
+                        <option value="1">ABC Nursery</option>
+                        <option value="2">Greenhill School</option>
+                        <option value="3">Sycamore Academy</option>
+                      </select>
+                      <label for="reviewsDueSettingList">Setting</label>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-floating">
+                      <input type="text" id="reviewDueTotal" class="form-control ms-auto my-3" aria-label="Default input example" value="0" readonly></input>
+                      <label for="reviewDueTotal">Reviews due</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="callout callout-info mb-0">
+                  <p>Details of reviews due in this period can be downloaded from the options menu and sent to settings as their notice of upcoming reviews.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
 
       </div>
     </div>
   </main>
 
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('planTimelinessChart');
+
+  new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ['On time', 'Not on time'],
+      datasets: [{
+        label: '# of plans',
+        data: [1123, 198],
+        borderWidth: 1
+      }]
+    }
+  });
+
+  const ctx2 = document.getElementById('requestsChart');
+
+  new Chart(ctx2, {
+    type: 'line',
+    data: {
+      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      datasets: [{
+        label: '# of requests',
+        data: [12, 19, 3, 5, 2, 3, 12, 19, 3, 5, 2, 3],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+
+  const ctx3 = document.getElementById('adviceTimelinessChart');
+
+  new Chart(ctx3, {
+    type: 'line',
+    data: {
+      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      datasets: [{
+        label: '# of requests',
+        data: [12, 19, 3, 5, 2, 3, 12, 19, 3, 5, 2, 3],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+
+</script>

@@ -32,6 +32,24 @@ $h6-font-size:              $font-size-base;*/
   --danger: #b91c1c;
   --light: #efefef;
   --dark: #0a0a0a;
+  --plum: #8D477C;
+  --plum-80: #AD5C99;
+  --plum-60: #BB77AA;
+  --plum-40: #C892BB;
+  --plum-20: #D6AECC;
+  --plum-5: #E4C9DD;
+  --burnt-orange: #DB7730;
+  --burnt-orange-80: #E08D52;
+  --burnt-orange-60: #E7A474;
+  --burnt-orange-40: #EDBB97;
+  --burnt-orange-20: #F0C6A8;
+  --burnt-orange-5: #F6DDCB;
+  --forest-green: #6EB431;
+  --forest-green-80: #8BCF4F;
+  --forest-green-60: #80D86F;
+  --forest-green-40: #B5E08F;
+  --forest-green-20: #CAE9AF;
+  --forest-green-5: #DFF2CF;
   --primary-500: #0a1f8f;
   --primary-600: #071564;
   --secondary-5: #f5f8fc;
@@ -7716,8 +7734,7 @@ textarea.form-control-lg {
 .card-header {
   padding: 0.75rem 1rem;
   margin-bottom: 0;
-  /* background-color: rgba(0, 0, 0, 0.03); */
-  background-color: var(--success-50);
+  background-color: var(--plum-5);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 .card-header:first-child {

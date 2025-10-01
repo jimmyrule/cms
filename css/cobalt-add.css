@@ -513,3 +513,14 @@ li i:hover {
   border-left: 5px solid var(--warning-300);
   padding-left: 10px;
 }
+
+.selected-filter {
+  background-color: transparent;
+  color: var(--body-color);
+  border: 1px solid var(--neutral-300);
+}
+
+.selected-filter a {
+  text-decoration: none;
+  color: var(--body-color);
+}

@@ -1,0 +1,200 @@
+---
+layout: default
+title: EHC Hub
+---
+
+<div class="d-flex flex-fill flex-column flex-md-row">
+  <!-- Page content -->
+
+  {% include sidenav.html %}
+
+  <main id="content" class="main container-fluid mt-5 px-6 px-lg-8 table-no-case">
+    <div class="row">
+      <div class="col">
+
+        {% include case-details.html %}
+
+        <hr>
+
+        <div class="d-flex flex-column flex-md-row justify-content-md-between text-neutral-600">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item"><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="/case-view">Case home</a></li>
+              <li class="breadcrumb-item"><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="assessment-team-manager">Assessment</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Manage response</li>
+            </ol>
+          </nav>
+          <p class="mb-0">Decision due: 14 Dec 2025</p>
+        </div>
+
+        <!-- Callout -->
+        <div class="callout callout-info mb-0">
+          <h3>Manage Response</h3>
+          <p>Health Team</p>
+          <p>Your team has been requested to provide advice towards the assessment process under Section 36 (1) of the Children and Families Act 2014. Please state whether your organisation or team will be providing advice before allocating the request to the relevant individual(s). Your response is due by <strong>8 Nov 2025</strong>.</p>
+        </div>
+
+        {% include actions-advice-team-response.html %}
+
+        <div class="row g-8">
+
+          <!-- Advice form -->
+          <div class="col" data-bs-spy="scroll" data-bs-target="#toc-advice" data-bs-offset="80" class="toc-scrollspy" tabindex="0">
+
+            <div class="card mb-6 toc-anchor" id="response-details">
+              <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center">
+                  <span>Response Details</span>
+                </div>
+              </div>
+              <div class="card-body px-6">
+                <form>
+                  <div class="mb-5">
+                    <p class="required fw-500">Will your team be providing advice, either directly from a team member or by seeking advice from another team?</p>
+                    <div class="form-check form-check">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1">
+                      <label class="form-check-label" for="inlineRadio1">Yes - Child or young person is known and meets the criteria for an assessment.</label>
+                    </div>
+                    <div class="form-check form-check">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2" checked>
+                      <label class="form-check-label" for="inlineRadio2">Yes - Child or young person has an allocated worker, who will be providing advice.</label>
+                    </div>
+                    <div class="form-check form-check">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio3" value="option3">
+                      <label class="form-check-label" for="inlineRadio3">Yes - Child or young person is not known but meets the criteria for an assessment.</label>
+                    </div>
+                    <div class="form-check form-check">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio4" value="option4">
+                      <label class="form-check-label" for="inlineRadio4">No - Child or young person is known but does not meet the criteria for an assessment.</label>
+                    </div>
+                    <div class="form-check form-check">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions5" id="inlineRadio5" value="option5">
+                      <label class="form-check-label" for="inlineRadio5">No - Child or young person is not known and does not meet the criteria for an assessment</label>
+                    </div>
+                    <div class="form-check form-check">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio6" value="option6">
+                      <label class="form-check-label" for="inlineRadio6">No - Other (please state reason)</label>
+                    </div>
+                    <div>
+                      <a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#"><small>Clear selection</small></a>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Details</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" aria-describedby="detailsHelp"></textarea>
+                    <div id="detailsHelp" class="form-text">Provide comment/context to support the previous question, if necessary.</div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="card mb-6 toc-anchor" id="member-allocation">
+              <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center">
+                  <span>Allocations to Team Members</span>
+                </div>
+              </div>
+              <div class="card-body px-6">
+                <form>
+                  <div class="mt-4 mb-8 d-flex">
+                    <div class="flex-grow-1 me-3">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Choose a team member</option>
+                        <option value="1">Gerry Fields (gerry.fields@example.com)</option>
+                        <option value="2">Lindsey Witherall (lindsey.witherall@example.com)</option>
+                        <option value="3">Add new team member</option>
+                      </select>
+                    </div>
+                    <a class="btn btn-neutral-50 no-wrap " href="#"><i class="fal fa-plus-circle me-2"></i>Allocate</a>
+                  </div>
+                  <div class="mb-3 table-responsive">
+                     <table class="table table-striped table-hover table-borderless idx-results-table align-middle no-wrap mt-0">
+                       <thead>
+                         <tr>
+                           <th scope="col">#<i class="fa fa-sort ms-1"></i></th>
+                           <th scope="col">Name<i class="fa fa-sort ms-1"></i></th>
+                           <th scope="col">Status<i class="fa fa-sort ms-1"></i></th>
+                           <th scope="col">Job title<i class="fa fa-sort ms-1"></i></th>
+                           <th scope="col">Specialism<i class="fa fa-sort ms-1"></i></th>
+                           <th scope="col">Requested<i class="fa fa-sort ms-1"></i></th>
+                           <th scope="col">Due<i class="fa fa-sort ms-1"></i></th>
+                           <th scope="col">Completed<i class="fa fa-sort ms-1"></i></th>
+                           <th scope="col" class="text-center">Actions</th>
+                         </tr>
+                       </thead>
+                       <tbody>
+                         <tr>
+                           <td colspan="9">There are no team member allocations.</td>
+                          </tr>
+                       </tbody>
+                     </table>
+                   </div>
+                </form>
+              </div>
+            </div>
+
+            <!-- <div class="card mb-6 toc-anchor" id="team-allocation">
+              <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center">
+                  <span>Allocations to Another Team</span>
+                </div>
+              </div>
+              <div class="card-body px-6">
+                <form>
+                  <div class="mt-4 mb-8 d-flex">
+                    <div class="flex-grow-1 me-3">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Choose a team</option>
+                        <option value="1">CAMHS (camhs@example.com)</option>
+                        <option value="2">Ed Psych West (ed-psych-west@example.com)</option>
+                        <option value="2">Social Care (sc-inbox@example.com)</option>
+                      </select>
+                    </div>
+                    <a class="btn btn-neutral-50 no-wrap" href="#"><i class="fal fa-plus-circle me-2"></i>Allocate</a>
+                  </div>
+                  <div class="mb-3 table-responsive">
+                     <table class="table table-striped table-hover table-borderless idx-results-table align-middle no-wrap mt-0">
+                       <thead>
+                         <tr>
+                           <th scope="col">#<i class="fa fa-sort ms-1"></i></th>
+                           <th scope="col">Name<i class="fa fa-sort ms-1"></i></th>
+                           <th scope="col">Status<i class="fa fa-sort ms-1"></i></th>
+                           <th scope="col">Job title<i class="fa fa-sort ms-1"></i></th>
+                           <th scope="col">Specialism<i class="fa fa-sort ms-1"></i></th>
+                           <th scope="col">Requested<i class="fa fa-sort ms-1"></i></th>
+                           <th scope="col">Due<i class="fa fa-sort ms-1"></i></th>
+                           <th scope="col">Completed<i class="fa fa-sort ms-1"></i></th>
+                           <th scope="col" class="text-center">Actions</th>
+                         </tr>
+                       </thead>
+                       <tbody>
+                         <tr>
+                           <td colspan="9">There are no allocations to another team.</td>
+                          </tr>
+                       </tbody>
+                     </table>
+                   </div>
+                </form>
+              </div>
+            </div> -->
+
+            <div class="card mb-6 toc-anchor" id="team-allocation">
+              <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center">
+                  <span>Allocations to Another Team</span>
+                </div>
+              </div>
+              <div class="card-body px-6">
+                <p>You have been allocated the task of providing advice by another team which means you are unable to allocate to another team.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+</div>

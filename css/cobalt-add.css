@@ -514,10 +514,14 @@ li i:hover {
   padding-left: 10px;
 }
 
+.selected-filter:last-of-type {
+  margin-right: 2rem;
+}
+
 .selected-filter {
-  background-color: transparent;
+  background-color: var(--success-50);
   color: var(--body-color);
-  border: 1px solid var(--neutral-300);
+  margin-right: 0.5rem;
 }
 
 .selected-filter a {

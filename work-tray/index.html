@@ -20,7 +20,17 @@ title: Work tray
          <div class="col">
 
              <!-- Search results -->
-             <p class="mb-0"><strong>1 - 5</strong> of <strong>15</strong> children and young people based on your current search and filter options.</p>
+             <div class="d-flex justify-content-between align-items-center">
+               <p class="mb-0"><strong>1 - 5</strong> of <strong>15</strong> children and young people based on your current search and filter options.</p>
+               <div class="dropdown ps-2">
+                 <a class="btn btn-neutral-50" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   <i class="fal fa-ellipsis-v-alt px-1"></i>
+                 </a>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="#">Export to CSV</a></li>
+                 </ul>
+               </div>
+             </div>
              <div class="table-responsive">
                <table class="table table-hover table-borderless idx-results-table align-middle no-wrap">
                  <thead>

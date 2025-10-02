@@ -9,7 +9,17 @@
       </div>
       <div class="d-flex justify-content-end">
         <a class="btn btn-neutral-50 no-wrap ms-2" href="#" data-bs-toggle="collapse" data-bs-target="#search-filters"><i class="fal fa-filter"></i><span class="d-none d-md-inline-block ms-2">Filters</span></a>
-        <a class="btn btn-neutral-50 dropdown-toggle no-wrap ms-2" href="#"><i class="fal fa-bookmark"></i><span class="d-none d-md-inline-block ms-2">Saved</span></a>
+        <div class="dropdown ms-2">
+          <a class="btn btn-neutral-50 dropdown-toggle no-wrap" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fal fa-bookmark"></i><span class="d-none d-md-inline-block ms-2">Saved</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Save search</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><h6 class="dropdown-header">Saved searches</h6></li>
+            <li><a class="dropdown-item text-muted" href="#" disabled>None saved</a></li>
+          </ul>
+        </div>
         <a class="btn btn-neutral-50 no-wrap ms-2" href="#"><i class="fal fa-undo"></i><span class="d-none d-md-inline-block ms-2">Clear</span></a>
       </div>
     </div>
@@ -17,11 +27,14 @@
   <div class="collapse py-3" id="search-filters">
     {% include filter-cases.html %}
   </div>
-  <div class="mt-2 d-flex align-items-center">
-    <span class="badge selected-filter me-2"><a href="#"><i class="fal fa-times me-2"></i></a>Year 9</span>
-    <span class="badge selected-filter me-2"><a href="#"><i class="fal fa-times me-2"></i></a>Greenhill School</span>
-    <span class="badge selected-filter me-2"><a href="#"><i class="fal fa-times me-2"></i></a>Assessment</span>
-    <span class="badge selected-filter me-2"><a href="#"><i class="fal fa-times me-2"></i></a>Impending</span>
-    <a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover me-2" href="#">save</a>
+  <div class="row">
+    <div class="col">
+      <div class="mt-4">
+        <span class="badge selected-filter"><a href="#"><i class="fal fa-times me-2"></i></a>Year 9</span>
+        <span class="badge selected-filter"><a href="#"><i class="fal fa-times me-2"></i></a>Greenhill School</span>
+        <span class="badge selected-filter"><a href="#"><i class="fal fa-times me-2"></i></a>Assessment</span>
+        <span class="badge selected-filter"><a href="#"><i class="fal fa-times me-2"></i></a>Impending</span>
+      </div>
+    </div>
   </div>
 </form>

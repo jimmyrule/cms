@@ -29,193 +29,127 @@ title: EHC Hub
         <!-- Callout -->
         <div class="callout callout-info mb-0">
           <h3>Step 3: EHC Needs Assessment</h3>
-          <p>Assessment process under Section 36 (1) of the Children and Families Act 2014. Please ensure that all relevant professional contributors have been requested to provide advice and the family have appropriate support in place to complete "About me" and "Parent/carer's views" below.</p>
+          <p>Your team has been requested to provide advice towards the assessment process under Section 36 (1) of the Children and Families Act 2014. Please state whether your organisation or team will be providing advice before allocating the request to the relevant individual(s). The family may have contributed views in "About me" and "Parent/carer's views" below. Your response is due by <strong>8 Nov 2025</strong>.</p>
         </div>
 
-        {% include actions-assessment.html %}
+        {% include actions-assessment-team-manager.html %}
 
         <!-- Requests for advice -->
         <h4>Requests for advice</h4>
 
         <div class="mb-5 table-responsive">
-           <table class="table table-striped table-hover table-borderless idx-results-table align-middle no-wrap mt-0">
-             <thead>
-               <tr>
-                 <th scope="col">#<i class="fa fa-sort ms-1"></i></th>
-                 <th scope="col">Name<i class="fa fa-sort ms-1"></i></th>
-                 <th scope="col">Status<i class="fa fa-sort ms-1"></i></th>
-                 <th scope="col">Job title<i class="fa fa-sort ms-1"></i></th>
-                 <th scope="col">Specialism<i class="fa fa-sort ms-1"></i></th>
-                 <th scope="col">Requested<i class="fa fa-sort ms-1"></i></th>
-                 <th scope="col">Due<i class="fa fa-sort ms-1"></i></th>
-                 <th scope="col">Completed<i class="fa fa-sort ms-1"></i></th>
-                 <th scope="col" class="text-center">Actions</th>
-               </tr>
-             </thead>
-             <tbody>
-               <tr>
-                 <th scope="row">1</th>
-                 <td class="table-name-label">Robyn Sayer</td>
-                 <td><span class="badge rounded-pill text-bg-warning w-100">Pending</span></td>
-                 <td class="text-truncate" style="max-width:150px"><span class="cursor-default" data-bs-toggle="tooltip" data-bs-title="SENCo">SENCo</span></td>
-                 <td>Education</td>
-                 <td>27/09/2025</td>
-                 <td>08/11/2025</td>
-                 <td></td>
-                 <td class="text-center">
-                   <div class="dropdown dropstart">
-                     <a class="px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                       <i class="fal fa-ellipsis-v-alt"></i>
-                     </a>
-                     <ul class="dropdown-menu">
-                       <li><a class="dropdown-item" href="#">Close</a></li>
-                     </ul>
-                   </div>
-                 </td>
-               </tr>
-               <tr>
-                 <th scope="row">2</th>
-                 <td class="table-name-label">Peter Jameson</td>
-                 <td><span class="badge rounded-pill text-bg-danger w-100">Closed</span></td>
-                 <td class="text-truncate" style="max-width:150px"><span class="cursor-default" data-bs-toggle="tooltip" data-bs-title="Educational Psychologist">Educational Psychologist</span></td>
-                 <td>Education</td>
-                 <td>27/09/2025</td>
-                 <td>08/11/2025</td>
-                 <td>10/11/2025</td>
-                 <td class="text-center">
-                   <div class="dropdown dropstart">
-                     <a class="px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                       <i class="fal fa-ellipsis-v-alt"></i>
-                     </a>
-                     <ul class="dropdown-menu">
-                       <li><a class="dropdown-item" href="#">Re-open</a></li>
-                     </ul>
-                   </div>
-                 </td>
-               </tr>
-               <tr>
-                 <th scope="row">3</th>
-                 <td class="table-name-label"><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="advice">Helen Clarkson</a></td>
-                 <td><span class="badge rounded-pill text-bg-success w-100">Completed</span></td>
-                 <td class="text-truncate" style="max-width:150px"><span class="cursor-default" data-bs-toggle="tooltip" data-bs-title="Occupational Therapist">Occupational Therapist</span></td>
-                 <td>Health</td>
-                 <td>27/09/2025</td>
-                 <td>08/11/2025</td>
-                 <td>06/11/2025</td>
-                 <td class="text-center">
-                   <div class="dropdown dropstart">
-                     <a class="px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                       <i class="fal fa-ellipsis-v-alt"></i>
-                     </a>
-                     <ul class="dropdown-menu">
-                       <li><a class="dropdown-item" href="#">Re-open</a></li>
-                     </ul>
-                   </div>
-                 </td>
-               </tr>
-               <tr>
-                 <th scope="row" rowspan="3" class="align-top">4</th>
-                 <td class="table-name-label">Social Care Team</td>
-                 <td><span class="badge rounded-pill text-bg-warning w-100">Pending</span></td>
-                 <td></td>
-                 <td>Social Care</td>
-                 <td>27/09/2025</td>
-                 <td>08/11/2025</td>
-                 <td></td>
-                 <td class="text-center">
-                   <div class="dropdown dropstart">
-                     <a class="px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                       <i class="fal fa-ellipsis-v-alt"></i>
-                     </a>
-                     <ul class="dropdown-menu">
-                       <li><a class="dropdown-item" href="#">Close</a></li>
-                     </ul>
-                   </div>
-                 </td>
-               </tr>
-               <tr>
-                 <td class="table-name-label">Kerry Holmes</td>
-                 <td><span class="badge rounded-pill text-bg-warning w-100">Pending</span></td>
-                 <td class="text-truncate" style="max-width:150px"><span class="cursor-default" data-bs-toggle="tooltip" data-bs-title="Social Worker">Social Worker</span></td>
-                 <td>Social Care</td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td class="text-center">
-                   <div class="dropdown dropstart">
-                     <a class="px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                       <i class="fal fa-ellipsis-v-alt"></i>
-                     </a>
-                     <ul class="dropdown-menu">
-                       <li><a class="dropdown-item" href="#">Close</a></li>
-                     </ul>
-                   </div>
-                 </td>
-               </tr>
-               <tr>
-                 <td class="table-name-label"><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Henry Fowler</a></td>
-                 <td><span class="badge rounded-pill text-bg-success w-100">Completed</span></td>
-                 <td class="text-truncate" style="max-width:150px"><span class="cursor-default" data-bs-toggle="tooltip" data-bs-title="Social Worker">Social Worker</span></td>
-                 <td>Social Care</td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td class="text-center">
-                   <div class="dropdown dropstart">
-                     <a class="px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                       <i class="fal fa-ellipsis-v-alt"></i>
-                     </a>
-                     <ul class="dropdown-menu">
-                       <li><a class="dropdown-item" href="#">Re-open</a></li>
-                     </ul>
-                   </div>
-                 </td>
-               </tr>
-               <tr>
-                 <th scope="row">5</th>
-                 <td class="table-name-label"><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Julie Grange</a></td>
-                 <td><span class="badge rounded-pill text-bg-success w-100">Completed</span></td>
-                 <td class="text-truncate" style="max-width:150px"><span class="cursor-default" data-bs-toggle="tooltip" data-bs-title="Physio">Physio</span></td>
-                 <td>Health</td>
-                 <td>27/09/2025</td>
-                 <td>08/11/2025</td>
-                 <td>06/11/2025</td>
-                 <td class="text-center">
-                   <div class="dropdown dropstart">
-                     <a class="px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                       <i class="fal fa-ellipsis-v-alt"></i>
-                     </a>
-                     <ul class="dropdown-menu">
-                       <li><a class="dropdown-item" href="#">Re-open</a></li>
-                     </ul>
-                   </div>
-                 </td>
-               </tr>
-               <tr>
-                 <th scope="row">6</th>
-                 <td class="table-name-label">Health Team</td>
-                 <td><span class="badge rounded-pill text-bg-warning w-100">Pending</span></td>
-                 <td></td>
-                 <td>Health</td>
-                 <td>27/09/2025</td>
-                 <td>08/11/2025</td>
-                 <td></td>
-                 <td class="text-center">
-                   <div class="dropdown dropstart">
-                     <a class="px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                       <i class="fal fa-ellipsis-v-alt"></i>
-                     </a>
-                     <ul class="dropdown-menu">
-                       <li><a class="dropdown-item" href="#">Manage response</a></li>
-                     </ul>
-                   </div>
-                 </td>
-               </tr>
-             </tbody>
-           </table>
-         <div class="d-flex justify-content-lg-end mt-2 mt-lg-0">
-           <a class="btn btn-neutral-50" href="#"><i class="fal fa-plus-circle me-2"></i>Add request</a>
-         </div>
+         <table class="table table-striped table-hover table-borderless idx-results-table align-middle no-wrap mt-0">
+           <thead>
+             <tr>
+               <th scope="col">#<i class="fa fa-sort ms-1"></i></th>
+               <th scope="col">Name<i class="fa fa-sort ms-1"></i></th>
+               <th scope="col">Status<i class="fa fa-sort ms-1"></i></th>
+               <th scope="col">Job title<i class="fa fa-sort ms-1"></i></th>
+               <th scope="col">Specialism<i class="fa fa-sort ms-1"></i></th>
+               <th scope="col">Requested<i class="fa fa-sort ms-1"></i></th>
+               <th scope="col">Due<i class="fa fa-sort ms-1"></i></th>
+               <th scope="col">Completed<i class="fa fa-sort ms-1"></i></th>
+               <th scope="col" class="text-center">Actions</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <th scope="row">1</th>
+               <td class="table-name-label">Robyn Sayer</td>
+               <td><span class="badge rounded-pill text-bg-warning w-100">Pending</span></td>
+               <td class="text-truncate" style="max-width:150px"><span class="cursor-default" data-bs-toggle="tooltip" data-bs-title="SENCo">SENCo</span></td>
+               <td>Education</td>
+               <td>27/09/2025</td>
+               <td>08/11/2025</td>
+               <td></td>
+               <td class="text-center"></td>
+             </tr>
+             <tr>
+               <th scope="row">2</th>
+               <td class="table-name-label">Peter Jameson</td>
+               <td><span class="badge rounded-pill text-bg-danger w-100">Closed</span></td>
+               <td class="text-truncate" style="max-width:150px"><span class="cursor-default" data-bs-toggle="tooltip" data-bs-title="Educational Psychologist">Educational Psychologist</span></td>
+               <td>Education</td>
+               <td>27/09/2025</td>
+               <td>08/11/2025</td>
+               <td>10/11/2025</td>
+               <td class="text-center"></td>
+             </tr>
+             <tr>
+               <th scope="row">3</th>
+               <td class="table-name-label">Helen Clarkson</td>
+               <td><span class="badge rounded-pill text-bg-success w-100">Completed</span></td>
+               <td class="text-truncate" style="max-width:150px"><span class="cursor-default" data-bs-toggle="tooltip" data-bs-title="Occupational Therapist">Occupational Therapist</span></td>
+               <td>Health</td>
+               <td>27/09/2025</td>
+               <td>08/11/2025</td>
+               <td>06/11/2025</td>
+               <td class="text-center"></td>
+             </tr>
+             <tr>
+               <th scope="row" rowspan="3" class="align-top">4</th>
+               <td class="table-name-label">Social Care Team</td>
+               <td><span class="badge rounded-pill text-bg-warning w-100">Pending</span></td>
+               <td></td>
+               <td>Social Care</td>
+               <td>27/09/2025</td>
+               <td>08/11/2025</td>
+               <td></td>
+               <td class="text-center"></td>
+             </tr>
+             <tr>
+               <td class="table-name-label">Kerry Holmes</td>
+               <td><span class="badge rounded-pill text-bg-warning w-100">Pending</span></td>
+               <td class="text-truncate" style="max-width:150px"><span class="cursor-default" data-bs-toggle="tooltip" data-bs-title="Social Worker">Social Worker</span></td>
+               <td>Social Care</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td class="text-center"></td>
+             </tr>
+             <tr>
+               <td class="table-name-label">Henry Fowler</td>
+               <td><span class="badge rounded-pill text-bg-success w-100">Completed</span></td>
+               <td class="text-truncate" style="max-width:150px"><span class="cursor-default" data-bs-toggle="tooltip" data-bs-title="Social Worker">Social Worker</span></td>
+               <td>Social Care</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td class="text-center"></td>
+             </tr>
+             <tr>
+               <th scope="row">5</th>
+               <td class="table-name-label">Julie Grange</td>
+               <td><span class="badge rounded-pill text-bg-success w-100">Completed</span></td>
+               <td class="text-truncate" style="max-width:150px"><span class="cursor-default" data-bs-toggle="tooltip" data-bs-title="Physio">Physio</span></td>
+               <td>Health</td>
+               <td>27/09/2025</td>
+               <td>08/11/2025</td>
+               <td>06/11/2025</td>
+               <td class="text-center"></td>
+             </tr>
+             <tr>
+               <th scope="row">6</th>
+               <td class="table-name-label">Health Team</td>
+               <td><span class="badge rounded-pill text-bg-warning w-100">Pending</span></td>
+               <td></td>
+               <td>Health</td>
+               <td>27/09/2025</td>
+               <td>08/11/2025</td>
+               <td></td>
+               <td class="text-center">
+                 <div class="dropdown dropstart">
+                   <a class="px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     <i class="fal fa-ellipsis-v-alt"></i>
+                   </a>
+                   <ul class="dropdown-menu">
+                     <li><a class="dropdown-item" href="#">Manage response</a></li>
+                   </ul>
+                 </div>
+               </td>
+             </tr>
+           </tbody>
+         </table>
        </div>
 
        <!-- About me -->

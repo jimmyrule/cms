@@ -183,6 +183,12 @@ $h6-font-size:              $font-size-base;*/
   --callout-color-info: #055160;
   --callout-bg-info: #cff4fc;
   --callout-border-info: #9eeaf9;
+  --callout-color-warning: #664d03;
+  --callout-bg-warning: #fff3cd;
+  --callout-border-warning: #ffe69c;
+  --callout-color-error: #b02a37;
+  --callout-bg-error: #f8d7da;
+  --callout-border-error: #f1aeb5;
 }
 
 *,

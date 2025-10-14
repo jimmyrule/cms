@@ -472,6 +472,18 @@ li i:hover {
   border-left: .25rem solid var(--callout-border-info);
 }
 
+.callout-warning {
+  color: var(--callout-color-warning);
+  background-color: var(--callout-bg-warning);
+  border-left: .25rem solid var(--callout-border-warning);
+}
+
+.callout-error {
+  color: var(--callout-color-error);
+  background-color: var(--callout-bg-error);
+  border-left: .25rem solid var(--callout-border-error);
+}
+
 .nbm p {
   margin-bottom: 0;
 }
@@ -527,4 +539,8 @@ li i:hover {
 .selected-filter a {
   text-decoration: none;
   color: var(--body-color);
+}
+
+.sticky-top-correction {
+  top: 56px;
 }

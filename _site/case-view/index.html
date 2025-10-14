@@ -30,24 +30,23 @@
 </div>
  -->
 
-			<header>
-  <nav class="py-2 navbar top bg-primary main-header">
-    <div class="container-fluid">
-      <a class="d-block d-md-none text-white align-self-center px-4" role="button" data-bs-toggle="collapse" href="#idx-sidenav" aria-controls="idx-sidenav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="visually-hidden">Side menu</span><i class="far fa-bars" aria-hidden="true"></i>
-      </a>
-      <a href="/" class="navbar-brand text-white ms-4 pt-2 "><span class="d-none d-md-inline-block">EHC Hub<span class="px-3">|</span></span><span class="la-name">Edgehill Council (Prototype)</span></a>
-      <a class="d-block d-md-none text-white align-self-center px-3" role="button" data-bs-toggle="collapse" href="#idx-usernav" aria-controls="idx-usernav" aria-expanded="false" aria-label="Toggle user options">
-          <span class="visually-hidden">User menu</span><i class="far fa-question-circle idx-nav-icon" aria-hidden="true"></i>
-      </a>
-      <div class="d-none d-md-block pull-right">
-        <a class="text-white me-4" href="/user-profile" data-bs-toggle="tooltip" data-bs-title="Profile"><i class="fal fa-user-circle idx-nav-icon" aria-hidden="true"></i> Bob Schneider</a>
-        <a class="text-white me-4" href="/help" data-bs-toggle="tooltip" data-bs-title="Help"><i class="fal fa-question-circle idx-nav-icon" aria-hidden="true" title="Help"></i></a>
-        <a class="text-white me-4" data-bs-toggle="modal" data-bs-target="#logoutModal" type="button" tabindex="0"><i class="fal fa-sign-out idx-nav-icon" aria-hidden="true" data-bs-toggle="tooltip" data-bs-title="Logout" ></i></a>
-      </div>
+			<nav class="navbar sticky-top bg-primary py-2">
+  <div class="container-fluid">
+    <a class="d-block d-md-none text-white align-self-center px-4" role="button" data-bs-toggle="collapse" href="#idx-sidenav" aria-controls="idx-sidenav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="visually-hidden">Side menu</span><i class="far fa-bars" aria-hidden="true"></i>
+    </a>
+    <a href="/" class="navbar-brand text-white ms-4 pt-2 "><span class="d-none d-md-inline-block">SEND Hub<span class="px-3">|</span></span><span class="la-name">Edgehill Council (Prototype)</span></a>
+    <a class="d-block d-md-none text-white align-self-center px-3" role="button" data-bs-toggle="collapse" href="#idx-usernav" aria-controls="idx-usernav" aria-expanded="false" aria-label="Toggle user options">
+        <span class="visually-hidden">User menu</span><i class="far fa-question-circle idx-nav-icon" aria-hidden="true"></i>
+    </a>
+    <div class="d-none d-md-block pull-right">
+      <a class="text-white me-4" href="/user-profile" data-bs-toggle="tooltip" data-bs-title="Profile"><i class="fal fa-user-circle idx-nav-icon" aria-hidden="true"></i> Bob Schneider</a>
+      <a class="text-white me-4" href="/help" data-bs-toggle="tooltip" data-bs-title="Help"><i class="fal fa-question-circle idx-nav-icon" aria-hidden="true" title="Help"></i></a>
+      <a class="text-white me-4" data-bs-toggle="modal" data-bs-target="#logoutModal" type="button" tabindex="0"><i class="fal fa-sign-out idx-nav-icon" aria-hidden="true" data-bs-toggle="tooltip" data-bs-title="Logout" ></i></a>
     </div>
-  </nav>
-  <aside class="idx-sidenav d-md-none border-end" id="idx-usernav">
+  </div>
+</nav>
+<aside class="idx-sidenav d-md-none border-end" id="idx-usernav">
     <!-- #BeginLibraryItem "/Library/Contents.lbi" -->
     <nav class="collapse idx-links sticky-top d-block" aria-label="User options">
         <ul class="list-unstyled mb-0 px-4 py-4 pt-5" id="idx-user-menu">
@@ -59,7 +58,6 @@
     <!-- #EndLibraryItem -->
 </aside>
 
-</header>
 
 <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -69,8 +67,8 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>Are you sure that you wish to logout of the EHC Hub?</p>
-        <p>Choose <strong>No</strong> to continue working or <strong>Yes, logout</strong> to leave the EHC Hub.</p>
+        <p>Are you sure that you wish to logout of the SEND Hub?</p>
+        <p>Choose <strong>No</strong> to continue working or <strong>Yes, logout</strong> to leave the SEND Hub.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-neutral-50" data-bs-dismiss="modal">No</button>
@@ -87,7 +85,7 @@
 
   <aside class="idx-sidenav d-md-block border-end" id="idx-sidenav">
     <!-- #BeginLibraryItem "/Library/Contents.lbi" -->
-    <nav class="collapse idx-links sticky-top d-block" aria-label="EHC Hub navigation">
+    <nav class="collapse idx-links sticky-top sticky-top-correction d-block" aria-label="SEND Hub navigation">
         <ul class="list-unstyled d-flex flex-column mb-0 pt-1 pb-5 px-4" id="idx-menu">
             <li class="pt-5 pb-1 mx-md-auto"><a href="/work-tray" data-bs-toggle="tooltip" data-bs-title="My cases in progress"><i class="fal fa-user idx-nav-icon fa-fw" aria-hidden="true"></i><span class="d-md-none ms-2">My cases in progress</span></a></li>
             <li class="pt-6 pb-1 mx-md-auto"><a href="#" data-bs-toggle="tooltip" data-bs-title="My live cases"><i class="fal fa-file-user idx-nav-icon fa-fw" aria-hidden="true"></i><span class="d-md-none ms-2">My live cases</span></a></li>
@@ -103,7 +101,7 @@
             </li>
             <li class="pt-6 pb-1 mx-md-auto"><a href="#" data-bs-toggle="tooltip" data-bs-title="All cases"><i class="fal fa-users idx-nav-icon fa-fw" aria-hidden="true"></i><span class="d-md-none ms-2">All cases</span></a></li>
             <li class="pt-6 pb-1 mx-md-auto"><a href="/new-request" data-bs-toggle="tooltip" data-bs-title="Start a new request"><i class="fal fa-file-plus idx-nav-icon fa-fw" aria-hidden="true"></i><span class="d-md-none ms-2">New request</span></a></li>
-            <li class="pt-6 pb-1 mx-md-auto"><a href="/panel-meetings" data-bs-toggle="tooltip" data-bs-title="Panel meetings"><i class="fal fa-calendar-alt idx-nav-icon fa-fw" aria-hidden="true"></i><span class="d-md-none ms-2">Panel meetings</span></a></li>            
+            <li class="pt-6 pb-1 mx-md-auto"><a href="/panel-meetings" data-bs-toggle="tooltip" data-bs-title="Panel meetings"><i class="fal fa-calendar-alt idx-nav-icon fa-fw" aria-hidden="true"></i><span class="d-md-none ms-2">Panel meetings</span></a></li>
             <li class="pt-6 pb-1 mx-md-auto"><a href="#" data-bs-toggle="tooltip" data-bs-title="Mediation and Tribunals"><i class="fal fa-balance-scale idx-nav-icon fa-fw" aria-hidden="true"></i><span class="d-md-none ms-2">Mediation and Tribunals</span></a></li>
             <li class="pt-6 pb-1 mx-md-auto"><a href="#" data-bs-toggle="tooltip" data-bs-title="Import plan"><i class="fal fa-file-upload idx-nav-icon fa-fw" aria-hidden="true"></i><span class="d-md-none ms-2">Import plan</span></a></li>
             <li class="pt-6 pb-1 mx-md-auto"><a href="/reports" data-bs-toggle="tooltip" data-bs-title="Reports"><i class="fal fa-chart-bar idx-nav-icon fa-fw" aria-hidden="true"></i><span class="d-md-none ms-2">Reports</span></a></li>
